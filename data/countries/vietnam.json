@@ -1,0 +1,167 @@
+{
+  "slug": "vietnam",
+  "iso2": "VN",
+  "iso3": "VNM",
+  "names": {
+    "en": "Vietnam",
+    "ko": "베트남"
+  },
+  "capital": {
+    "names": {
+      "en": "Hanoi",
+      "ko": "하노이"
+    },
+    "lat": 21.0245,
+    "lng": 105.84117
+  },
+  "continent": "asia",
+  "area_km2": 331212,
+  "population": {
+    "value": 101598527,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 514697215165,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 5066,
+    "year": 2025
+  },
+  "median_age": 32.5,
+  "life_expectancy": 74.7,
+  "urbanization_pct": 38.8,
+  "religions": [
+    {
+      "key": "folk",
+      "pct": 45.3
+    },
+    {
+      "key": "none",
+      "pct": 29.6
+    },
+    {
+      "key": "buddhism",
+      "pct": 16.4
+    },
+    {
+      "key": "christianity",
+      "pct": 8.2
+    },
+    {
+      "key": "other",
+      "pct": 0.5
+    }
+  ],
+  "languages": {
+    "official": [
+      "vi"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "manufacturing",
+    "electronics",
+    "textiles",
+    "agriculture"
+  ],
+  "currency": {
+    "code": "VND",
+    "usd_rate_snapshot": 25400,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Asia/Ho_Chi_Minh"
+  ],
+  "electricity": {
+    "voltage": 220,
+    "plugs": [
+      "A",
+      "C"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+84",
+  "emergency": "113",
+  "climate": {
+    "temp_high_c": [
+      22.9,
+      20.5,
+      24.9,
+      30.5,
+      30.8,
+      32.7,
+      32.7,
+      31.8,
+      31.4,
+      28.5,
+      23.8,
+      23.6
+    ],
+    "temp_low_c": [
+      13.1,
+      14.5,
+      17.1,
+      21.7,
+      24.4,
+      25.7,
+      26,
+      25.6,
+      25.1,
+      22.7,
+      17.1,
+      16.9
+    ],
+    "precip_mm": [
+      20,
+      52,
+      32,
+      170,
+      231,
+      524,
+      317,
+      373,
+      342,
+      280,
+      112,
+      38
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

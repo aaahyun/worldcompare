@@ -1,0 +1,162 @@
+{
+  "slug": "united-states",
+  "iso2": "US",
+  "iso3": "USA",
+  "names": {
+    "en": "United States",
+    "ko": "미국"
+  },
+  "capital": {
+    "names": {
+      "en": "Washington, D.C.",
+      "ko": "워싱턴 D.C."
+    },
+    "lat": 38.895,
+    "lng": -77.036666666
+  },
+  "continent": "north_america",
+  "area_km2": 9372610,
+  "population": {
+    "value": 341784857,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 30769700000000,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 90026.5,
+    "year": 2025
+  },
+  "median_age": 38.9,
+  "life_expectancy": 78.9,
+  "urbanization_pct": 80.2,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 63
+    },
+    {
+      "key": "none",
+      "pct": 29
+    },
+    {
+      "key": "other",
+      "pct": 8
+    }
+  ],
+  "languages": {
+    "official": [
+      "en"
+    ],
+    "english_proficiency": "very_high"
+  },
+  "industries": [
+    "technology",
+    "finance",
+    "manufacturing",
+    "aerospace"
+  ],
+  "currency": {
+    "code": "USD",
+    "usd_rate_snapshot": 1,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "America/New_York",
+    "America/Chicago",
+    "America/Denver",
+    "America/Los_Angeles"
+  ],
+  "electricity": {
+    "voltage": 120,
+    "plugs": [
+      "A",
+      "B"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+1",
+  "emergency": "911",
+  "climate": {
+    "temp_high_c": [
+      2.2,
+      7,
+      16.2,
+      20.7,
+      23,
+      30.2,
+      31.6,
+      27.7,
+      26.1,
+      19.6,
+      13.7,
+      6.1
+    ],
+    "temp_low_c": [
+      -5.2,
+      -0.9,
+      4.8,
+      10.1,
+      14.4,
+      19.9,
+      22.8,
+      18.7,
+      17.3,
+      10.2,
+      4.9,
+      -1.6
+    ],
+    "precip_mm": [
+      53,
+      89,
+      69,
+      115,
+      255,
+      163,
+      189,
+      66,
+      91,
+      84,
+      51,
+      54
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

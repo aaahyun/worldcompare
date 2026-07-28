@@ -1,0 +1,163 @@
+{
+  "slug": "germany",
+  "iso2": "DE",
+  "iso3": "DEU",
+  "names": {
+    "en": "Germany",
+    "ko": "독일"
+  },
+  "capital": {
+    "names": {
+      "en": "Berlin",
+      "ko": "베를린"
+    },
+    "lat": 52.516666666,
+    "lng": 13.383333333
+  },
+  "continent": "europe",
+  "area_km2": 357114,
+  "population": {
+    "value": 83491249,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 5050922925047,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 60496.4,
+    "year": 2025
+  },
+  "median_age": 45.7,
+  "life_expectancy": 80.8,
+  "urbanization_pct": 82.1,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 55
+    },
+    {
+      "key": "none",
+      "pct": 38
+    },
+    {
+      "key": "islam",
+      "pct": 5.5
+    },
+    {
+      "key": "other",
+      "pct": 1.5
+    }
+  ],
+  "languages": {
+    "official": [
+      "de"
+    ],
+    "english_proficiency": "high"
+  },
+  "industries": [
+    "automotive",
+    "manufacturing",
+    "machinery",
+    "chemicals"
+  ],
+  "currency": {
+    "code": "EUR",
+    "usd_rate_snapshot": 0.93,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Europe/Berlin"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+49",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      4.9,
+      4.3,
+      11.6,
+      17.5,
+      18.7,
+      25.2,
+      23.8,
+      23.9,
+      20.2,
+      13.3,
+      8.2,
+      5.4
+    ],
+    "temp_low_c": [
+      -0.1,
+      -2.4,
+      1.9,
+      7.1,
+      8.9,
+      14.4,
+      15.5,
+      13.9,
+      11.8,
+      7.5,
+      2.9,
+      1
+    ],
+    "precip_mm": [
+      81,
+      24,
+      14,
+      20,
+      23,
+      61,
+      159,
+      40,
+      53,
+      60,
+      40,
+      24
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

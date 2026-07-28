@@ -1,0 +1,160 @@
+{
+  "slug": "canada",
+  "iso2": "CA",
+  "iso3": "CAN",
+  "names": {
+    "en": "Canada",
+    "ko": "캐나다"
+  },
+  "capital": {
+    "names": {
+      "en": "Ottawa",
+      "ko": "오타와"
+    },
+    "lat": 45.424722222,
+    "lng": -75.695
+  },
+  "continent": "north_america",
+  "area_km2": 9984670,
+  "population": {
+    "value": 41651653,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 2319899772426,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 55697.7,
+    "year": 2025
+  },
+  "median_age": 41.1,
+  "life_expectancy": 82.1,
+  "urbanization_pct": 82.9,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 53.3
+    },
+    {
+      "key": "none",
+      "pct": 34.6
+    },
+    {
+      "key": "other",
+      "pct": 12.1
+    }
+  ],
+  "languages": {
+    "official": [
+      "en",
+      "fr"
+    ],
+    "english_proficiency": "very_high"
+  },
+  "industries": [
+    "mining",
+    "manufacturing",
+    "technology",
+    "oil_gas"
+  ],
+  "currency": {
+    "code": "CAD",
+    "usd_rate_snapshot": 1.37,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "America/Toronto"
+  ],
+  "electricity": {
+    "voltage": 120,
+    "plugs": [
+      "A",
+      "B"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+1",
+  "emergency": "911",
+  "climate": {
+    "temp_high_c": [
+      -5.4,
+      -5.1,
+      3.9,
+      11.4,
+      18.2,
+      25,
+      27.8,
+      26.4,
+      21.5,
+      15.4,
+      3.3,
+      -3.2
+    ],
+    "temp_low_c": [
+      -13,
+      -14.4,
+      -6.1,
+      0,
+      8.5,
+      15.3,
+      18.4,
+      16.4,
+      12.4,
+      6.5,
+      -1.3,
+      -12.6
+    ],
+    "precip_mm": [
+      40,
+      71,
+      104,
+      96,
+      81,
+      78,
+      126,
+      50,
+      31,
+      86,
+      75,
+      70
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

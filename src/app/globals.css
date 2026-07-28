@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme inline {
+  --color-neutral-0: var(--color-neutral-0);
+  --color-neutral-50: var(--color-neutral-50);
+  --color-neutral-100: var(--color-neutral-100);
+  --color-neutral-200: var(--color-neutral-200);
+  --color-neutral-300: var(--color-neutral-300);
+  --color-neutral-400: var(--color-neutral-400);
+  --color-neutral-500: var(--color-neutral-500);
+  --color-neutral-600: var(--color-neutral-600);
+  --color-neutral-700: var(--color-neutral-700);
+  --color-neutral-800: var(--color-neutral-800);
+  --color-neutral-900: var(--color-neutral-900);
+
+  --color-brand-50: var(--color-brand-50);
+  --color-brand-100: var(--color-brand-100);
+  --color-brand-200: var(--color-brand-200);
+  --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
+  --color-brand-500: var(--color-brand-500);
+  --color-brand-600: var(--color-brand-600);
+  --color-brand-700: var(--color-brand-700);
+  --color-brand-800: var(--color-brand-800);
+  --color-brand-900: var(--color-brand-900);
+
+  --color-country-target: var(--color-country-target);
+  --color-country-target-soft: var(--color-country-target-soft);
+  --color-country-home: var(--color-country-home);
+  --color-country-home-soft: var(--color-country-home-soft);
+
+  --color-surface-0: var(--color-surface-0);
+  --color-surface-100: var(--color-surface-100);
+  --color-surface-card: var(--color-surface-card);
+  --color-content-primary: var(--color-content-primary);
+  --color-content-secondary: var(--color-content-secondary);
+  --color-content-tertiary: var(--color-content-tertiary);
+  --color-content-inverse: var(--color-content-inverse);
+  --color-feedback-success: var(--color-feedback-success);
+  --color-feedback-error: var(--color-feedback-error);
+
+  --font-sans: var(--font-sans);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
+  --radius-full: var(--radius-full);
+
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+}
+
+body {
+  background: var(--color-surface-100);
+  color: var(--color-content-primary);
+  font-family: var(--font-sans);
+}

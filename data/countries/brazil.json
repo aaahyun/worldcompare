@@ -1,0 +1,159 @@
+{
+  "slug": "brazil",
+  "iso2": "BR",
+  "iso3": "BRA",
+  "names": {
+    "en": "Brazil",
+    "ko": "브라질"
+  },
+  "capital": {
+    "names": {
+      "en": "Brasília",
+      "ko": "브라질리아"
+    },
+    "lat": -15.793888888,
+    "lng": -47.882777777
+  },
+  "continent": "south_america",
+  "area_km2": 8515767,
+  "population": {
+    "value": 212812405,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 2279920092492,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 10713.3,
+    "year": 2025
+  },
+  "median_age": 34.6,
+  "life_expectancy": 76,
+  "urbanization_pct": 88.2,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 86.8
+    },
+    {
+      "key": "none",
+      "pct": 8
+    },
+    {
+      "key": "other",
+      "pct": 5.2
+    }
+  ],
+  "languages": {
+    "official": [
+      "pt"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "agriculture",
+    "mining",
+    "manufacturing",
+    "oil_gas"
+  ],
+  "currency": {
+    "code": "BRL",
+    "usd_rate_snapshot": 5.5,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "America/Sao_Paulo"
+  ],
+  "electricity": {
+    "voltage": 127,
+    "plugs": [
+      "C",
+      "N"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+55",
+  "emergency": "190",
+  "climate": {
+    "temp_high_c": [
+      26,
+      27.9,
+      28.4,
+      27.2,
+      25.2,
+      26,
+      25.9,
+      28.6,
+      29.4,
+      29,
+      28,
+      26.4
+    ],
+    "temp_low_c": [
+      19,
+      19.2,
+      19.3,
+      19.2,
+      16.5,
+      15.8,
+      15.2,
+      16.8,
+      18.9,
+      19.1,
+      19.5,
+      19
+    ],
+    "precip_mm": [
+      155,
+      68,
+      108,
+      111,
+      8,
+      3,
+      1,
+      0,
+      37,
+      64,
+      134,
+      320
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "slug": "philippines",
+  "iso2": "PH",
+  "iso3": "PHL",
+  "names": {
+    "en": "Philippines",
+    "ko": "필리핀"
+  },
+  "capital": {
+    "names": {
+      "en": "Manila",
+      "ko": "마닐라"
+    },
+    "lat": 14.595833333,
+    "lng": 120.977222222
+  },
+  "continent": "asia",
+  "area_km2": 342353,
+  "population": {
+    "value": 116786962,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 487086123720,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 4170.7,
+    "year": 2025
+  },
+  "median_age": 25.7,
+  "life_expectancy": 69.9,
+  "urbanization_pct": 55.8,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 92.6
+    },
+    {
+      "key": "islam",
+      "pct": 5.5
+    },
+    {
+      "key": "other",
+      "pct": 1.9
+    }
+  ],
+  "languages": {
+    "official": [
+      "tl",
+      "en"
+    ],
+    "english_proficiency": "high"
+  },
+  "industries": [
+    "agriculture",
+    "electronics",
+    "manufacturing",
+    "tourism"
+  ],
+  "currency": {
+    "code": "PHP",
+    "usd_rate_snapshot": 58.7,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Asia/Manila"
+  ],
+  "electricity": {
+    "voltage": 220,
+    "plugs": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+63",
+  "emergency": "911",
+  "climate": {
+    "temp_high_c": [
+      29.9,
+      30.2,
+      32.9,
+      35,
+      34.1,
+      30.4,
+      29,
+      30.7,
+      28.9,
+      30.1,
+      30.6,
+      30.1
+    ],
+    "temp_low_c": [
+      24.2,
+      24.1,
+      25.9,
+      27.3,
+      27.3,
+      25.6,
+      26.1,
+      25.5,
+      25,
+      25.4,
+      25.3,
+      24.6
+    ],
+    "precip_mm": [
+      51,
+      97,
+      28,
+      22,
+      122,
+      333,
+      524,
+      301,
+      336,
+      223,
+      221,
+      125
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

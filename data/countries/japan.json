@@ -1,0 +1,164 @@
+{
+  "slug": "japan",
+  "iso2": "JP",
+  "iso3": "JPN",
+  "names": {
+    "en": "Japan",
+    "ko": "일본"
+  },
+  "capital": {
+    "names": {
+      "en": "Tokyo",
+      "ko": "도쿄"
+    },
+    "lat": 35.689444444,
+    "lng": 139.691666666
+  },
+  "continent": "asia",
+  "area_km2": 377930,
+  "population": {
+    "value": 123366734,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 4435162999977,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 35951,
+    "year": 2025
+  },
+  "median_age": 49.9,
+  "life_expectancy": 84,
+  "urbanization_pct": 92.3,
+  "religions": [
+    {
+      "key": "folk",
+      "pct": 48
+    },
+    {
+      "key": "buddhism",
+      "pct": 34
+    },
+    {
+      "key": "christianity",
+      "pct": 1.5
+    },
+    {
+      "key": "none",
+      "pct": 16.5
+    }
+  ],
+  "languages": {
+    "official": [
+      "ja"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "automotive",
+    "electronics",
+    "technology",
+    "manufacturing",
+    "steel"
+  ],
+  "currency": {
+    "code": "JPY",
+    "usd_rate_snapshot": 157.3,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Asia/Tokyo"
+  ],
+  "electricity": {
+    "voltage": 100,
+    "plugs": [
+      "A",
+      "B"
+    ]
+  },
+  "driving_side": "left",
+  "calling_code": "+81",
+  "emergency": "110",
+  "climate": {
+    "temp_high_c": [
+      10,
+      10.7,
+      14.3,
+      19.6,
+      22.7,
+      28.7,
+      33,
+      34.6,
+      30.4,
+      21.4,
+      16.3,
+      12.1
+    ],
+    "temp_low_c": [
+      1.2,
+      1.8,
+      5.6,
+      11.5,
+      15.5,
+      21.5,
+      25,
+      26.5,
+      22.9,
+      15.4,
+      8.2,
+      3.5
+    ],
+    "precip_mm": [
+      34,
+      11,
+      159,
+      142,
+      255,
+      134,
+      87,
+      47,
+      236,
+      153,
+      22,
+      42
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

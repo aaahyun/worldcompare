@@ -1,0 +1,159 @@
+{
+  "slug": "spain",
+  "iso2": "ES",
+  "iso3": "ESP",
+  "names": {
+    "en": "Spain",
+    "ko": "스페인"
+  },
+  "capital": {
+    "names": {
+      "en": "Madrid",
+      "ko": "마드리드"
+    },
+    "lat": 40.416944444,
+    "lng": -3.703333333
+  },
+  "continent": "europe",
+  "area_km2": 505992,
+  "population": {
+    "value": 49355143,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 1906453309986,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 38627.2,
+    "year": 2025
+  },
+  "median_age": 44.9,
+  "life_expectancy": 83.9,
+  "urbanization_pct": 80.5,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 58.6
+    },
+    {
+      "key": "none",
+      "pct": 38.7
+    },
+    {
+      "key": "other",
+      "pct": 2.7
+    }
+  ],
+  "languages": {
+    "official": [
+      "es"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "tourism",
+    "automotive",
+    "agriculture",
+    "manufacturing"
+  ],
+  "currency": {
+    "code": "EUR",
+    "usd_rate_snapshot": 0.93,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Europe/Madrid"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+34",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      11,
+      13.6,
+      12.9,
+      18.3,
+      23.4,
+      33.5,
+      34,
+      35.1,
+      28.1,
+      22.9,
+      13.5,
+      10.2
+    ],
+    "temp_low_c": [
+      3.1,
+      3.4,
+      4.9,
+      8.6,
+      11.8,
+      20.2,
+      20.3,
+      22.1,
+      15.8,
+      12.9,
+      5.3,
+      4
+    ],
+    "precip_mm": [
+      49,
+      13,
+      238,
+      104,
+      109,
+      17,
+      1,
+      1,
+      10,
+      30,
+      66,
+      43
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

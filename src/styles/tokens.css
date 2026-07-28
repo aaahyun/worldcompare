@@ -1,0 +1,66 @@
+:root {
+  --color-neutral-0: #ffffff;
+  --color-neutral-50: #f7f8fa;
+  --color-neutral-100: #eef0f3;
+  --color-neutral-200: #dde1e7;
+  --color-neutral-300: #c2c8d1;
+  --color-neutral-400: #9aa3b1;
+  --color-neutral-500: #707a8a;
+  --color-neutral-600: #545d6c;
+  --color-neutral-700: #3c4350;
+  --color-neutral-800: #262b35;
+  --color-neutral-900: #14171d;
+
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #d9e6ff;
+  --color-brand-200: #b3ccff;
+  --color-brand-300: #85acfa;
+  --color-brand-400: #5789f0;
+  --color-brand-500: #3468e0;
+  --color-brand-600: #2650c2;
+  --color-brand-700: #1d3d9a;
+  --color-brand-800: #172f75;
+  --color-brand-900: #12234f;
+
+  /* Comparison point colors: queried country vs. home country. Must hold 4.5:1 against surface-0/100. */
+  --color-country-target: #2f6fed;
+  --color-country-target-soft: #e7effe;
+  --color-country-home: #d9822b;
+  --color-country-home-soft: #fbeedd;
+
+  --color-surface-0: var(--color-neutral-0);
+  --color-surface-100: var(--color-neutral-50);
+  --color-surface-card: #ffffff;
+  --color-content-primary: var(--color-neutral-900);
+  --color-content-secondary: var(--color-neutral-600);
+  --color-content-tertiary: var(--color-neutral-400);
+  --color-content-inverse: var(--color-neutral-0);
+
+  --color-feedback-success: #1a8f5a;
+  --color-feedback-error: #c23b3b;
+
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", -apple-system, sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px 0 rgb(20 23 29 / 0.05);
+  --shadow-md: 0 4px 10px -2px rgb(20 23 29 / 0.08);
+  --shadow-lg: 0 12px 24px -6px rgb(20 23 29 / 0.12);
+}
+
+:root[data-theme="dark"] {
+  --color-surface-0: var(--color-neutral-900);
+  --color-surface-100: var(--color-neutral-800);
+  --color-surface-card: var(--color-neutral-800);
+  --color-content-primary: var(--color-neutral-50);
+  --color-content-secondary: var(--color-neutral-300);
+  --color-content-tertiary: var(--color-neutral-400);
+  --color-content-inverse: var(--color-neutral-900);
+  --color-country-target-soft: #17284d;
+  --color-country-home-soft: #3a2a15;
+}

@@ -1,0 +1,162 @@
+{
+  "site": {
+    "name": "WhatsThePop",
+    "tagline": "어느 나라든, 내 나라와 비교해서 이해하세요."
+  },
+  "nav": {
+    "home": "홈",
+    "countries": "전체 국가"
+  },
+  "header": {
+    "searchPlaceholder": "국가 검색 (예: 아이슬란드, 일본)",
+    "searchNoResults": "검색 결과가 없습니다"
+  },
+  "home": {
+    "title": "어느 나라든 내 나라와 한눈에 비교하기",
+    "subtitle": "인구, 면적, GDP, 기온까지 — 대한민국(또는 내 나라) 기준으로 바로 비교해 드립니다.",
+    "popularCountries": "인기 국가"
+  },
+  "countriesIndex": {
+    "title": "전체 국가",
+    "subtitle": "WhatsThePop이 다루는 모든 국가를 살펴보세요."
+  },
+  "country": {
+    "summaryTemplates": [
+      "{continent}에 위치한 {name}은(는) {capital}을(를) 수도로 하고 있습니다. 인구는 약 {population}명이며, 면적은 {area}㎢에 달합니다. 1인당 GDP는 약 {gdpPerCapita} 수준이고, 인구의 약 {urbanization}%가 도시 지역에 거주하고 있습니다. 주요 산업으로는 {industry}이(가) 꼽힙니다. 여행자라면 계절별 기온과 강수량, 통화, 시차 등 실용 정보도 함께 살펴보면 도움이 됩니다.",
+      "{name}은(는) {continent}에 속한 국가로, 수도는 {capital}입니다. 약 {population}명이 {area}㎢의 국토에서 살아가고 있으며, 1인당 GDP는 {gdpPerCapita} 정도로 집계됩니다. 기대수명은 {lifeExpectancy}세이며, {industry} 산업이 경제에서 중요한 역할을 합니다. 다른 나라와 비교해 보면 규모와 생활 수준의 차이를 한눈에 파악할 수 있습니다.",
+      "수도 {capital}을(를) 중심으로 성장해 온 {name}은(는) {continent}에 위치하며, 인구 약 {population}명, 면적 {area}㎢ 규모의 국가입니다. 1인당 GDP는 {gdpPerCapita} 수준이고, 도시화율은 {urbanization}%에 이릅니다. {industry} 산업이 발달해 있으며, 월별 기온과 강수량 정보는 여행 시기를 정하는 데 유용한 참고 자료가 됩니다."
+    ],
+    "comparingWith": "{country} 비교 중",
+    "changeCountry": "변경",
+    "selectCompareCountry": "비교할 국가를 선택하세요",
+    "capital": "수도",
+    "continent": "대륙",
+    "viewFullComparison": "{target} vs {home} 자세히 비교하기",
+    "sections": {
+      "populationArea": "인구 & 면적",
+      "economy": "경제",
+      "climate": "월별 기온 & 강수",
+      "demographics": "인구 통계",
+      "religion": "종교 구성",
+      "language": "언어",
+      "travelInfo": "여행 실용 정보",
+      "comparisonTable": "{target} vs {home} 상세 비교",
+      "sources": "출처 및 데이터 기준일"
+    },
+    "stats": {
+      "population": "인구",
+      "area": "면적",
+      "gdpPerCapita": "1인당 GDP"
+    },
+    "economy": {
+      "gdpNominal": "명목 GDP",
+      "gdpPerCapita": "1인당 GDP",
+      "currency": "통화",
+      "topIndustries": "주요 산업"
+    },
+    "climate": {
+      "bestTimeToVisit": "{target} 여행에는 평균 최고기온이 {temp}°C 안팎인 {months} 무렵이 좋습니다."
+    },
+    "demographics": {
+      "medianAge": "연령 중위값",
+      "lifeExpectancy": "기대수명",
+      "urbanization": "도시화율"
+    },
+    "language": {
+      "official": "공용어",
+      "englishProficiency": "영어 통용도"
+    },
+    "travel": {
+      "timezone": "시간대",
+      "timeDifference": "{home} 대비 {diff}",
+      "electricity": "전압/플러그",
+      "drivingSide": "통행 방향",
+      "callingCode": "국가번호",
+      "emergency": "긴급전화",
+      "drivingSideLeft": "좌측통행",
+      "drivingSideRight": "우측통행"
+    },
+    "faq": {
+      "population": "{target}의 인구는 몇 명인가요?",
+      "area": "{target}의 면적은 얼마나 되나요?",
+      "capital": "{target}의 수도는 어디인가요?",
+      "gdp": "{target}의 1인당 GDP는 얼마인가요?",
+      "language": "{target}에서는 어떤 언어를 사용하나요?"
+    }
+  },
+  "compare": {
+    "title": "{a} vs {b}",
+    "templates": {
+      "population": "{target}의 인구는 약 {value}명으로, {home}({homeValue}명)의 {ratio} 수준입니다.",
+      "areaSimilar": "{target}의 면적은 {homeGwaWa} 비슷합니다.",
+      "areaMultiple": "{targetTopic} {home}보다 약 {x}배 넓습니다.",
+      "areaFraction": "{targetTopic} {home}보다 약 {x}배 좁습니다.",
+      "gdpPerCapita": "{target}의 1인당 GDP는 {value}, {home}({homeValue})의 {ratio} 수준입니다.",
+      "temperature": "{month}월 {target} 수도의 평균 기온은 {t}°C로, 같은 시기 {home}보다 {diff}°C {direction}."
+    },
+    "ratioSimilar": "비슷한",
+    "ratioPercent": "약 {n}%",
+    "ratioMultiple": "약 {n}배",
+    "higher": "높습니다",
+    "lower": "낮습니다"
+  },
+  "enums": {
+    "continents": {
+      "africa": "아프리카",
+      "asia": "아시아",
+      "europe": "유럽",
+      "north_america": "북아메리카",
+      "south_america": "남아메리카",
+      "oceania": "오세아니아",
+      "antarctica": "남극"
+    },
+    "religions": {
+      "christianity": "기독교",
+      "islam": "이슬람교",
+      "hinduism": "힌두교",
+      "buddhism": "불교",
+      "judaism": "유대교",
+      "folk": "민간신앙",
+      "none": "무교",
+      "other": "기타"
+    },
+    "industries": {
+      "tourism": "관광업",
+      "fisheries": "수산업",
+      "aluminum": "알루미늄",
+      "geothermal_energy": "지열 에너지",
+      "manufacturing": "제조업",
+      "technology": "기술",
+      "semiconductors": "반도체",
+      "automotive": "자동차",
+      "electronics": "전자",
+      "agriculture": "농업",
+      "finance": "금융",
+      "shipbuilding": "조선업",
+      "steel": "철강",
+      "aerospace": "항공우주",
+      "machinery": "기계",
+      "chemicals": "화학",
+      "mining": "광업",
+      "oil_gas": "석유·가스",
+      "textiles": "섬유",
+      "pharmaceuticals": "제약"
+    },
+    "englishProficiency": {
+      "very_high": "매우 높음",
+      "high": "높음",
+      "moderate": "보통",
+      "low": "낮음",
+      "very_low": "매우 낮음"
+    }
+  },
+  "footer": {
+    "sourcesNote": "수치는 공개 데이터셋을 기준으로 하며 주기적으로 갱신됩니다.",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "body": "요청하신 페이지가 존재하지 않습니다.",
+    "backHome": "홈으로 돌아가기"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "slug": "iceland",
+  "iso2": "IS",
+  "iso3": "ISL",
+  "names": {
+    "en": "Iceland",
+    "ko": "아이슬란드"
+  },
+  "capital": {
+    "names": {
+      "en": "Reykjavík",
+      "ko": "레이캬비크"
+    },
+    "lat": 64.1475,
+    "lng": -21.935
+  },
+  "continent": "europe",
+  "area_km2": 103000,
+  "population": {
+    "value": 392404,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 38582528789,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 98323.5,
+    "year": 2025
+  },
+  "median_age": 37.1,
+  "life_expectancy": 82.8,
+  "urbanization_pct": 94.2,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 67.4
+    },
+    {
+      "key": "none",
+      "pct": 26.1
+    },
+    {
+      "key": "other",
+      "pct": 6.5
+    }
+  ],
+  "languages": {
+    "official": [
+      "is"
+    ],
+    "english_proficiency": "very_high"
+  },
+  "industries": [
+    "tourism",
+    "fisheries",
+    "aluminum",
+    "geothermal_energy"
+  ],
+  "currency": {
+    "code": "ISK",
+    "usd_rate_snapshot": 138.2,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Atlantic/Reykjavik"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+354",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      1.1,
+      4.8,
+      5.7,
+      8.1,
+      11.1,
+      10.8,
+      13.6,
+      13.7,
+      11.6,
+      6.6,
+      2.9,
+      4.7
+    ],
+    "temp_low_c": [
+      -4.1,
+      0.7,
+      0.9,
+      2.6,
+      6.1,
+      6.2,
+      9.8,
+      9.7,
+      6.6,
+      2.7,
+      -1.3,
+      0.9
+    ],
+    "precip_mm": [
+      209,
+      195,
+      160,
+      73,
+      99,
+      78,
+      77,
+      153,
+      188,
+      157,
+      57,
+      137
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

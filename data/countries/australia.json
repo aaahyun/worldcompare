@@ -1,0 +1,158 @@
+{
+  "slug": "australia",
+  "iso2": "AU",
+  "iso3": "AUS",
+  "names": {
+    "en": "Australia",
+    "ko": "호주"
+  },
+  "capital": {
+    "names": {
+      "en": "Canberra",
+      "ko": "캔버라"
+    },
+    "lat": -35.293055555,
+    "lng": 149.126944444
+  },
+  "continent": "oceania",
+  "area_km2": 7692024,
+  "population": {
+    "value": 27614411,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 1798518933689,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 65129.7,
+    "year": 2025
+  },
+  "median_age": 38.4,
+  "life_expectancy": 83.1,
+  "urbanization_pct": 87.7,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 43.9
+    },
+    {
+      "key": "none",
+      "pct": 38.9
+    },
+    {
+      "key": "other",
+      "pct": 17.2
+    }
+  ],
+  "languages": {
+    "official": [
+      "en"
+    ],
+    "english_proficiency": "very_high"
+  },
+  "industries": [
+    "mining",
+    "agriculture",
+    "tourism",
+    "finance"
+  ],
+  "currency": {
+    "code": "AUD",
+    "usd_rate_snapshot": 1.52,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Australia/Sydney"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "I"
+    ]
+  },
+  "driving_side": "left",
+  "calling_code": "+61",
+  "emergency": "000",
+  "climate": {
+    "temp_high_c": [
+      27.3,
+      26.8,
+      25.6,
+      20.9,
+      15.8,
+      10,
+      10.9,
+      13.3,
+      16.3,
+      20.4,
+      21.8,
+      26.4
+    ],
+    "temp_low_c": [
+      14.8,
+      14.4,
+      14.3,
+      9.4,
+      5.9,
+      0,
+      2.4,
+      3.3,
+      4.9,
+      8.1,
+      9.5,
+      11.8
+    ],
+    "precip_mm": [
+      49,
+      52,
+      31,
+      18,
+      74,
+      46,
+      93,
+      47,
+      40,
+      33,
+      65,
+      46
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "site": {
+    "name": "WhatsThePop",
+    "tagline": "Understand any country, compared to your own."
+  },
+  "nav": {
+    "home": "Home",
+    "countries": "All Countries"
+  },
+  "header": {
+    "searchPlaceholder": "Search a country (e.g. Iceland, Japan)",
+    "searchNoResults": "No countries found"
+  },
+  "home": {
+    "title": "Compare any country to your own, at a glance",
+    "subtitle": "Population, area, GDP, climate and more — instantly put side by side with your home country.",
+    "popularCountries": "Popular countries"
+  },
+  "countriesIndex": {
+    "title": "All countries",
+    "subtitle": "Browse every country covered by WhatsThePop."
+  },
+  "country": {
+    "summaryTemplates": [
+      "{name} is a country in {continent}, with its capital at {capital}. Population stands at about {population}, spread across {area} km², and GDP per capita is around {gdpPerCapita}. About {urbanization}% of the population lives in urban areas, and one of its leading industries is {industry}.",
+      "Located in {continent}, {name} has {capital} as its capital city. With roughly {population} people living across {area} square kilometers, and a GDP per capita near {gdpPerCapita}, it offers a distinct economic and demographic profile shaped in part by its {industry} industry.",
+      "{name}, in {continent}, is home to about {population} people and covers {area} km², governed from its capital {capital}. Average life expectancy is {lifeExpectancy} years, GDP per capita sits around {gdpPerCapita}, and {industry} remains one of the country's key industries."
+    ],
+    "comparingWith": "Comparing with {country}",
+    "changeCountry": "Change",
+    "selectCompareCountry": "Select a country to compare with",
+    "capital": "Capital",
+    "continent": "Continent",
+    "viewFullComparison": "See the full {target} vs {home} comparison",
+    "sections": {
+      "populationArea": "Population & area",
+      "economy": "Economy",
+      "climate": "Monthly temperature & rainfall",
+      "demographics": "Demographics",
+      "religion": "Religion",
+      "language": "Language",
+      "travelInfo": "Travel essentials",
+      "comparisonTable": "{target} vs {home}, side by side",
+      "sources": "Sources & data"
+    },
+    "stats": {
+      "population": "Population",
+      "area": "Area",
+      "gdpPerCapita": "GDP per capita"
+    },
+    "economy": {
+      "gdpNominal": "Nominal GDP",
+      "gdpPerCapita": "GDP per capita",
+      "currency": "Currency",
+      "topIndustries": "Top industries"
+    },
+    "climate": {
+      "bestTimeToVisit": "Best time to visit {target} tends to be around {months}, when average highs sit near {temp}°C."
+    },
+    "demographics": {
+      "medianAge": "Median age",
+      "lifeExpectancy": "Life expectancy",
+      "urbanization": "Urbanization"
+    },
+    "language": {
+      "official": "Official language(s)",
+      "englishProficiency": "English proficiency"
+    },
+    "travel": {
+      "timezone": "Time zone",
+      "timeDifference": "{diff} vs {home}",
+      "electricity": "Electricity",
+      "drivingSide": "Driving side",
+      "callingCode": "Calling code",
+      "emergency": "Emergency number",
+      "drivingSideLeft": "Left",
+      "drivingSideRight": "Right"
+    },
+    "faq": {
+      "population": "What is the population of {target}?",
+      "area": "How big is {target}?",
+      "capital": "What is the capital of {target}?",
+      "gdp": "What is the GDP per capita of {target}?",
+      "language": "What language is spoken in {target}?"
+    }
+  },
+  "compare": {
+    "title": "{a} vs {b}",
+    "templates": {
+      "population": "{target}'s population is about {value}, {ratio} of {home}'s ({homeValue}).",
+      "areaSimilar": "{target}'s land area is similar to {home}'s.",
+      "areaMultiple": "{target} is about {x}x the size of {home}.",
+      "areaFraction": "{target} is about {x}x smaller than {home}.",
+      "gdpPerCapita": "{target}'s GDP per capita is {value}, {ratio} of {home}'s ({homeValue}).",
+      "temperature": "In {month}, {target}'s capital averages {t}°C — {diff}°C {direction} than {home} at the same time of year."
+    },
+    "ratioSimilar": "about the same level",
+    "ratioPercent": "about {n}%",
+    "ratioMultiple": "about {n}x",
+    "higher": "higher",
+    "lower": "lower"
+  },
+  "enums": {
+    "continents": {
+      "africa": "Africa",
+      "asia": "Asia",
+      "europe": "Europe",
+      "north_america": "North America",
+      "south_america": "South America",
+      "oceania": "Oceania",
+      "antarctica": "Antarctica"
+    },
+    "religions": {
+      "christianity": "Christianity",
+      "islam": "Islam",
+      "hinduism": "Hinduism",
+      "buddhism": "Buddhism",
+      "judaism": "Judaism",
+      "folk": "Folk religion",
+      "none": "Unaffiliated",
+      "other": "Other"
+    },
+    "industries": {
+      "tourism": "Tourism",
+      "fisheries": "Fisheries",
+      "aluminum": "Aluminum",
+      "geothermal_energy": "Geothermal energy",
+      "manufacturing": "Manufacturing",
+      "technology": "Technology",
+      "semiconductors": "Semiconductors",
+      "automotive": "Automotive",
+      "electronics": "Electronics",
+      "agriculture": "Agriculture",
+      "finance": "Finance",
+      "shipbuilding": "Shipbuilding",
+      "steel": "Steel",
+      "aerospace": "Aerospace",
+      "machinery": "Machinery",
+      "chemicals": "Chemicals",
+      "mining": "Mining",
+      "oil_gas": "Oil & gas",
+      "textiles": "Textiles",
+      "pharmaceuticals": "Pharmaceuticals"
+    },
+    "englishProficiency": {
+      "very_high": "Very high",
+      "high": "High",
+      "moderate": "Moderate",
+      "low": "Low",
+      "very_low": "Very low"
+    }
+  },
+  "footer": {
+    "sourcesNote": "Figures are sourced from public datasets and refreshed periodically.",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist.",
+    "backHome": "Back to home"
+  }
+}

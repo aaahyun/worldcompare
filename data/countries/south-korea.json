@@ -1,0 +1,164 @@
+{
+  "slug": "south-korea",
+  "iso2": "KR",
+  "iso3": "KOR",
+  "names": {
+    "en": "South Korea",
+    "ko": "한국"
+  },
+  "capital": {
+    "names": {
+      "en": "Seoul",
+      "ko": "서울"
+    },
+    "lat": 37.56,
+    "lng": 126.99
+  },
+  "continent": "asia",
+  "area_km2": 100210,
+  "population": {
+    "value": 51684564,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 1872374961553,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 36227,
+    "year": 2025
+  },
+  "median_age": 44.5,
+  "life_expectancy": 83.6,
+  "urbanization_pct": 81.2,
+  "religions": [
+    {
+      "key": "none",
+      "pct": 56.1
+    },
+    {
+      "key": "christianity",
+      "pct": 27.6
+    },
+    {
+      "key": "buddhism",
+      "pct": 15.5
+    },
+    {
+      "key": "other",
+      "pct": 0.8
+    }
+  ],
+  "languages": {
+    "official": [
+      "ko"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "semiconductors",
+    "automotive",
+    "electronics",
+    "shipbuilding",
+    "steel"
+  ],
+  "currency": {
+    "code": "KRW",
+    "usd_rate_snapshot": 1350,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Asia/Seoul"
+  ],
+  "electricity": {
+    "voltage": 220,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+82",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      1.9,
+      2.1,
+      11.6,
+      17.4,
+      21.6,
+      28.1,
+      32.3,
+      30.9,
+      26.2,
+      19.3,
+      12.1,
+      3.3
+    ],
+    "temp_low_c": [
+      -5.6,
+      -6.4,
+      1.4,
+      7,
+      12.4,
+      19.6,
+      24.5,
+      24,
+      19.1,
+      12.3,
+      2.8,
+      -4.9
+    ],
+    "precip_mm": [
+      19,
+      5,
+      45,
+      104,
+      103,
+      101,
+      234,
+      211,
+      292,
+      160,
+      16,
+      46
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

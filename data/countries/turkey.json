@@ -1,0 +1,155 @@
+{
+  "slug": "turkey",
+  "iso2": "TR",
+  "iso3": "TUR",
+  "names": {
+    "en": "Türkiye",
+    "ko": "터키"
+  },
+  "capital": {
+    "names": {
+      "en": "Ankara",
+      "ko": "앙카라"
+    },
+    "lat": 39.93576,
+    "lng": 32.83869
+  },
+  "continent": "asia",
+  "area_km2": 783562,
+  "population": {
+    "value": 85878556,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 1597293229287,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 18599.4,
+    "year": 2025
+  },
+  "median_age": 34,
+  "life_expectancy": 77.4,
+  "urbanization_pct": 89.5,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 99.2
+    },
+    {
+      "key": "other",
+      "pct": 0.8
+    }
+  ],
+  "languages": {
+    "official": [
+      "tr"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "manufacturing",
+    "textiles",
+    "automotive",
+    "tourism"
+  ],
+  "currency": {
+    "code": "TRY",
+    "usd_rate_snapshot": 33,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Europe/Istanbul"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+90",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      8.5,
+      4.7,
+      17.1,
+      15.8,
+      23.4,
+      29,
+      34.4,
+      32.7,
+      26.2,
+      18.2,
+      16.1,
+      7.6
+    ],
+    "temp_low_c": [
+      -0.4,
+      -3.5,
+      4.2,
+      4.5,
+      10.6,
+      14.8,
+      19.5,
+      19.3,
+      13.2,
+      8,
+      4.4,
+      0.2
+    ],
+    "precip_mm": [
+      23,
+      19,
+      9,
+      78,
+      42,
+      15,
+      0,
+      3,
+      23,
+      50,
+      17,
+      43
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

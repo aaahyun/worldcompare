@@ -1,0 +1,165 @@
+{
+  "slug": "india",
+  "iso2": "IN",
+  "iso3": "IND",
+  "names": {
+    "en": "India",
+    "ko": "인도"
+  },
+  "capital": {
+    "names": {
+      "en": "New Delhi",
+      "ko": "뉴델리"
+    },
+    "lat": 28.613888888,
+    "lng": 77.208888888
+  },
+  "continent": "asia",
+  "area_km2": 3287590,
+  "population": {
+    "value": 1463865525,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 3956067115772,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 2702.5,
+    "year": 2025
+  },
+  "median_age": 28.2,
+  "life_expectancy": 72.2,
+  "urbanization_pct": 35.7,
+  "religions": [
+    {
+      "key": "hinduism",
+      "pct": 79.8
+    },
+    {
+      "key": "islam",
+      "pct": 14.2
+    },
+    {
+      "key": "christianity",
+      "pct": 2.3
+    },
+    {
+      "key": "other",
+      "pct": 3.7
+    }
+  ],
+  "languages": {
+    "official": [
+      "hi",
+      "en"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "technology",
+    "textiles",
+    "agriculture",
+    "manufacturing"
+  ],
+  "currency": {
+    "code": "INR",
+    "usd_rate_snapshot": 83.5,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Asia/Kolkata"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "D",
+      "M"
+    ]
+  },
+  "driving_side": "left",
+  "calling_code": "+91",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      20,
+      25,
+      30.8,
+      38.4,
+      37.9,
+      36.8,
+      33.3,
+      31.9,
+      34.3,
+      31,
+      26.6,
+      22.6
+    ],
+    "temp_low_c": [
+      9.2,
+      13.4,
+      17.4,
+      23.9,
+      26.1,
+      26.8,
+      26.2,
+      25.8,
+      25.5,
+      21.3,
+      14,
+      10.6
+    ],
+    "precip_mm": [
+      14,
+      16,
+      14,
+      11,
+      30,
+      127,
+      173,
+      200,
+      107,
+      26,
+      0,
+      0
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

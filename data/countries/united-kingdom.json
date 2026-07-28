@@ -1,0 +1,162 @@
+{
+  "slug": "united-kingdom",
+  "iso2": "GB",
+  "iso3": "GBR",
+  "names": {
+    "en": "United Kingdom",
+    "ko": "영국"
+  },
+  "capital": {
+    "names": {
+      "en": "London",
+      "ko": "런던"
+    },
+    "lat": 51.507222222,
+    "lng": -0.1275
+  },
+  "continent": "europe",
+  "area_km2": 242900,
+  "population": {
+    "value": 69487000,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 4002587541846,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 57602,
+    "year": 2025
+  },
+  "median_age": 40.6,
+  "life_expectancy": 81.4,
+  "urbanization_pct": 83.3,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 46.2
+    },
+    {
+      "key": "none",
+      "pct": 37.2
+    },
+    {
+      "key": "islam",
+      "pct": 6.5
+    },
+    {
+      "key": "other",
+      "pct": 10.1
+    }
+  ],
+  "languages": {
+    "official": [
+      "en"
+    ],
+    "english_proficiency": "very_high"
+  },
+  "industries": [
+    "finance",
+    "manufacturing",
+    "technology",
+    "automotive"
+  ],
+  "currency": {
+    "code": "GBP",
+    "usd_rate_snapshot": 0.78,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "Europe/London"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "G"
+    ]
+  },
+  "driving_side": "left",
+  "calling_code": "+44",
+  "emergency": "999",
+  "climate": {
+    "temp_high_c": [
+      6.6,
+      7.8,
+      12.7,
+      17.5,
+      19.9,
+      24.5,
+      24.4,
+      23.4,
+      18.8,
+      14.9,
+      11.7,
+      9.7
+    ],
+    "temp_low_c": [
+      1.7,
+      3.1,
+      4.4,
+      7.5,
+      10.4,
+      14.7,
+      16.1,
+      14.9,
+      11.8,
+      9.9,
+      6.9,
+      5.5
+    ],
+    "precip_mm": [
+      84,
+      49,
+      13,
+      24,
+      28,
+      41,
+      76,
+      33,
+      61,
+      62,
+      76,
+      68
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}

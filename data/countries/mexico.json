@@ -1,0 +1,159 @@
+{
+  "slug": "mexico",
+  "iso2": "MX",
+  "iso3": "MEX",
+  "names": {
+    "en": "Mexico",
+    "ko": "멕시코"
+  },
+  "capital": {
+    "names": {
+      "en": "Mexico City",
+      "ko": "멕시코시티"
+    },
+    "lat": 19.353773,
+    "lng": -99.13589
+  },
+  "continent": "north_america",
+  "area_km2": 1964375,
+  "population": {
+    "value": 131946900,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 1832641364776,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 13889.2,
+    "year": 2025
+  },
+  "median_age": 29.9,
+  "life_expectancy": 75.3,
+  "urbanization_pct": 80,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 88
+    },
+    {
+      "key": "none",
+      "pct": 9
+    },
+    {
+      "key": "other",
+      "pct": 3
+    }
+  ],
+  "languages": {
+    "official": [
+      "es"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "manufacturing",
+    "automotive",
+    "electronics",
+    "agriculture"
+  ],
+  "currency": {
+    "code": "MXN",
+    "usd_rate_snapshot": 18.3,
+    "snapshot_date": "2026-07-26"
+  },
+  "timezone": [
+    "America/Mexico_City"
+  ],
+  "electricity": {
+    "voltage": 127,
+    "plugs": [
+      "A",
+      "B"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+52",
+  "emergency": "911",
+  "climate": {
+    "temp_high_c": [
+      23.5,
+      24.6,
+      28.7,
+      29.2,
+      28,
+      23.1,
+      23.5,
+      23.6,
+      23.3,
+      23.6,
+      24.1,
+      21.9
+    ],
+    "temp_low_c": [
+      9.4,
+      10.6,
+      12.5,
+      13.6,
+      15.6,
+      14.3,
+      13.3,
+      13.6,
+      13.8,
+      12.4,
+      10.5,
+      9.9
+    ],
+    "precip_mm": [
+      3,
+      14,
+      7,
+      1,
+      91,
+      338,
+      154,
+      172,
+      276,
+      177,
+      18,
+      10
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-07"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-07"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    }
+  }
+}
