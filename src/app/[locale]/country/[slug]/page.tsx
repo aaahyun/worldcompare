@@ -8,9 +8,9 @@ import { bestTimeToVisit, formatCompact, formatUSD } from "@/lib/compare";
 import { countrySummary } from "@/lib/summary";
 import { buildAlternateLanguages, canonicalUrl } from "@/lib/seo";
 import { siteUrl } from "@/lib/site";
-import { flagEmoji } from "@/lib/homeCountry";
 import { CountryCompareProvider } from "@/components/CountryCompareProvider";
 import { HomeCountryControl } from "@/components/HomeCountryControl";
+import { PopulationHero } from "@/components/PopulationHero";
 import { HeroCompareBadge } from "@/components/HeroCompareBadge";
 import { PersonalizedSentence } from "@/components/PersonalizedSentence";
 import {
@@ -151,15 +151,11 @@ export default async function CountryPage({
           <HomeCountryControl />
         </div>
 
-        <header className="mb-6">
-          <h1 className="flex items-center gap-2 text-3xl font-bold">
-            <span aria-hidden="true">{flagEmoji(country.iso2)}</span>
-            {name}
-          </h1>
-          <p className="mt-1 text-sm text-content-secondary">
-            {t("capital")}: {capitalName} · {t("continent")}: {continentName}
-          </p>
-        </header>
+        <PopulationHero />
+
+        <p className="mb-8 mt-2 text-sm text-content-secondary">
+          {t("capital")}: {capitalName} · {t("continent")}: {continentName}
+        </p>
 
         <p className="mb-8 text-base leading-relaxed text-content-primary">{summary}</p>
 

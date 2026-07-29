@@ -12,10 +12,25 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "home" });
+  const title = `${t("title")} | ${siteName}`;
+  const description = t("subtitle");
+  const url = canonicalUrl(locale, "");
+
   return {
+    title: { absolute: title },
+    description,
     alternates: {
-      canonical: canonicalUrl(locale, ""),
+      canonical: url,
       languages: buildAlternateLanguages(""),
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName,
+      locale,
+      type: "website",
     },
   };
 }

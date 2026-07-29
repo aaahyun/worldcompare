@@ -51,13 +51,26 @@ export async function generateMetadata({
   const nameA = a.names[locale] ?? a.names.en;
   const nameB = b.names[locale] ?? b.names.en;
   const path = `/compare/${pair}`;
+  const url = canonicalUrl(locale, path);
+
+  const title =
+    locale === "ko"
+      ? `${nameA} vs ${nameB} 비교: 인구, 면적, GDP`
+      : `${nameA} vs ${nameB}: Population, Area & GDP Compared`;
+
+  const description =
+    locale === "ko"
+      ? `${nameA} 인구 ${formatCompact(a.population.value, locale)}명, ${nameB} 인구 ${formatCompact(b.population.value, locale)}명. 면적과 1인당 GDP까지 한눈에 비교해 보세요.`
+      : `${nameA} (pop. ${formatCompact(a.population.value, locale)}) vs ${nameB} (pop. ${formatCompact(b.population.value, locale)}) — compare population, area, and GDP per capita side by side.`;
 
   return {
-    title: `${nameA} vs ${nameB}`,
+    title,
+    description,
     alternates: {
-      canonical: canonicalUrl(locale, path),
+      canonical: url,
       languages: buildAlternateLanguages(path),
     },
+    openGraph: { title, description, url },
   };
 }
 
