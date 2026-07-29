@@ -21,6 +21,12 @@
     "subtitle": "Browse every country covered by WhatsThePop."
   },
   "country": {
+    "hero": {
+      "question": "What's the population of {name}?",
+      "peopleUnit": "people",
+      "percentOfHome": "{pct}% of {home}",
+      "loadingCompare": "Checking your comparison country…"
+    },
     "summaryTemplates": [
       "{name} is a country in {continent}, with its capital at {capital}. Population stands at about {population}, spread across {area} km², and GDP per capita is around {gdpPerCapita}. About {urbanization}% of the population lives in urban areas, and one of its leading industries is {industry}.",
       "Located in {continent}, {name} has {capital} as its capital city. With roughly {population} people living across {area} square kilometers, and a GDP per capita near {gdpPerCapita}, it offers a distinct economic and demographic profile shaped in part by its {industry} industry.",

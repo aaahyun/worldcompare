@@ -59,3 +59,51 @@ body {
   color: var(--color-content-primary);
   font-family: var(--font-sans);
 }
+
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-flag-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) rotate(-8deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.15) rotate(4deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.hero-fade-up {
+  animation: hero-fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-fade-up-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.hero-fade-up-delay-2 {
+  animation-delay: 0.35s;
+}
+
+.hero-flag-pop {
+  animation: hero-flag-pop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-fade-up,
+  .hero-flag-pop {
+    animation: none;
+  }
+}
