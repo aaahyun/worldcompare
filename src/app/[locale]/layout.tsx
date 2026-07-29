@@ -25,6 +25,11 @@ export async function generateMetadata({
     alternates: {
       canonical: `/${locale}`,
     },
+    verification: {
+      other: {
+        "msvalidate.01": "4466C36B23437E3DB9D7D495752F3637",
+      },
+    },
   };
 }
 
