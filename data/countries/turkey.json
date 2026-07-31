@@ -31,6 +31,17 @@
   "median_age": 34,
   "life_expectancy": 77.4,
   "urbanization_pct": 89.5,
+  "happiness_index": {
+    "score": 5.26,
+    "rank": 94,
+    "out_of": 147,
+    "year": 2025
+  },
+  "livability_rank": {
+    "rank": 31,
+    "out_of": 87,
+    "year": 2024
+  },
   "religions": [
     {
       "key": "islam",
@@ -149,6 +160,16 @@
     "climate": {
       "name": "Open-Meteo Historical Weather API",
       "url": "https://open-meteo.com",
+      "retrieved": "2026-07"
+    },
+    "happiness_index": {
+      "name": "World Happiness Report 2025",
+      "url": "https://worldhappiness.report",
+      "retrieved": "2026-07"
+    },
+    "livability_rank": {
+      "name": "U.S. News & World Report — Best Countries 2024",
+      "url": "https://www.usnews.com/news/best-countries/rankings",
       "retrieved": "2026-07"
     }
   }

@@ -54,6 +54,21 @@ export const countrySchema = z.object({
   median_age: z.number().positive().optional(),
   life_expectancy: z.number().positive().optional(),
   urbanization_pct: z.number().min(0).max(100).optional(),
+  happiness_index: z
+    .object({
+      score: z.number().min(0).max(10),
+      rank: z.number().int().positive(),
+      out_of: z.number().int().positive(),
+      year: z.number().int(),
+    })
+    .optional(),
+  livability_rank: z
+    .object({
+      rank: z.number().int().positive(),
+      out_of: z.number().int().positive(),
+      year: z.number().int(),
+    })
+    .optional(),
   religions: z
     .array(
       z.object({

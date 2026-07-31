@@ -20,7 +20,7 @@ export function PopulationHero() {
   return (
     <section aria-label={t("hero.question", { name })} className="mb-10">
       <h1
-        className="hero-fade-up flex flex-wrap items-center gap-3 text-[clamp(2.5rem,9vw,7.75rem)] font-black leading-[1.05] tracking-tight text-content-primary"
+        className="hero-fade-up flex flex-wrap items-center gap-3 text-[clamp(2.5rem,9vw,6.75rem)] font-black leading-[1.05] tracking-tight text-content-primary"
       >
         <span aria-hidden="true" className="hero-flag-pop inline-block">
           {flagEmoji(target.iso2)}

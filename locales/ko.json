@@ -66,7 +66,11 @@
     "demographics": {
       "medianAge": "연령 중위값",
       "lifeExpectancy": "기대수명",
-      "urbanization": "도시화율"
+      "urbanization": "도시화율",
+      "happinessIndex": "행복지수",
+      "happinessIndexOutOf": "{outOf}개국 중 {rank}위",
+      "livabilityRank": "살고 싶은 나라 순위",
+      "livabilityRankOutOf": "{outOf}개국 중 {rank}위"
     },
     "language": {
       "official": "공용어",

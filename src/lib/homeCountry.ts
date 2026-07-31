@@ -36,3 +36,9 @@ export function flagEmoji(iso2: string): string {
     .toUpperCase()
     .replace(/./g, (char) => String.fromCodePoint(127397 + char.charCodeAt(0)));
 }
+
+/** Data-URI SVG favicon rendering a country's flag emoji, for use in a route's `metadata.icons`. */
+export function flagFaviconDataUrl(iso2: string): string {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><text x="32" y="48" font-size="48" text-anchor="middle">${flagEmoji(iso2)}</text></svg>`;
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+}

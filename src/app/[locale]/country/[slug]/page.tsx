@@ -13,6 +13,8 @@ import { HomeCountryControl } from "@/components/HomeCountryControl";
 import { PopulationHero } from "@/components/PopulationHero";
 import { HeroCompareBadge } from "@/components/HeroCompareBadge";
 import { PersonalizedSentence } from "@/components/PersonalizedSentence";
+import { PlugIcon } from "@/components/PlugIcon";
+import { flagFaviconDataUrl } from "@/lib/homeCountry";
 import {
   PersonalizedAreaChart,
   PersonalizedClimateChart,
@@ -55,6 +57,7 @@ export async function generateMetadata({
       languages: buildAlternateLanguages(path),
     },
     openGraph: { title, description, url: canonicalUrl(locale, path) },
+    icons: { icon: flagFaviconDataUrl(country.iso2) },
   };
 }
 
@@ -292,6 +295,33 @@ export default async function CountryPage({
                 <dd className="font-medium">{country.urbanization_pct}%</dd>
               </div>
             )}
+            {country.happiness_index && (
+              <div>
+                <dt className="text-content-tertiary">{t("demographics.happinessIndex")}</dt>
+                <dd className="font-medium">
+                  {country.happiness_index.score.toFixed(2)}
+                  <span className="ml-1 text-xs font-normal text-content-tertiary">
+                    (
+                    {t("demographics.happinessIndexOutOf", {
+                      rank: country.happiness_index.rank,
+                      outOf: country.happiness_index.out_of,
+                    })}
+                    )
+                  </span>
+                </dd>
+              </div>
+            )}
+            {country.livability_rank && (
+              <div>
+                <dt className="text-content-tertiary">{t("demographics.livabilityRank")}</dt>
+                <dd className="font-medium">
+                  {t("demographics.livabilityRankOutOf", {
+                    rank: country.livability_rank.rank,
+                    outOf: country.livability_rank.out_of,
+                  })}
+                </dd>
+              </div>
+            )}
           </dl>
         </section>
 
@@ -343,7 +373,14 @@ export default async function CountryPage({
             <div>
               <dt className="text-content-tertiary">{t("travel.electricity")}</dt>
               <dd className="font-medium">
-                {country.electricity.voltage}V · {country.electricity.plugs.join("/")}
+                <div>
+                  {country.electricity.voltage}V · {country.electricity.plugs.join("/")}
+                </div>
+                <div className="mt-1 flex gap-2 text-content-secondary">
+                  {country.electricity.plugs.map((p) => (
+                    <PlugIcon key={p} type={p} className="h-8 w-8" />
+                  ))}
+                </div>
               </dd>
             </div>
             <div>
