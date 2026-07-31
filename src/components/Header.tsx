@@ -18,6 +18,7 @@ export async function Header() {
           </Link>
           <nav className="flex items-center gap-4 text-sm text-content-secondary">
             <Link href="/countries">{t("countries")}</Link>
+            <Link href="/reports">{t("reports")}</Link>
           </nav>
         </div>
         <div className="flex items-center gap-3">

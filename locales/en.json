@@ -5,7 +5,8 @@
   },
   "nav": {
     "home": "Home",
-    "countries": "All Countries"
+    "countries": "All Countries",
+    "reports": "Reports"
   },
   "header": {
     "searchPlaceholder": "Search a country (e.g. Iceland, Japan)",
@@ -19,6 +20,17 @@
   "countriesIndex": {
     "title": "All countries",
     "subtitle": "Browse every country covered by WhatsThePop."
+  },
+  "reportsIndex": {
+    "title": "Reports",
+    "subtitle": "Deep dives into the world's countries, told through data.",
+    "readMore": "Read more"
+  },
+  "reportDetail": {
+    "backToReports": "Back to reports",
+    "readingMinutes": "{n} min read",
+    "sourcesTitle": "Sources",
+    "retrieved": "retrieved {date}"
   },
   "country": {
     "hero": {

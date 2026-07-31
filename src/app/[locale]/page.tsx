@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllCountries } from "@/lib/countries";
 import { buildAlternateLanguages, canonicalUrl } from "@/lib/seo";
 import { siteName, siteUrl } from "@/lib/site";
-import { flagEmoji } from "@/lib/homeCountry";
+import { flagEmoji, emojiFaviconDataUrl } from "@/lib/homeCountry";
 
 export async function generateMetadata({
   params,
@@ -32,6 +32,7 @@ export async function generateMetadata({
       locale,
       type: "website",
     },
+    icons: { icon: emojiFaviconDataUrl("🌍") },
   };
 }
 

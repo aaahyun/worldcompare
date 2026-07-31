@@ -5,7 +5,8 @@
   },
   "nav": {
     "home": "홈",
-    "countries": "전체 국가"
+    "countries": "전체 국가",
+    "reports": "리포트"
   },
   "header": {
     "searchPlaceholder": "국가 검색 (예: 아이슬란드, 일본)",
@@ -19,6 +20,17 @@
   "countriesIndex": {
     "title": "전체 국가",
     "subtitle": "WhatsThePop이 다루는 모든 국가를 살펴보세요."
+  },
+  "reportsIndex": {
+    "title": "리포트",
+    "subtitle": "데이터로 살펴보는 세계 각국 이야기.",
+    "readMore": "자세히 보기"
+  },
+  "reportDetail": {
+    "backToReports": "리포트 목록으로",
+    "readingMinutes": "읽는 데 약 {n}분",
+    "sourcesTitle": "출처",
+    "retrieved": "{date} 기준"
   },
   "country": {
     "hero": {

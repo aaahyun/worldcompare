@@ -1,0 +1,156 @@
+{
+  "slug": "population-extremes",
+  "publishedAt": "2026-07-30",
+  "readingMinutes": 6,
+  "coverArt": "population-extremes",
+  "tags": {
+    "en": ["Population", "Data Deep-Dive", "World Records"],
+    "ko": ["인구", "데이터 분석", "세계 기록"]
+  },
+  "title": {
+    "en": "The World's Biggest vs. Smallest Country: How Big Is the Gap, Really?",
+    "ko": "세계에서 인구가 가장 많은 나라 vs 가장 적은 나라, 그 차이는 얼마나 클까"
+  },
+  "excerpt": {
+    "en": "India's 1.46 billion people versus Vatican City's 764. Two extremes that barely feel like they belong to the same category — put side by side with real data.",
+    "ko": "인도의 인구 14억 6,000만 명과 바티칸 시국의 764명. 같은 '나라'라는 단어로 묶기 어려운 두 극단을 실제 데이터로 비교해봤습니다."
+  },
+  "stats": [
+    {
+      "label": { "en": "Most populous country", "ko": "인구 1위 국가" },
+      "value": { "en": "India — ~1.46B", "ko": "인도 — 약 14.6억 명" }
+    },
+    {
+      "label": { "en": "Smallest sovereign state (population)", "ko": "인구 최소 주권국" },
+      "value": { "en": "Vatican City — ~764", "ko": "바티칸 시국 — 약 764명" }
+    },
+    {
+      "label": { "en": "Smallest UN member state (population)", "ko": "인구 최소 UN 회원국" },
+      "value": { "en": "Tuvalu — ~11,000", "ko": "투발루 — 약 1만 1천 명" }
+    },
+    {
+      "label": { "en": "Population ratio (India vs. Vatican City)", "ko": "인구 비율 (인도 vs 바티칸)" },
+      "value": { "en": "~1.9 million ×", "ko": "약 190만 배" }
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "en": "Two countries, one incomprehensible gap",
+        "ko": "두 나라, 상상하기 힘든 격차"
+      },
+      "body": {
+        "en": [
+          "Pick any hundred people at random from Earth's roughly 8.2 billion residents, and odds are none of them has ever set foot in the world's smallest country. That's because Vatican City is home to fewer people than a single large apartment building — while India, the most populous nation on the planet, adds more people to the world each year than Vatican City's entire population could ever hope to reach.",
+          "This report puts the two extremes side by side: the country with the most people on Earth, and the country (or countries, depending on how you define \"country\") with the fewest — using the same kind of public datasets WhatsThePop uses everywhere else on this site."
+        ],
+        "ko": [
+          "전 세계 약 82억 인구 중 무작위로 100명을 뽑는다고 상상해 보세요. 그중 세계에서 인구가 가장 적은 나라에 발을 들여본 사람은 아마 한 명도 없을 겁니다. 바티칸 시국의 인구는 웬만한 아파트 한 동에 사는 사람 수보다도 적기 때문입니다. 반면 지구에서 인구가 가장 많은 나라인 인도는, 한 해 동안 늘어나는 인구만으로도 바티칸 시국 전체 인구를 훌쩍 뛰어넘습니다.",
+          "이번 리포트에서는 WhatsThePop이 다른 페이지에서도 사용하는 것과 같은 공신력 있는 공개 데이터를 바탕으로, 인구가 가장 많은 나라와 가장 적은 나라(들)를 나란히 비교해 봅니다."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "The most populous country on Earth: India",
+        "ko": "세계에서 인구가 가장 많은 나라: 인도"
+      },
+      "body": {
+        "en": [
+          "As of 2025, India's population stands at roughly 1.46 billion people (World Bank Open Data), spread across 3,287,590 km² — an area smaller than the U.S. states of Alaska and Texas combined. That works out to an average of about 445 people per square kilometer.",
+          "India hasn't always held this title. For most of modern history, China was the world's most populous country. That changed around April 2023, when the UN Department of Economic and Social Affairs (UN DESA) projected, in its World Population Prospects 2022 revision, that India's population had overtaken China's. China's population is now around 1.41 billion (World Bank Open Data, 2025) and has begun to shrink slightly year over year, while India's continues to grow.",
+          "Put another way: roughly 1 in every 6 people alive today lives in India."
+        ],
+        "ko": [
+          "2025년 기준 인도의 인구는 약 14억 6,000만 명으로(World Bank Open Data), 국토 면적은 3,287,590㎢에 달합니다. 이는 대한민국 면적의 약 33배에 해당하는 크기입니다. 평균적으로 1㎢당 약 445명이 살고 있는 셈입니다.",
+          "인도가 처음부터 이 타이틀을 가지고 있었던 것은 아닙니다. 근현대사 대부분의 기간 동안 세계에서 인구가 가장 많은 나라는 중국이었습니다. 하지만 UN 경제사회국(UN DESA)이 '세계 인구 전망 2022 개정판'에서 추정한 바에 따르면, 2023년 4월 무렵 인도의 인구가 중국을 추월했습니다. 중국의 인구는 2025년 기준 약 14억 700만 명(World Bank Open Data)으로 최근 몇 년간 소폭 감소세로 돌아선 반면, 인도의 인구는 계속 증가하고 있습니다.",
+          "다시 말해, 현재 지구에 사는 사람 6명 중 1명은 인도 국적자인 셈입니다."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "The other extreme: it depends how you define \"country\"",
+        "ko": "반대편 극단: '나라'를 어떻게 정의하느냐에 따라 달라지는 답"
+      },
+      "body": {
+        "en": [
+          "Finding the world's smallest country by population means making a choice first, because Vatican City — an independent city-state ruled by the Pope — isn't a United Nations member. If you count every internationally recognized sovereign state, Vatican City wins by a wide margin: about 764 residents (CIA World Factbook), most of them clergy, Swiss Guards, and Holy See staff, many of whom don't live there full-time. It's also the smallest country by area, at just 0.49 km² — small enough to walk across in about 15 minutes.",
+          "Restrict the list to United Nations member states, and the title goes to Tuvalu, a chain of coral atolls in the Pacific Ocean with a population of about 11,000 people (World Bank Open Data) spread across just 26 km² of land — roughly the size of a large airport. Tuvalu is also one of the countries most immediately threatened by rising sea levels, with much of its land sitting less than 2 meters above sea level."
+        ],
+        "ko": [
+          "인구가 가장 적은 나라를 찾으려면 먼저 기준을 정해야 합니다. 교황이 통치하는 독립 도시국가인 바티칸 시국은 UN 회원국이 아니기 때문입니다. 국제적으로 인정받는 모든 주권국을 기준으로 삼는다면, 바티칸 시국이 압도적인 차이로 1위입니다. 인구는 약 764명(CIA World Factbook)에 불과하며 대부분 성직자와 스위스 근위대, 교황청 직원들로 구성되어 있고 이 중 다수는 상주하지 않습니다. 면적 역시 0.49㎢로 세계에서 가장 작아, 걸어서 한 바퀴 도는 데 15분이면 충분합니다.",
+          "UN 회원국으로 범위를 좁히면 태평양의 산호섬 국가 투발루가 1위를 차지합니다. 투발루의 인구는 약 1만 1,000명(World Bank Open Data)이며, 국토 면적은 대형 공항 하나 정도인 약 26㎢에 불과합니다. 투발루는 또한 해수면 상승으로 가장 먼저 위협받는 나라 중 하나로, 국토 대부분이 해발 2m 미만에 위치해 있습니다."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "The numbers, side by side",
+        "ko": "숫자로 나란히 비교하기"
+      },
+      "body": {
+        "en": [
+          "India's population is more than 1.9 million times larger than Vatican City's, and about 133,000 times larger than Tuvalu's. By land area, India is roughly 6.7 million times the size of Vatican City — a gap large enough to be genuinely hard to visualize. If every Vatican City resident tried to fill one section of a mid-size football stadium, they'd need help from the section next door; India's population could fill that same stadium more than 20,000 times over."
+        ],
+        "ko": [
+          "인도의 인구는 바티칸 시국보다 약 190만 배, 투발루보다는 약 13만 3,000배 많습니다. 면적으로 비교하면 인도는 바티칸 시국보다 약 670만 배 넓은데, 실감하기조차 어려운 격차입니다. 바티칸 시국 주민 전원이 중형 축구 경기장의 한 구역을 채운다고 해도 옆 구역의 도움이 필요할 정도지만, 인도 인구라면 같은 경기장을 2만 번 넘게 가득 채울 수 있는 규모입니다."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "Why the gap is this extreme",
+        "ko": "왜 이렇게까지 차이가 날까"
+      },
+      "body": {
+        "en": [
+          "Population size mostly comes down to two things: land area and history. Countries like India and China sit on large, fertile landmasses that have supported dense agricultural societies for thousands of years, and both remained — or were reunified as — large states that inherited that scale.",
+          "Microstates like Vatican City exist for entirely different reasons, usually historical or religious sovereignty rather than the capacity to support a large population. Vatican City was established by the 1929 Lateran Treaty specifically to guarantee the Pope's independence from Italy, not to function as a nation-state with its own economy and workforce. Small island nations like Tuvalu, meanwhile, are simply constrained by the physical size of the land they sit on."
+        ],
+        "ko": [
+          "인구 규모는 대체로 두 가지 요인, 즉 국토 면적과 역사로 설명됩니다. 인도와 중국처럼 넓고 비옥한 국토를 가진 나라들은 수천 년에 걸쳐 밀도 높은 농업 사회를 유지해 왔고, 이후에도 거대한 국가 체제 속에서 그 규모를 그대로 이어받았습니다.",
+          "반면 바티칸 시국 같은 초소형 국가는 애초에 많은 인구를 수용하기 위한 목적으로 만들어진 나라가 아닙니다. 바티칸 시국은 1929년 라테란 조약을 통해 교황이 이탈리아로부터 독립적인 지위를 보장받기 위해 세워졌을 뿐, 경제활동과 노동력을 갖춘 일반적인 국가로 기능하기 위한 곳이 아닙니다. 투발루 같은 작은 섬나라들은 단순히 국토 자체의 물리적 크기가 인구 규모를 제한하는 경우입니다."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "en": "The bigger picture",
+        "ko": "더 큰 그림"
+      },
+      "body": {
+        "en": [
+          "Extremes aside, population is heavily concentrated worldwide: the ten most populous countries are home to more than half of all people on Earth (UN DESA, World Population Prospects 2024), while dozens of small states — island nations, microstates, and city-states — share only a tiny fraction of the remaining population between them.",
+          "Curious where your own country lands on this spectrum? Compare it with India, Tuvalu, or any other country covered on WhatsThePop."
+        ],
+        "ko": [
+          "극단적인 두 사례를 떠나서도 세계 인구는 매우 편중되어 있습니다. UN DESA의 '세계 인구 전망 2024'에 따르면 인구 상위 10개국이 전 세계 인구의 절반 이상을 차지하는 반면, 섬나라와 초소형 국가, 도시국가를 포함한 수십 개의 소규모 국가들은 나머지 인구의 아주 작은 부분만을 나누어 갖고 있습니다.",
+          "내 나라는 이 스펙트럼에서 어디쯤 위치할까요? WhatsThePop에서 인도, 투발루, 그리고 다른 나라들과 직접 비교해 보세요."
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "World Bank Open Data — Population, total",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "retrieved": "2026-07"
+    },
+    {
+      "name": "UN DESA — World Population Prospects 2024",
+      "url": "https://population.un.org/wpp/",
+      "retrieved": "2026-07"
+    },
+    {
+      "name": "CIA World Factbook — Holy See (Vatican City)",
+      "url": "https://www.cia.gov/the-world-factbook/countries/holy-see/",
+      "retrieved": "2026-07"
+    },
+    {
+      "name": "CIA World Factbook — Tuvalu",
+      "url": "https://www.cia.gov/the-world-factbook/countries/tuvalu/",
+      "retrieved": "2026-07"
+    }
+  ]
+}
