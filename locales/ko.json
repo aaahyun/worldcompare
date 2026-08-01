@@ -61,6 +61,7 @@
       "language": "언어",
       "travelInfo": "여행 실용 정보",
       "comparisonTable": "{target} vs {home} 상세 비교",
+      "compareWith": "{name}과(와) 비교하기",
       "sources": "출처 및 데이터 기준일"
     },
     "stats": {

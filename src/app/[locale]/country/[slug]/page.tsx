@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getAllSlugs, getCountry, toComparable } from "@/lib/countries";
+import { getAllSlugs, getCountry, getRelatedCompareSlugs, toComparable } from "@/lib/countries";
 import { getCompareDataset } from "@/lib/compareDataset";
 import { bestTimeToVisit, formatCompact, formatUSD } from "@/lib/compare";
 import { countrySummary } from "@/lib/summary";
@@ -14,7 +14,7 @@ import { PopulationHero } from "@/components/PopulationHero";
 import { HeroCompareBadge } from "@/components/HeroCompareBadge";
 import { PersonalizedSentence } from "@/components/PersonalizedSentence";
 import { PlugIcon } from "@/components/PlugIcon";
-import { flagFaviconDataUrl } from "@/lib/homeCountry";
+import { flagEmoji, flagFaviconDataUrl } from "@/lib/homeCountry";
 import {
   PersonalizedAreaChart,
   PersonalizedClimateChart,
@@ -102,6 +102,7 @@ export default async function CountryPage({
   );
 
   const dataset = getCompareDataset();
+  const relatedSlugs = getRelatedCompareSlugs(slug);
 
   const faqEntries = [
     { q: t("faq.population", { target: name }), a: `${name} — ${formatCompact(country.population.value, locale)} (${country.population.year})` },
@@ -401,6 +402,29 @@ export default async function CountryPage({
             </div>
           </dl>
         </section>
+
+        {relatedSlugs.length > 0 && (
+          <section className="mb-10">
+            <h2 className="mb-3 text-xl font-semibold">{t("sections.compareWith", { name })}</h2>
+            <div className="flex flex-wrap gap-2">
+              {relatedSlugs.map((otherSlug) => {
+                const other = getCountry(otherSlug);
+                if (!other) return null;
+                const otherName = other.names[locale] ?? other.names.en;
+                const pair = [slug, otherSlug].sort().join("-vs-");
+                return (
+                  <Link
+                    key={otherSlug}
+                    href={`/compare/${pair}`}
+                    className="rounded-full bg-surface-card px-3 py-1 text-xs text-content-secondary shadow-sm transition hover:text-content-primary"
+                  >
+                    {flagEmoji(other.iso2)} {otherName}
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
 
         <section id="sources" className="mb-10">
           <h2 className="mb-3 text-xl font-semibold">{t("sections.sources")}</h2>

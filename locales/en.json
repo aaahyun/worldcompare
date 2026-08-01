@@ -61,6 +61,7 @@
       "language": "Language",
       "travelInfo": "Travel essentials",
       "comparisonTable": "{target} vs {home}, side by side",
+      "compareWith": "Compare {name} with",
       "sources": "Sources & data"
     },
     "stats": {

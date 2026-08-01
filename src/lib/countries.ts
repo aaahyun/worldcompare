@@ -39,6 +39,38 @@ export function getAllSlugs(): string[] {
   return Array.from(loadAll().keys());
 }
 
+/** Picks countries to surface as "compare with" links on a country page: closest by
+ * population within the same continent first, filled out with the closest by
+ * population overall. Keeps suggestions relevant while guaranteeing `count` results
+ * even for continents with very few covered countries (e.g. Oceania). */
+export function getRelatedCompareSlugs(slug: string, count = 4): string[] {
+  const country = getCountry(slug);
+  if (!country) return [];
+
+  const others = getAllCountries().filter((c) => c.slug !== slug);
+  const byPopulationDistance = (list: Country[]) =>
+    [...list].sort(
+      (a, b) =>
+        Math.abs(a.population.value - country.population.value) -
+        Math.abs(b.population.value - country.population.value)
+    );
+
+  const picks = byPopulationDistance(others.filter((c) => c.continent === country.continent)).slice(
+    0,
+    count
+  );
+
+  if (picks.length < count) {
+    for (const c of byPopulationDistance(others)) {
+      if (picks.length >= count) break;
+      if (picks.some((p) => p.slug === c.slug)) continue;
+      picks.push(c);
+    }
+  }
+
+  return picks.map((c) => c.slug);
+}
+
 export function toComparable(country: Country, locale: string): ComparableCountry {
   return {
     name: country.names[locale] ?? country.names.en,
