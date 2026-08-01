@@ -118,8 +118,100 @@ function PopulationExtremesArt({ className }: { className?: string }) {
   );
 }
 
+function AreaComparisonArt({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 480 320"
+      preserveAspectRatio="xMidYMid slice"
+      className={className}
+      role="img"
+      aria-labelledby="report-cover-title-area"
+    >
+      <title id="report-cover-title-area">
+        Nested squares comparing Canada&apos;s land area of 9.98 million square kilometers to South
+        Korea&apos;s 100 thousand square kilometers
+      </title>
+      <rect width={480} height={320} className="fill-country-target-soft" />
+
+      <line
+        x1={40}
+        y1={270}
+        x2={440}
+        y2={270}
+        className="stroke-content-tertiary"
+        strokeOpacity={0.4}
+        strokeWidth={1.5}
+      />
+
+      <rect x={54} y={40} width={228} height={228} rx={16} className="fill-country-target" />
+
+      <rect x={252} y={247} width={23} height={23} rx={5} className="fill-country-home" />
+
+      <line
+        x1={296}
+        y1={70}
+        x2={400}
+        y2={70}
+        className="stroke-content-secondary"
+        strokeOpacity={0.55}
+        strokeWidth={1.5}
+        strokeDasharray="3 5"
+      />
+      <line
+        x1={400}
+        y1={70}
+        x2={400}
+        y2={240}
+        className="stroke-content-secondary"
+        strokeOpacity={0.55}
+        strokeWidth={1.5}
+        strokeDasharray="3 5"
+      />
+
+      <text x={168} y={26} textAnchor="middle" fontSize={22}>
+        🇨🇦
+      </text>
+      <text
+        x={168}
+        y={296}
+        textAnchor="middle"
+        fontSize={17}
+        fontWeight={700}
+        className="fill-content-primary"
+      >
+        9.98M km²
+      </text>
+
+      <text x={263} y={240} textAnchor="middle" fontSize={14}>
+        🇰🇷
+      </text>
+      <text
+        x={263}
+        y={296}
+        textAnchor="middle"
+        fontSize={13}
+        fontWeight={700}
+        className="fill-content-primary"
+      >
+        100K km²
+      </text>
+
+      <text
+        x={405}
+        y={155}
+        fontSize={13}
+        fontWeight={700}
+        className="fill-content-secondary"
+      >
+        ×99.6
+      </text>
+    </svg>
+  );
+}
+
 const artByVariant: Record<ReportCoverArtVariant, (props: { className?: string }) => ReactNode> = {
   "population-extremes": PopulationExtremesArt,
+  "area-comparison": AreaComparisonArt,
 };
 
 export function ReportCoverArt({

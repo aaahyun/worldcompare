@@ -42,12 +42,12 @@ export default async function ReportsIndexPage({
       <h1 className="text-3xl font-bold">{t("title")}</h1>
       <p className="mt-2 text-content-secondary">{t("subtitle")}</p>
 
-      <div className="no-scrollbar mt-8 flex snap-x snap-mandatory justify-center gap-6 overflow-x-auto pb-4">
+      <div className="mt-8 flex flex-col gap-6">
         {reports.map((report) => (
           <Link
             key={report.slug}
             href={`/reports/${report.slug}`}
-            className="flex w-[85%] shrink-0 snap-start overflow-hidden rounded-2xl bg-surface-card shadow-md transition hover:shadow-lg sm:w-[68%]"
+            className="flex w-full overflow-hidden rounded-2xl bg-surface-card shadow-md transition hover:shadow-lg"
           >
             <div className="w-[38%] shrink-0 sm:w-[42%]">
               <ReportCoverArt variant={report.coverArt} className="h-full min-h-64" />

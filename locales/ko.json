@@ -30,7 +30,8 @@
     "backToReports": "리포트 목록으로",
     "readingMinutes": "읽는 데 약 {n}분",
     "sourcesTitle": "출처",
-    "retrieved": "{date} 기준"
+    "retrieved": "{date} 기준",
+    "relatedCountriesTitle": "이 리포트에 등장한 나라"
   },
   "country": {
     "hero": {
