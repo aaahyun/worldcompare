@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { emojiFaviconDataUrl } from "@/lib/homeCountry";
+
+export const metadata: Metadata = {
+  icons: { icon: emojiFaviconDataUrl("🌍") },
+};
 
 export default function GlobalNotFound() {
   return (
