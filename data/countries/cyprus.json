@@ -1,0 +1,167 @@
+{
+  "slug": "cyprus",
+  "iso2": "CY",
+  "iso3": "CYP",
+  "names": {
+    "en": "Cyprus",
+    "ko": "키프로스"
+  },
+  "capital": {
+    "names": {
+      "en": "Nicosia",
+      "ko": "니코시아"
+    },
+    "lat": 35.1725,
+    "lng": 33.365
+  },
+  "continent": "europe",
+  "area_km2": 9251,
+  "population": {
+    "value": 1370754,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 41225787247,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 41783.1,
+    "year": 2025
+  },
+  "median_age": 38.4,
+  "life_expectancy": 81.8,
+  "urbanization_pct": 66.7,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 94
+    },
+    {
+      "key": "islam",
+      "pct": 1.8
+    },
+    {
+      "key": "buddhism",
+      "pct": 1
+    },
+    {
+      "key": "other",
+      "pct": 2.5
+    },
+    {
+      "key": "none",
+      "pct": 0.6
+    }
+  ],
+  "languages": {
+    "official": [
+      "el",
+      "tr"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "tourism",
+    "finance",
+    "shipping",
+    "food_processing"
+  ],
+  "currency": {
+    "code": "EUR",
+    "usd_rate_snapshot": 0.92,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Asia/Nicosia"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "G"
+    ]
+  },
+  "driving_side": "left",
+  "calling_code": "+357",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      17.7,
+      14.4,
+      23.2,
+      23.9,
+      30.4,
+      36.3,
+      38.7,
+      38.2,
+      34.3,
+      28.1,
+      25.3,
+      17.6
+    ],
+    "temp_low_c": [
+      7.4,
+      4.9,
+      9.8,
+      11.4,
+      15.9,
+      20.8,
+      23.2,
+      23.2,
+      20.4,
+      16.2,
+      13.6,
+      9.1
+    ],
+    "precip_mm": [
+      18,
+      30,
+      13,
+      27,
+      35,
+      2,
+      5,
+      1,
+      1,
+      1,
+      13,
+      92
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

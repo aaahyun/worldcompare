@@ -1,0 +1,166 @@
+{
+  "slug": "bahrain",
+  "iso2": "BH",
+  "iso3": "BHR",
+  "names": {
+    "en": "Bahrain",
+    "ko": "바레인"
+  },
+  "capital": {
+    "names": {
+      "en": "Manama",
+      "ko": "마나마"
+    },
+    "lat": 26.216666666,
+    "lng": 50.583333333
+  },
+  "continent": "asia",
+  "area_km2": 765,
+  "population": {
+    "value": 1600366,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 48965725532,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 30596.6,
+    "year": 2025
+  },
+  "median_age": 33.3,
+  "life_expectancy": 81.4,
+  "urbanization_pct": 100,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 73.7
+    },
+    {
+      "key": "christianity",
+      "pct": 9.3
+    },
+    {
+      "key": "hinduism",
+      "pct": 6
+    },
+    {
+      "key": "judaism",
+      "pct": 0.1
+    },
+    {
+      "key": "other",
+      "pct": 10.9
+    }
+  ],
+  "languages": {
+    "official": [
+      "ar"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "oil_gas",
+    "aluminum",
+    "finance",
+    "tourism"
+  ],
+  "currency": {
+    "code": "BHD",
+    "usd_rate_snapshot": 0.376,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Asia/Bahrain"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "G"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+973",
+  "emergency": "999",
+  "climate": {
+    "temp_high_c": [
+      19.8,
+      20.2,
+      24.2,
+      33,
+      36.3,
+      38,
+      39.8,
+      40.5,
+      37.4,
+      33,
+      27.9,
+      23.8
+    ],
+    "temp_low_c": [
+      14.3,
+      15.4,
+      18,
+      24.5,
+      28.1,
+      31.1,
+      32.4,
+      32.1,
+      30.8,
+      26.4,
+      21.6,
+      17.8
+    ],
+    "precip_mm": [
+      5,
+      32,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      32
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

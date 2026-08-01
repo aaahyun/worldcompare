@@ -22,6 +22,7 @@ import {
 } from "@/components/PersonalizedChart";
 import { ClimateLineChart } from "@/lib/charts/climateChart";
 import { ReligionStackedBar } from "@/lib/charts/religionChart";
+import { ViewBeacon } from "@/components/ViewBeacon";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -139,6 +140,7 @@ export default async function CountryPage({
 
   return (
     <CountryCompareProvider targetSlug={slug} dataset={dataset}>
+      <ViewBeacon endpoint={`/api/countries/${slug}/view`} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

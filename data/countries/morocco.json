@@ -1,0 +1,156 @@
+{
+  "slug": "morocco",
+  "iso2": "MA",
+  "iso3": "MAR",
+  "names": {
+    "en": "Morocco",
+    "ko": "모로코"
+  },
+  "capital": {
+    "names": {
+      "en": "Rabat",
+      "ko": "라바트"
+    },
+    "lat": 34.021111111,
+    "lng": -6.841388888
+  },
+  "continent": "africa",
+  "area_km2": 446550,
+  "population": {
+    "value": 38430770,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 182374250612,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 4672.5,
+    "year": 2025
+  },
+  "median_age": 29.7,
+  "life_expectancy": 75.5,
+  "urbanization_pct": 63.1,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 99
+    },
+    {
+      "key": "other",
+      "pct": 1
+    }
+  ],
+  "languages": {
+    "official": [
+      "ar"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "tourism",
+    "agriculture",
+    "textiles",
+    "automotive",
+    "mining"
+  ],
+  "currency": {
+    "code": "MAD",
+    "usd_rate_snapshot": 9.4,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Africa/Casablanca"
+  ],
+  "electricity": {
+    "voltage": 220,
+    "plugs": [
+      "C",
+      "E"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+212",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      19.1,
+      18.8,
+      18.6,
+      21.7,
+      23.6,
+      27.4,
+      26.8,
+      28.2,
+      26.3,
+      24.7,
+      20.9,
+      17
+    ],
+    "temp_low_c": [
+      9.9,
+      10.3,
+      11.8,
+      14.3,
+      15.9,
+      20.1,
+      20.3,
+      21.5,
+      18.7,
+      17.8,
+      13.3,
+      10.6
+    ],
+    "precip_mm": [
+      61,
+      36,
+      179,
+      57,
+      12,
+      3,
+      1,
+      10,
+      5,
+      13,
+      87,
+      253
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

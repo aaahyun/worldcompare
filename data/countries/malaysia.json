@@ -1,0 +1,166 @@
+{
+  "slug": "malaysia",
+  "iso2": "MY",
+  "iso3": "MYS",
+  "names": {
+    "en": "Malaysia",
+    "ko": "말레이시아"
+  },
+  "capital": {
+    "names": {
+      "en": "Kuala Lumpur",
+      "ko": "쿠알라룸푸르"
+    },
+    "lat": 3.147777777,
+    "lng": 101.695277777
+  },
+  "continent": "asia",
+  "area_km2": 330803,
+  "population": {
+    "value": 35977838,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 472193128645,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 13124.6,
+    "year": 2025
+  },
+  "median_age": 31,
+  "life_expectancy": 76.8,
+  "urbanization_pct": 77.4,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 63.5
+    },
+    {
+      "key": "buddhism",
+      "pct": 18.7
+    },
+    {
+      "key": "christianity",
+      "pct": 9.1
+    },
+    {
+      "key": "hinduism",
+      "pct": 6.1
+    },
+    {
+      "key": "other",
+      "pct": 2.6
+    }
+  ],
+  "languages": {
+    "official": [
+      "ms"
+    ],
+    "english_proficiency": "high"
+  },
+  "industries": [
+    "manufacturing",
+    "electronics",
+    "palm_oil",
+    "tourism"
+  ],
+  "currency": {
+    "code": "MYR",
+    "usd_rate_snapshot": 4.09,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Asia/Kuala_Lumpur"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "G"
+    ]
+  },
+  "driving_side": "left",
+  "calling_code": "+60",
+  "emergency": "999",
+  "climate": {
+    "temp_high_c": [
+      30.5,
+      32.9,
+      32.5,
+      31.7,
+      32,
+      33.1,
+      34.9,
+      33,
+      32.7,
+      32.5,
+      31.9,
+      31.4
+    ],
+    "temp_low_c": [
+      23,
+      23.4,
+      23.6,
+      23.8,
+      24.3,
+      24.2,
+      25,
+      23.6,
+      23.9,
+      24.2,
+      24.1,
+      23.4
+    ],
+    "precip_mm": [
+      300,
+      206,
+      229,
+      473,
+      209,
+      148,
+      55,
+      122,
+      132,
+      168,
+      403,
+      357
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

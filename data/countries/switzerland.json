@@ -77,7 +77,7 @@
   "currency": {
     "code": "CHF",
     "usd_rate_snapshot": 0.9,
-    "snapshot_date": "2026-07-26"
+    "snapshot_date": "2026-08-01"
   },
   "timezone": [
     "Europe/Zurich"
@@ -140,37 +140,37 @@
     "population": {
       "name": "World Bank Open Data",
       "url": "https://data.worldbank.org",
-      "retrieved": "2026-07"
+      "retrieved": "2026-08"
     },
     "area": {
       "name": "world-countries (Wikidata-derived)",
       "url": "https://github.com/mledoze/countries",
-      "retrieved": "2026-07"
+      "retrieved": "2026-08"
     },
     "gdp_nominal_usd": {
       "name": "World Bank Open Data",
       "url": "https://data.worldbank.org",
-      "retrieved": "2026-07"
+      "retrieved": "2026-08"
     },
     "gdp_per_capita_usd": {
       "name": "World Bank Open Data",
       "url": "https://data.worldbank.org",
-      "retrieved": "2026-07"
+      "retrieved": "2026-08"
     },
     "religions": {
       "name": "Manual curation (Pew Research)",
       "url": "https://www.pewresearch.org",
-      "retrieved": "2026-07"
+      "retrieved": "2026-08"
     },
     "industries": {
       "name": "Manual curation (CIA World Factbook)",
       "url": "https://www.cia.gov/the-world-factbook/",
-      "retrieved": "2026-07"
+      "retrieved": "2026-08"
     },
     "climate": {
       "name": "Open-Meteo Historical Weather API",
       "url": "https://open-meteo.com",
-      "retrieved": "2026-07"
+      "retrieved": "2026-08"
     },
     "happiness_index": {
       "name": "World Happiness Report 2025",

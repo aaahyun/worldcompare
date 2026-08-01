@@ -7,6 +7,7 @@ import { getCountry } from "@/lib/countries";
 import { buildAlternateLanguages, canonicalUrl } from "@/lib/seo";
 import { ReportCoverArt } from "@/components/reports/ReportCoverArt";
 import { ReportScrollHeader } from "@/components/reports/ReportScrollHeader";
+import { ViewBeacon } from "@/components/ViewBeacon";
 
 export async function generateStaticParams() {
   return getAllReportSlugs().map((slug) => ({ slug }));
@@ -58,6 +59,7 @@ export default async function ReportPage({
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
+      <ViewBeacon endpoint={`/api/reports/${report.slug}/view`} />
       <Link href="/reports" className="text-sm text-content-secondary hover:text-content-primary">
         ← {t("backToReports")}
       </Link>
@@ -84,7 +86,7 @@ export default async function ReportPage({
       </p>
 
       <div className="mt-6 overflow-hidden rounded-2xl">
-        <ReportCoverArt variant={report.coverArt} className="h-56 w-full sm:h-72" />
+        <ReportCoverArt variant={report.coverArt} className="aspect-[3/2] w-full" />
       </div>
 
       {report.stats && report.stats.length > 0 && (

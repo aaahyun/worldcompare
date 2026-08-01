@@ -40,6 +40,30 @@ async function mapWithConcurrency<T, R>(
   return results;
 }
 
+/**
+ * happiness_index and livability_rank are hand-curated directly into the output JSON
+ * (see manualOverrides.ts header) — this pipeline has no source for them. Re-running
+ * ingest must not wipe that data, so an existing file's values are carried forward.
+ */
+function readExistingExtras(slug: string): {
+  fields: Pick<Country, "happiness_index" | "livability_rank">;
+  sources: Partial<Country["sources"]>;
+} {
+  const file = path.join(OUT_DIR, `${slug}.json`);
+  if (!fs.existsSync(file)) return { fields: {}, sources: {} };
+  const existing = JSON.parse(fs.readFileSync(file, "utf-8")) as Partial<Country>;
+  return {
+    fields: {
+      happiness_index: existing.happiness_index,
+      livability_rank: existing.livability_rank,
+    },
+    sources: {
+      ...(existing.sources?.happiness_index && { happiness_index: existing.sources.happiness_index }),
+      ...(existing.sources?.livability_rank && { livability_rank: existing.sources.livability_rank }),
+    },
+  };
+}
+
 async function buildCountry(
   entry: (typeof countryList)[number],
   capitalGeo: Awaited<ReturnType<typeof fetchCapitalGeo>>
@@ -52,16 +76,26 @@ async function buildCountry(
   }
 
   const base = getBaseInfo(iso2);
-  const wb = await fetchWorldBankIndicators(iso3);
+  const wb = override.economicOverride
+    ? {
+        population: override.economicOverride.population,
+        gdpNominalUsd: override.economicOverride.gdpNominalUsd,
+        gdpPerCapitaUsd: override.economicOverride.gdpPerCapitaUsd,
+        lifeExpectancy: null,
+        urbanizationPct: null,
+      }
+    : await fetchWorldBankIndicators(iso3);
   const capital = capitalGeo.get(iso2);
   if (!capital) throw new Error(`No Wikidata capital found for ${slug} (${iso2})`);
   const climate = await fetchClimateNormals(capital.lat, capital.lng);
+  const extras = readExistingExtras(slug);
 
   return countrySchema.parse({
+    ...extras.fields,
     slug,
     iso2,
     iso3,
-    names: { en: base.nameEn, ko: base.nameKo ?? override.namesKoFallback },
+    names: { en: base.nameEn, ko: override.namesKoOverride ?? base.nameKo ?? override.namesKoFallback },
     capital: {
       names: { en: capital.nameEn, ko: override.capitalNameKo },
       lat: capital.lat,
@@ -96,13 +130,16 @@ async function buildCountry(
     emergency: override.emergency,
     climate,
     sources: {
-      population: src("World Bank Open Data", "https://data.worldbank.org"),
+      population: override.economicOverride?.source ?? src("World Bank Open Data", "https://data.worldbank.org"),
       area: src("world-countries (Wikidata-derived)", "https://github.com/mledoze/countries"),
-      gdp_nominal_usd: src("World Bank Open Data", "https://data.worldbank.org"),
-      gdp_per_capita_usd: src("World Bank Open Data", "https://data.worldbank.org"),
+      gdp_nominal_usd:
+        override.economicOverride?.source ?? src("World Bank Open Data", "https://data.worldbank.org"),
+      gdp_per_capita_usd:
+        override.economicOverride?.source ?? src("World Bank Open Data", "https://data.worldbank.org"),
       religions: src("Manual curation (Pew Research)", "https://www.pewresearch.org"),
       industries: src("Manual curation (CIA World Factbook)", "https://www.cia.gov/the-world-factbook/"),
       climate: src("Open-Meteo Historical Weather API", "https://open-meteo.com"),
+      ...extras.sources,
     },
   });
 }

@@ -1,0 +1,163 @@
+{
+  "slug": "north-korea",
+  "iso2": "KP",
+  "iso3": "PRK",
+  "names": {
+    "en": "North Korea",
+    "ko": "북한"
+  },
+  "capital": {
+    "names": {
+      "en": "Pyongyang",
+      "ko": "평양"
+    },
+    "lat": 39.016666666,
+    "lng": 125.7475
+  },
+  "continent": "asia",
+  "area_km2": 120538,
+  "population": {
+    "value": 26402841,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 35925925926,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 1387.4,
+    "year": 2025
+  },
+  "median_age": 36.2,
+  "religions": [
+    {
+      "key": "none",
+      "pct": 64.3
+    },
+    {
+      "key": "folk",
+      "pct": 16
+    },
+    {
+      "key": "chondoism",
+      "pct": 13.5
+    },
+    {
+      "key": "buddhism",
+      "pct": 4.5
+    },
+    {
+      "key": "christianity",
+      "pct": 2
+    }
+  ],
+  "languages": {
+    "official": [
+      "ko"
+    ],
+    "english_proficiency": "very_low"
+  },
+  "industries": [
+    "mining",
+    "textiles",
+    "chemicals",
+    "metallurgy"
+  ],
+  "currency": {
+    "code": "KPW"
+  },
+  "timezone": [
+    "Asia/Pyongyang"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+850",
+  "emergency": "110",
+  "climate": {
+    "temp_high_c": [
+      0.7,
+      0.4,
+      11.6,
+      17.1,
+      21.3,
+      27.7,
+      30.9,
+      30.2,
+      26,
+      18.1,
+      10.9,
+      1.5
+    ],
+    "temp_low_c": [
+      -7.8,
+      -8.1,
+      0.5,
+      6,
+      11.9,
+      18.2,
+      23.2,
+      23.2,
+      18,
+      10.3,
+      1.5,
+      -6.6
+    ],
+    "precip_mm": [
+      11,
+      6,
+      12,
+      82,
+      92,
+      239,
+      101,
+      239,
+      163,
+      110,
+      27,
+      24
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "Bank of Korea DPRK GDP/GNI estimate (2025년 북한 경제성장률 추정 결과), converted from KRW at ~1,350 KRW/USD; population from CIA World Factbook",
+      "url": "https://www.bok.or.kr",
+      "retrieved": "2026-07"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "Bank of Korea DPRK GDP/GNI estimate (2025년 북한 경제성장률 추정 결과), converted from KRW at ~1,350 KRW/USD; population from CIA World Factbook",
+      "url": "https://www.bok.or.kr",
+      "retrieved": "2026-07"
+    },
+    "gdp_per_capita_usd": {
+      "name": "Bank of Korea DPRK GDP/GNI estimate (2025년 북한 경제성장률 추정 결과), converted from KRW at ~1,350 KRW/USD; population from CIA World Factbook",
+      "url": "https://www.bok.or.kr",
+      "retrieved": "2026-07"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "slug": "qatar",
+  "iso2": "QA",
+  "iso3": "QAT",
+  "names": {
+    "en": "Qatar",
+    "ko": "카타르"
+  },
+  "capital": {
+    "names": {
+      "en": "Doha",
+      "ko": "도하"
+    },
+    "lat": 25.286111111,
+    "lng": 51.529444444
+  },
+  "continent": "asia",
+  "area_km2": 11586,
+  "population": {
+    "value": 2972215,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 215559615385,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 72524.9,
+    "year": 2025
+  },
+  "median_age": 34.2,
+  "life_expectancy": 82.5,
+  "urbanization_pct": 99.4,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 65.2
+    },
+    {
+      "key": "christianity",
+      "pct": 13.7
+    },
+    {
+      "key": "hinduism",
+      "pct": 15.9
+    },
+    {
+      "key": "buddhism",
+      "pct": 3.8
+    },
+    {
+      "key": "other",
+      "pct": 1.4
+    }
+  ],
+  "languages": {
+    "official": [
+      "ar"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "oil_gas",
+    "petrochemicals",
+    "construction",
+    "finance",
+    "steel"
+  ],
+  "currency": {
+    "code": "QAR",
+    "usd_rate_snapshot": 3.64,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Asia/Qatar"
+  ],
+  "electricity": {
+    "voltage": 240,
+    "plugs": [
+      "D",
+      "G"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+974",
+  "emergency": "999",
+  "climate": {
+    "temp_high_c": [
+      22.4,
+      22.8,
+      27.2,
+      35.8,
+      40.4,
+      42.3,
+      43,
+      42.2,
+      39.8,
+      35.3,
+      30.5,
+      24.9
+    ],
+    "temp_low_c": [
+      14.1,
+      15,
+      18,
+      24.4,
+      28.2,
+      30.3,
+      31.8,
+      32.3,
+      30,
+      25.2,
+      21.2,
+      17.4
+    ],
+    "precip_mm": [
+      3,
+      21,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      67
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

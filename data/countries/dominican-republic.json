@@ -1,0 +1,159 @@
+{
+  "slug": "dominican-republic",
+  "iso2": "DO",
+  "iso3": "DOM",
+  "names": {
+    "en": "Dominican Republic",
+    "ko": "도미니카 공화국"
+  },
+  "capital": {
+    "names": {
+      "en": "Santo Domingo",
+      "ko": "산토도밍고"
+    },
+    "lat": 18.4625,
+    "lng": -69.936111111
+  },
+  "continent": "north_america",
+  "area_km2": 48671,
+  "population": {
+    "value": 11520487,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 127407463759,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 11059.2,
+    "year": 2025
+  },
+  "median_age": 28.8,
+  "life_expectancy": 73.9,
+  "urbanization_pct": 72.5,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 68.4
+    },
+    {
+      "key": "none",
+      "pct": 29.6
+    },
+    {
+      "key": "other",
+      "pct": 2
+    }
+  ],
+  "languages": {
+    "official": [
+      "es"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "tourism",
+    "agriculture",
+    "mining",
+    "manufacturing"
+  ],
+  "currency": {
+    "code": "DOP",
+    "usd_rate_snapshot": 59,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "America/Santo_Domingo"
+  ],
+  "electricity": {
+    "voltage": 120,
+    "plugs": [
+      "A",
+      "B"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+1",
+  "emergency": "911",
+  "climate": {
+    "temp_high_c": [
+      28.4,
+      28.7,
+      29.3,
+      29.2,
+      29.7,
+      30.2,
+      30.9,
+      31.3,
+      30.6,
+      29.4,
+      29.2,
+      28.5
+    ],
+    "temp_low_c": [
+      20.9,
+      20.8,
+      21,
+      21.4,
+      22.2,
+      23,
+      23.3,
+      24,
+      23.9,
+      23,
+      22,
+      20.8
+    ],
+    "precip_mm": [
+      34,
+      41,
+      86,
+      147,
+      200,
+      130,
+      114,
+      135,
+      193,
+      309,
+      105,
+      36
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

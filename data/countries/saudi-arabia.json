@@ -1,0 +1,158 @@
+{
+  "slug": "saudi-arabia",
+  "iso2": "SA",
+  "iso3": "SAU",
+  "names": {
+    "en": "Saudi Arabia",
+    "ko": "사우디아라비아"
+  },
+  "capital": {
+    "names": {
+      "en": "Riyadh",
+      "ko": "리야드"
+    },
+    "lat": 24.65,
+    "lng": 46.71
+  },
+  "continent": "asia",
+  "area_km2": 2149690,
+  "population": {
+    "value": 36973555,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 1276942933333,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 34536.7,
+    "year": 2025
+  },
+  "median_age": 29.6,
+  "life_expectancy": 79,
+  "urbanization_pct": 84.6,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 93
+    },
+    {
+      "key": "christianity",
+      "pct": 5
+    },
+    {
+      "key": "other",
+      "pct": 2
+    }
+  ],
+  "languages": {
+    "official": [
+      "ar"
+    ],
+    "english_proficiency": "very_low"
+  },
+  "industries": [
+    "oil_gas",
+    "petrochemicals",
+    "construction",
+    "finance"
+  ],
+  "currency": {
+    "code": "SAR",
+    "usd_rate_snapshot": 3.75,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Asia/Riyadh"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "G"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+966",
+  "emergency": "999",
+  "climate": {
+    "temp_high_c": [
+      19.3,
+      21.4,
+      27.6,
+      36.4,
+      40.5,
+      42.5,
+      43.4,
+      43.3,
+      41,
+      34.2,
+      27.9,
+      21.8
+    ],
+    "temp_low_c": [
+      10.3,
+      11.6,
+      17.2,
+      25.2,
+      29.6,
+      31.5,
+      32.9,
+      33.1,
+      30.1,
+      23.5,
+      17.1,
+      13.1
+    ],
+    "precip_mm": [
+      6,
+      34,
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      24
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "slug": "albania",
+  "iso2": "AL",
+  "iso3": "ALB",
+  "names": {
+    "en": "Albania",
+    "ko": "알바니아"
+  },
+  "capital": {
+    "names": {
+      "en": "Tirana",
+      "ko": "티라나"
+    },
+    "lat": 41.328333333,
+    "lng": 19.818055555
+  },
+  "continent": "europe",
+  "area_km2": 28748,
+  "population": {
+    "value": 2349580,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 30540188271,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 12998.1,
+    "year": 2025
+  },
+  "median_age": 35.8,
+  "life_expectancy": 79.8,
+  "urbanization_pct": 58.9,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 58.8
+    },
+    {
+      "key": "christianity",
+      "pct": 16.8
+    },
+    {
+      "key": "none",
+      "pct": 2.5
+    },
+    {
+      "key": "other",
+      "pct": 21.9
+    }
+  ],
+  "languages": {
+    "official": [
+      "sq"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "tourism",
+    "agriculture",
+    "textiles",
+    "mining"
+  ],
+  "currency": {
+    "code": "ALL",
+    "usd_rate_snapshot": 82.5,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Europe/Tirane"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+355",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      14,
+      13.3,
+      17.4,
+      19.3,
+      22.3,
+      31.3,
+      32.6,
+      31.9,
+      27.7,
+      19.9,
+      17.3,
+      14.1
+    ],
+    "temp_low_c": [
+      5.3,
+      3,
+      7.7,
+      8.5,
+      12.3,
+      18.9,
+      21,
+      19.5,
+      16.8,
+      10.6,
+      9.9,
+      4.4
+    ],
+    "precip_mm": [
+      173,
+      37,
+      169,
+      64,
+      99,
+      3,
+      39,
+      77,
+      37,
+      218,
+      346,
+      25
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

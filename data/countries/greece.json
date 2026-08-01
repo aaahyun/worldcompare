@@ -1,0 +1,163 @@
+{
+  "slug": "greece",
+  "iso2": "GR",
+  "iso3": "GRC",
+  "names": {
+    "en": "Greece",
+    "ko": "그리스"
+  },
+  "capital": {
+    "names": {
+      "en": "Athens",
+      "ko": "아테네"
+    },
+    "lat": 37.984166666,
+    "lng": 23.728055555
+  },
+  "continent": "europe",
+  "area_km2": 131990,
+  "population": {
+    "value": 10413962,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 280635521324,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 26948,
+    "year": 2025
+  },
+  "median_age": 46.3,
+  "life_expectancy": 81.8,
+  "urbanization_pct": 79.2,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 90
+    },
+    {
+      "key": "none",
+      "pct": 6
+    },
+    {
+      "key": "islam",
+      "pct": 2
+    },
+    {
+      "key": "other",
+      "pct": 2
+    }
+  ],
+  "languages": {
+    "official": [
+      "el"
+    ],
+    "english_proficiency": "very_high"
+  },
+  "industries": [
+    "tourism",
+    "shipping",
+    "agriculture",
+    "manufacturing"
+  ],
+  "currency": {
+    "code": "EUR",
+    "usd_rate_snapshot": 0.87,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Europe/Athens"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+30",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      14.7,
+      11.4,
+      18.1,
+      19.2,
+      25.7,
+      32.9,
+      35.8,
+      32.5,
+      29.4,
+      22.1,
+      19.9,
+      15.6
+    ],
+    "temp_low_c": [
+      7.7,
+      5.1,
+      9.7,
+      10.7,
+      16.2,
+      22.5,
+      25.3,
+      23.4,
+      20.3,
+      14.8,
+      13.8,
+      8.5
+    ],
+    "precip_mm": [
+      44,
+      51,
+      25,
+      84,
+      43,
+      4,
+      3,
+      3,
+      5,
+      35,
+      173,
+      96
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

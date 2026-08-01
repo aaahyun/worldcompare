@@ -1,0 +1,163 @@
+{
+  "slug": "ireland",
+  "iso2": "IE",
+  "iso3": "IRL",
+  "names": {
+    "en": "Ireland",
+    "ko": "아일랜드"
+  },
+  "capital": {
+    "names": {
+      "en": "Dublin",
+      "ko": "더블린"
+    },
+    "lat": 53.349722222,
+    "lng": -6.260277777
+  },
+  "continent": "europe",
+  "area_km2": 70273,
+  "population": {
+    "value": 5484367,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 721701359046,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 131592.5,
+    "year": 2025
+  },
+  "median_age": 38.8,
+  "life_expectancy": 83,
+  "urbanization_pct": 64.6,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 75
+    },
+    {
+      "key": "islam",
+      "pct": 1.4
+    },
+    {
+      "key": "none",
+      "pct": 15.4
+    },
+    {
+      "key": "other",
+      "pct": 8.2
+    }
+  ],
+  "languages": {
+    "official": [
+      "ga",
+      "en"
+    ],
+    "english_proficiency": "very_high"
+  },
+  "industries": [
+    "pharmaceuticals",
+    "technology",
+    "finance",
+    "food_processing"
+  ],
+  "currency": {
+    "code": "EUR",
+    "usd_rate_snapshot": 0.92,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Europe/Dublin"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "G"
+    ]
+  },
+  "driving_side": "left",
+  "calling_code": "+353",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      7.6,
+      9.1,
+      11.4,
+      13.4,
+      16.2,
+      18.6,
+      20.1,
+      20,
+      16.4,
+      13.8,
+      11.3,
+      9.9
+    ],
+    "temp_low_c": [
+      3,
+      5,
+      5.9,
+      7.3,
+      9.3,
+      12.2,
+      13.8,
+      13.9,
+      10.7,
+      9.6,
+      6.9,
+      6.5
+    ],
+    "precip_mm": [
+      101,
+      74,
+      24,
+      140,
+      44,
+      114,
+      121,
+      54,
+      152,
+      101,
+      138,
+      110
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

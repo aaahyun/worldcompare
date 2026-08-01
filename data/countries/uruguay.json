@@ -1,0 +1,166 @@
+{
+  "slug": "uruguay",
+  "iso2": "UY",
+  "iso3": "URY",
+  "names": {
+    "en": "Uruguay",
+    "ko": "우루과이"
+  },
+  "capital": {
+    "names": {
+      "en": "Montevideo",
+      "ko": "몬테비데오"
+    },
+    "lat": -34.905916666,
+    "lng": -56.191311111
+  },
+  "continent": "south_america",
+  "area_km2": 181034,
+  "population": {
+    "value": 3384688,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 85347696278,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 25215.8,
+    "year": 2025
+  },
+  "median_age": 35.8,
+  "life_expectancy": 78.3,
+  "urbanization_pct": 95.7,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 42.3
+    },
+    {
+      "key": "folk",
+      "pct": 2.8
+    },
+    {
+      "key": "none",
+      "pct": 48.9
+    },
+    {
+      "key": "other",
+      "pct": 6
+    }
+  ],
+  "languages": {
+    "official": [
+      "es"
+    ],
+    "english_proficiency": "moderate"
+  },
+  "industries": [
+    "agriculture",
+    "meat_processing",
+    "tourism",
+    "textiles",
+    "finance"
+  ],
+  "currency": {
+    "code": "UYU",
+    "usd_rate_snapshot": 40,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "America/Montevideo"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F",
+      "I",
+      "L"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+598",
+  "emergency": "911",
+  "climate": {
+    "temp_high_c": [
+      24.1,
+      26.6,
+      24.4,
+      19.5,
+      18.1,
+      12.7,
+      12.3,
+      13.9,
+      15.7,
+      19.6,
+      20.9,
+      25.2
+    ],
+    "temp_low_c": [
+      20.3,
+      21.4,
+      20.1,
+      16,
+      13.8,
+      8.7,
+      8.1,
+      10.2,
+      11.7,
+      14.3,
+      15.5,
+      20.4
+    ],
+    "precip_mm": [
+      42,
+      115,
+      77,
+      43,
+      45,
+      55,
+      26,
+      64,
+      78,
+      86,
+      81,
+      42
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

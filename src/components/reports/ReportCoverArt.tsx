@@ -29,7 +29,7 @@ function PopulationExtremesArt({ className }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 480 320"
-      preserveAspectRatio="xMidYMid slice"
+      preserveAspectRatio="xMidYMid meet"
       className={className}
       role="img"
       aria-labelledby="report-cover-title"
@@ -122,7 +122,7 @@ function AreaComparisonArt({ className }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 480 320"
-      preserveAspectRatio="xMidYMid slice"
+      preserveAspectRatio="xMidYMid meet"
       className={className}
       role="img"
       aria-labelledby="report-cover-title-area"

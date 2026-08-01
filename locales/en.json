@@ -15,7 +15,8 @@
   "home": {
     "title": "Compare any country to your own, at a glance",
     "subtitle": "Population, area, GDP, climate and more — instantly put side by side with your home country.",
-    "popularCountries": "Popular countries"
+    "popularReports": "Popular reports",
+    "allReports": "All reports"
   },
   "countriesIndex": {
     "title": "All countries",
@@ -140,6 +141,7 @@
       "buddhism": "Buddhism",
       "judaism": "Judaism",
       "folk": "Folk religion",
+      "chondoism": "Chondoism",
       "none": "Unaffiliated",
       "other": "Other"
     },
@@ -163,7 +165,18 @@
       "mining": "Mining",
       "oil_gas": "Oil & gas",
       "textiles": "Textiles",
-      "pharmaceuticals": "Pharmaceuticals"
+      "pharmaceuticals": "Pharmaceuticals",
+      "banking": "Banking",
+      "retail": "Retail",
+      "food_processing": "Food processing",
+      "wine": "Wine",
+      "forestry": "Forestry",
+      "shipping": "Shipping",
+      "petrochemicals": "Petrochemicals",
+      "palm_oil": "Palm oil",
+      "metallurgy": "Metallurgy",
+      "construction": "Construction",
+      "meat_processing": "Meat processing"
     },
     "englishProficiency": {
       "very_high": "Very high",

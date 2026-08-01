@@ -1,0 +1,160 @@
+{
+  "slug": "hungary",
+  "iso2": "HU",
+  "iso3": "HUN",
+  "names": {
+    "en": "Hungary",
+    "ko": "헝가리"
+  },
+  "capital": {
+    "names": {
+      "en": "Budapest",
+      "ko": "부다페스트"
+    },
+    "lat": 47.498333333,
+    "lng": 19.040833333
+  },
+  "continent": "europe",
+  "area_km2": 93028,
+  "population": {
+    "value": 9514251,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 246490213513,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 25907.5,
+    "year": 2025
+  },
+  "median_age": 44.2,
+  "life_expectancy": 76.7,
+  "urbanization_pct": 70.7,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 43.3
+    },
+    {
+      "key": "none",
+      "pct": 16.1
+    },
+    {
+      "key": "other",
+      "pct": 40.6
+    }
+  ],
+  "languages": {
+    "official": [
+      "hu"
+    ],
+    "english_proficiency": "high"
+  },
+  "industries": [
+    "automotive",
+    "manufacturing",
+    "electronics",
+    "agriculture",
+    "tourism"
+  ],
+  "currency": {
+    "code": "HUF",
+    "usd_rate_snapshot": 340,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Europe/Budapest"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "C",
+      "F"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+36",
+  "emergency": "112",
+  "climate": {
+    "temp_high_c": [
+      5.8,
+      4.5,
+      13.7,
+      18.8,
+      19.4,
+      29.8,
+      28.8,
+      29.3,
+      24.3,
+      15.1,
+      9.2,
+      5.2
+    ],
+    "temp_low_c": [
+      -0.2,
+      -2.6,
+      3.3,
+      7.9,
+      10,
+      17.4,
+      17.8,
+      16.8,
+      14.3,
+      6.9,
+      2.9,
+      1.9
+    ],
+    "precip_mm": [
+      14,
+      19,
+      85,
+      56,
+      68,
+      7,
+      61,
+      48,
+      43,
+      32,
+      76,
+      13
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

@@ -5,12 +5,23 @@ interface WorldBankObservation {
   value: number | null;
 }
 
-/** Most recent non-null observation for one World Bank indicator, for one country. */
+const CURRENT_YEAR = new Date().getUTCFullYear();
+
+/**
+ * Most recent non-null observation for one World Bank indicator, for one country.
+ *
+ * Uses an explicit date range rather than the API's own `mrnev=1` ("most recent
+ * non-empty value") flag — that flag started returning HTTP 400 for every
+ * indicator/country combination as of mid-2026, apparently a bug on the World
+ * Bank API's side. Fetching the last decade and picking the first non-null
+ * observation client-side (the API returns rows newest-first) reproduces the
+ * same result without depending on the broken flag.
+ */
 async function fetchIndicator(
   iso3: string,
   indicator: string
 ): Promise<{ value: number; year: number } | null> {
-  const url = `https://api.worldbank.org/v2/country/${iso3}/indicator/${indicator}?format=json&per_page=20&mrnev=1`;
+  const url = `https://api.worldbank.org/v2/country/${iso3}/indicator/${indicator}?format=json&date=${CURRENT_YEAR - 10}:${CURRENT_YEAR}&per_page=20`;
   const res = await fetchWithRetry(url, { headers: { Accept: "application/json" } });
   // World Bank prefixes responses with a UTF-8 BOM.
   const body = (await res.text()).replace(/^﻿/, "");

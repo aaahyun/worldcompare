@@ -1,0 +1,159 @@
+{
+  "slug": "argentina",
+  "iso2": "AR",
+  "iso3": "ARG",
+  "names": {
+    "en": "Argentina",
+    "ko": "아르헨티나"
+  },
+  "capital": {
+    "names": {
+      "en": "Buenos Aires",
+      "ko": "부에노스아이레스"
+    },
+    "lat": -34.599722222,
+    "lng": -58.381944444
+  },
+  "continent": "south_america",
+  "area_km2": 2780400,
+  "population": {
+    "value": 45851378,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 683097891619,
+    "year": 2025
+  },
+  "gdp_per_capita_usd": {
+    "value": 14898.1,
+    "year": 2025
+  },
+  "median_age": 33,
+  "life_expectancy": 77.5,
+  "urbanization_pct": 92.4,
+  "religions": [
+    {
+      "key": "christianity",
+      "pct": 78.2
+    },
+    {
+      "key": "none",
+      "pct": 18.9
+    },
+    {
+      "key": "other",
+      "pct": 2.9
+    }
+  ],
+  "languages": {
+    "official": [
+      "es"
+    ],
+    "english_proficiency": "high"
+  },
+  "industries": [
+    "agriculture",
+    "automotive",
+    "food_processing",
+    "mining"
+  ],
+  "currency": {
+    "code": "ARS",
+    "usd_rate_snapshot": 1490,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "America/Argentina/Buenos_Aires"
+  ],
+  "electricity": {
+    "voltage": 220,
+    "plugs": [
+      "C",
+      "I"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+54",
+  "emergency": "911",
+  "climate": {
+    "temp_high_c": [
+      29.5,
+      29.7,
+      26.1,
+      20.8,
+      19,
+      13.9,
+      14.4,
+      16.5,
+      19.2,
+      23.4,
+      24.8,
+      30.5
+    ],
+    "temp_low_c": [
+      21.8,
+      22.1,
+      19.3,
+      13.9,
+      13.1,
+      7,
+      8.3,
+      9.8,
+      11.6,
+      14.9,
+      16.3,
+      21
+    ],
+    "precip_mm": [
+      49,
+      108,
+      251,
+      110,
+      199,
+      31,
+      34,
+      124,
+      95,
+      95,
+      88,
+      49
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

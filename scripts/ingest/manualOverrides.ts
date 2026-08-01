@@ -1,6 +1,8 @@
 export interface ManualOverride {
   capitalNameKo: string;
   namesKoFallback: string;
+  /** Overrides world-countries' Korean translation outright (e.g. DPRK's "조선" isn't how the target audience refers to it). */
+  namesKoOverride?: string;
   religions: { key: string; pct: number }[] | null;
   languagesOfficial: string[];
   englishProficiency: "very_high" | "high" | "moderate" | "low" | "very_low";
@@ -11,6 +13,17 @@ export interface ManualOverride {
   drivingSide: "left" | "right";
   emergency: string;
   currencyUsdRateSnapshot: number | null;
+  /**
+   * For countries the World Bank has no data on at all (e.g. North Korea isn't a WB
+   * member and reports no official statistics) — supplies population/GDP from the
+   * next-best reputable estimate instead of letting the pipeline throw.
+   */
+  economicOverride?: {
+    population: { value: number; year: number };
+    gdpNominalUsd: { value: number; year: number };
+    gdpPerCapitaUsd: { value: number; year: number };
+    source: { name: string; url: string; retrieved: string };
+  };
 }
 
 /**
@@ -1053,5 +1066,554 @@ export const manualOverrides: Record<string, ManualOverride> = {
     drivingSide: "right",
     emergency: "113",
     currencyUsdRateSnapshot: 25400
+  },
+  albania: {
+    capitalNameKo: "티라나",
+    namesKoFallback: "알바니아",
+    religions: [
+      { key: "islam", pct: 58.8 },
+      { key: "christianity", pct: 16.8 },
+      { key: "none", pct: 2.5 },
+      { key: "other", pct: 21.9 }
+    ],
+    languagesOfficial: ["sq"],
+    englishProficiency: "moderate",
+    industries: ["tourism", "agriculture", "textiles", "mining"],
+    medianAge: 35.8,
+    timezone: ["Europe/Tirane"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 82.5
+  },
+  andorra: {
+    capitalNameKo: "안도라라베야",
+    namesKoFallback: "안도라",
+    religions: [
+      { key: "christianity", pct: 90.8 },
+      { key: "none", pct: 6.9 },
+      { key: "other", pct: 2.3 }
+    ],
+    languagesOfficial: ["ca"],
+    englishProficiency: "moderate",
+    industries: ["tourism", "banking", "retail", "agriculture"],
+    medianAge: 46.2,
+    timezone: ["Europe/Andorra"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 0.92
+  },
+  argentina: {
+    capitalNameKo: "부에노스아이레스",
+    namesKoFallback: "아르헨티나",
+    religions: [
+      { key: "christianity", pct: 78.2 },
+      { key: "none", pct: 18.9 },
+      { key: "other", pct: 2.9 }
+    ],
+    languagesOfficial: ["es"],
+    englishProficiency: "high",
+    industries: ["agriculture", "automotive", "food_processing", "mining"],
+    medianAge: 33,
+    timezone: ["America/Argentina/Buenos_Aires"],
+    electricity: { voltage: 220, plugs: ["C", "I"] },
+    drivingSide: "right",
+    emergency: "911",
+    currencyUsdRateSnapshot: 1490
+  },
+  austria: {
+    capitalNameKo: "빈",
+    namesKoFallback: "오스트리아",
+    religions: [
+      { key: "christianity", pct: 64 },
+      { key: "none", pct: 22 },
+      { key: "islam", pct: 8 },
+      { key: "other", pct: 6 }
+    ],
+    languagesOfficial: ["de"],
+    englishProficiency: "very_high",
+    industries: ["tourism", "manufacturing", "automotive", "finance"],
+    medianAge: 44.7,
+    timezone: ["Europe/Vienna"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 0.87
+  },
+  bahrain: {
+    capitalNameKo: "마나마",
+    namesKoFallback: "바레인",
+    religions: [
+      { key: "islam", pct: 73.7 },
+      { key: "christianity", pct: 9.3 },
+      { key: "hinduism", pct: 6 },
+      { key: "judaism", pct: 0.1 },
+      { key: "other", pct: 10.9 }
+    ],
+    languagesOfficial: ["ar"],
+    englishProficiency: "moderate",
+    industries: ["oil_gas", "aluminum", "finance", "tourism"],
+    medianAge: 33.3,
+    timezone: ["Asia/Bahrain"],
+    electricity: { voltage: 230, plugs: ["G"] },
+    drivingSide: "right",
+    emergency: "999",
+    currencyUsdRateSnapshot: 0.376
+  },
+  cambodia: {
+    capitalNameKo: "프놈펜",
+    namesKoFallback: "캄보디아",
+    religions: [
+      { key: "buddhism", pct: 97 },
+      { key: "islam", pct: 2 },
+      { key: "christianity", pct: 0.2 },
+      { key: "other", pct: 0.8 }
+    ],
+    languagesOfficial: ["km"],
+    englishProficiency: "very_low",
+    industries: ["tourism", "textiles", "agriculture", "fisheries"],
+    medianAge: 27.4,
+    timezone: ["Asia/Phnom_Penh"],
+    electricity: { voltage: 230, plugs: ["A", "C", "G"] },
+    drivingSide: "right",
+    emergency: "117",
+    currencyUsdRateSnapshot: 4000
+  },
+  chile: {
+    capitalNameKo: "산티아고",
+    namesKoFallback: "칠레",
+    religions: [
+      { key: "christianity", pct: 74.5 },
+      { key: "none", pct: 24.7 },
+      { key: "other", pct: 0.8 }
+    ],
+    languagesOfficial: ["es"],
+    englishProficiency: "moderate",
+    industries: ["mining", "agriculture", "fisheries", "wine", "forestry"],
+    medianAge: 36.4,
+    timezone: ["America/Santiago", "Pacific/Easter"],
+    electricity: { voltage: 220, plugs: ["C", "L"] },
+    drivingSide: "right",
+    emergency: "133",
+    currencyUsdRateSnapshot: 900
+  },
+  colombia: {
+    capitalNameKo: "보고타",
+    namesKoFallback: "콜롬비아",
+    religions: [
+      { key: "christianity", pct: 81.8 },
+      { key: "none", pct: 16.2 },
+      { key: "other", pct: 2 }
+    ],
+    languagesOfficial: ["es"],
+    englishProficiency: "low",
+    industries: ["oil_gas", "mining", "agriculture", "textiles"],
+    medianAge: 31.6,
+    timezone: ["America/Bogota"],
+    electricity: { voltage: 110, plugs: ["A", "B"] },
+    drivingSide: "right",
+    emergency: "123",
+    currencyUsdRateSnapshot: 3132
+  },
+  cyprus: {
+    capitalNameKo: "니코시아",
+    namesKoFallback: "키프로스",
+    religions: [
+      { key: "christianity", pct: 94 },
+      { key: "islam", pct: 1.8 },
+      { key: "buddhism", pct: 1 },
+      { key: "other", pct: 2.5 },
+      { key: "none", pct: 0.6 }
+    ],
+    languagesOfficial: ["el", "tr"],
+    englishProficiency: "moderate",
+    industries: ["tourism", "finance", "shipping", "food_processing"],
+    medianAge: 38.4,
+    timezone: ["Asia/Nicosia"],
+    electricity: { voltage: 230, plugs: ["G"] },
+    drivingSide: "left",
+    emergency: "112",
+    currencyUsdRateSnapshot: 0.92
+  },
+  "dominican-republic": {
+    capitalNameKo: "산토도밍고",
+    namesKoFallback: "도미니카 공화국",
+    religions: [
+      { key: "christianity", pct: 68.4 },
+      { key: "none", pct: 29.6 },
+      { key: "other", pct: 2 }
+    ],
+    languagesOfficial: ["es"],
+    englishProficiency: "moderate",
+    industries: ["tourism", "agriculture", "mining", "manufacturing"],
+    medianAge: 28.8,
+    timezone: ["America/Santo_Domingo"],
+    electricity: { voltage: 120, plugs: ["A", "B"] },
+    drivingSide: "right",
+    emergency: "911",
+    currencyUsdRateSnapshot: 59
+  },
+  georgia: {
+    capitalNameKo: "트빌리시",
+    namesKoFallback: "조지아",
+    religions: [
+      { key: "christianity", pct: 86.3 },
+      { key: "islam", pct: 10.7 },
+      { key: "none", pct: 0.5 },
+      { key: "other", pct: 2.5 }
+    ],
+    languagesOfficial: ["ka"],
+    englishProficiency: "moderate",
+    industries: ["agriculture", "mining", "tourism", "wine", "manufacturing"],
+    medianAge: 38,
+    timezone: ["Asia/Tbilisi"],
+    electricity: { voltage: 220, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 2.65
+  },
+  greece: {
+    capitalNameKo: "아테네",
+    namesKoFallback: "그리스",
+    religions: [
+      { key: "christianity", pct: 90 },
+      { key: "none", pct: 6 },
+      { key: "islam", pct: 2 },
+      { key: "other", pct: 2 }
+    ],
+    languagesOfficial: ["el"],
+    englishProficiency: "very_high",
+    industries: ["tourism", "shipping", "agriculture", "manufacturing"],
+    medianAge: 46.3,
+    timezone: ["Europe/Athens"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 0.87
+  },
+  hungary: {
+    capitalNameKo: "부다페스트",
+    namesKoFallback: "헝가리",
+    religions: [
+      { key: "christianity", pct: 43.3 },
+      { key: "none", pct: 16.1 },
+      { key: "other", pct: 40.6 }
+    ],
+    languagesOfficial: ["hu"],
+    englishProficiency: "high",
+    industries: ["automotive", "manufacturing", "electronics", "agriculture", "tourism"],
+    medianAge: 44.2,
+    timezone: ["Europe/Budapest"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 340
+  },
+  iran: {
+    capitalNameKo: "테헤란",
+    namesKoFallback: "이란",
+    religions: [
+      { key: "islam", pct: 99.4 },
+      { key: "other", pct: 0.6 }
+    ],
+    languagesOfficial: ["fa"],
+    englishProficiency: "low",
+    industries: ["oil_gas", "petrochemicals", "automotive", "textiles"],
+    medianAge: 32.5,
+    timezone: ["Asia/Tehran"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "110",
+    currencyUsdRateSnapshot: 1900000
+  },
+  ireland: {
+    capitalNameKo: "더블린",
+    namesKoFallback: "아일랜드",
+    religions: [
+      { key: "christianity", pct: 75 },
+      { key: "islam", pct: 1.4 },
+      { key: "none", pct: 15.4 },
+      { key: "other", pct: 8.2 }
+    ],
+    languagesOfficial: ["ga", "en"],
+    englishProficiency: "very_high",
+    industries: ["pharmaceuticals", "technology", "finance", "food_processing"],
+    medianAge: 38.8,
+    timezone: ["Europe/Dublin"],
+    electricity: { voltage: 230, plugs: ["G"] },
+    drivingSide: "left",
+    emergency: "112",
+    currencyUsdRateSnapshot: 0.92
+  },
+  jordan: {
+    capitalNameKo: "암만",
+    namesKoFallback: "요르단",
+    religions: [
+      { key: "islam", pct: 97.1 },
+      { key: "christianity", pct: 2.1 },
+      { key: "other", pct: 0.8 }
+    ],
+    languagesOfficial: ["ar"],
+    englishProficiency: "very_low",
+    industries: ["tourism", "mining", "textiles", "pharmaceuticals", "technology"],
+    medianAge: 24.5,
+    timezone: ["Asia/Amman"],
+    electricity: { voltage: 230, plugs: ["B", "C", "D", "F", "G"] },
+    drivingSide: "right",
+    emergency: "911",
+    currencyUsdRateSnapshot: 0.71
+  },
+  malaysia: {
+    capitalNameKo: "쿠알라룸푸르",
+    namesKoFallback: "말레이시아",
+    religions: [
+      { key: "islam", pct: 63.5 },
+      { key: "buddhism", pct: 18.7 },
+      { key: "christianity", pct: 9.1 },
+      { key: "hinduism", pct: 6.1 },
+      { key: "other", pct: 2.6 }
+    ],
+    languagesOfficial: ["ms"],
+    englishProficiency: "high",
+    industries: ["manufacturing", "electronics", "palm_oil", "tourism"],
+    medianAge: 31,
+    timezone: ["Asia/Kuala_Lumpur"],
+    electricity: { voltage: 230, plugs: ["G"] },
+    drivingSide: "left",
+    emergency: "999",
+    currencyUsdRateSnapshot: 4.09
+  },
+  morocco: {
+    capitalNameKo: "라바트",
+    namesKoFallback: "모로코",
+    religions: [
+      { key: "islam", pct: 99 },
+      { key: "other", pct: 1 }
+    ],
+    languagesOfficial: ["ar"],
+    englishProficiency: "low",
+    industries: ["tourism", "agriculture", "textiles", "automotive", "mining"],
+    medianAge: 29.7,
+    timezone: ["Africa/Casablanca"],
+    electricity: { voltage: 220, plugs: ["C", "E"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 9.4
+  },
+  "north-korea": {
+    capitalNameKo: "평양",
+    namesKoFallback: "북한",
+    namesKoOverride: "북한",
+    religions: [
+      { key: "none", pct: 64.3 },
+      { key: "folk", pct: 16 },
+      { key: "chondoism", pct: 13.5 },
+      { key: "buddhism", pct: 4.5 },
+      { key: "christianity", pct: 2 }
+    ],
+    languagesOfficial: ["ko"],
+    englishProficiency: "very_low",
+    industries: ["mining", "textiles", "chemicals", "metallurgy"],
+    medianAge: 36.2,
+    timezone: ["Asia/Pyongyang"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "110",
+    currencyUsdRateSnapshot: null,
+    economicOverride: {
+      population: { value: 26402841, year: 2025 },
+      gdpNominalUsd: { value: 35925925926, year: 2025 },
+      gdpPerCapitaUsd: { value: 1387.4, year: 2025 },
+      source: {
+        name: "Bank of Korea DPRK GDP/GNI estimate (2025년 북한 경제성장률 추정 결과), converted from KRW at ~1,350 KRW/USD; population from CIA World Factbook",
+        url: "https://www.bok.or.kr",
+        retrieved: "2026-07"
+      }
+    }
+  },
+  peru: {
+    capitalNameKo: "리마",
+    namesKoFallback: "페루",
+    religions: [
+      { key: "christianity", pct: 94.5 },
+      { key: "none", pct: 5.1 },
+      { key: "other", pct: 0.4 }
+    ],
+    languagesOfficial: ["es", "qu", "ay"],
+    englishProficiency: "moderate",
+    industries: ["mining", "agriculture", "fisheries", "tourism"],
+    medianAge: 30.7,
+    timezone: ["America/Lima"],
+    electricity: { voltage: 220, plugs: ["A", "C"] },
+    drivingSide: "right",
+    emergency: "105",
+    currencyUsdRateSnapshot: 3.4
+  },
+  poland: {
+    capitalNameKo: "바르샤바",
+    namesKoFallback: "폴란드",
+    religions: [
+      { key: "christianity", pct: 72 },
+      { key: "other", pct: 21 },
+      { key: "none", pct: 7 }
+    ],
+    languagesOfficial: ["pl"],
+    englishProficiency: "high",
+    industries: ["manufacturing", "agriculture", "mining", "automotive"],
+    medianAge: 42.5,
+    timezone: ["Europe/Warsaw"],
+    electricity: { voltage: 230, plugs: ["C", "E"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 3.73
+  },
+  portugal: {
+    capitalNameKo: "리스본",
+    namesKoFallback: "포르투갈",
+    religions: [
+      { key: "christianity", pct: 85 },
+      { key: "none", pct: 14 },
+      { key: "other", pct: 1 }
+    ],
+    languagesOfficial: ["pt"],
+    englishProficiency: "very_high",
+    industries: ["tourism", "textiles", "agriculture", "manufacturing"],
+    medianAge: 46.4,
+    timezone: ["Europe/Lisbon"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 0.87
+  },
+  qatar: {
+    capitalNameKo: "도하",
+    namesKoFallback: "카타르",
+    religions: [
+      { key: "islam", pct: 65.2 },
+      { key: "christianity", pct: 13.7 },
+      { key: "hinduism", pct: 15.9 },
+      { key: "buddhism", pct: 3.8 },
+      { key: "other", pct: 1.4 }
+    ],
+    languagesOfficial: ["ar"],
+    englishProficiency: "low",
+    industries: ["oil_gas", "petrochemicals", "construction", "finance", "steel"],
+    medianAge: 34.2,
+    timezone: ["Asia/Qatar"],
+    electricity: { voltage: 240, plugs: ["D", "G"] },
+    drivingSide: "right",
+    emergency: "999",
+    currencyUsdRateSnapshot: 3.64
+  },
+  "saudi-arabia": {
+    capitalNameKo: "리야드",
+    namesKoFallback: "사우디아라비아",
+    religions: [
+      { key: "islam", pct: 93 },
+      { key: "christianity", pct: 5 },
+      { key: "other", pct: 2 }
+    ],
+    languagesOfficial: ["ar"],
+    englishProficiency: "very_low",
+    industries: ["oil_gas", "petrochemicals", "construction", "finance"],
+    medianAge: 29.6,
+    timezone: ["Asia/Riyadh"],
+    electricity: { voltage: 230, plugs: ["G"] },
+    drivingSide: "right",
+    emergency: "999",
+    currencyUsdRateSnapshot: 3.75
+  },
+  sweden: {
+    capitalNameKo: "스톡홀름",
+    namesKoFallback: "스웨덴",
+    religions: [
+      { key: "christianity", pct: 53.9 },
+      { key: "none", pct: 37.2 },
+      { key: "other", pct: 8.9 }
+    ],
+    languagesOfficial: ["sv"],
+    englishProficiency: "very_high",
+    industries: ["technology", "automotive", "manufacturing", "forestry", "finance"],
+    medianAge: 41.2,
+    timezone: ["Europe/Stockholm"],
+    electricity: { voltage: 230, plugs: ["F"] },
+    drivingSide: "right",
+    emergency: "112",
+    currencyUsdRateSnapshot: 9.5
+  },
+  tunisia: {
+    capitalNameKo: "튀니스",
+    namesKoFallback: "튀니지",
+    religions: [
+      { key: "islam", pct: 99 },
+      { key: "other", pct: 1 }
+    ],
+    languagesOfficial: ["ar"],
+    englishProficiency: "low",
+    industries: ["tourism", "textiles", "agriculture", "mining", "oil_gas"],
+    medianAge: 33.4,
+    timezone: ["Africa/Tunis"],
+    electricity: { voltage: 230, plugs: ["C", "E"] },
+    drivingSide: "right",
+    emergency: "197",
+    currencyUsdRateSnapshot: 2.95
+  },
+  "united-arab-emirates": {
+    capitalNameKo: "아부다비",
+    namesKoFallback: "아랍에미리트",
+    religions: [
+      { key: "islam", pct: 74 },
+      { key: "christianity", pct: 13 },
+      { key: "hinduism", pct: 7 },
+      { key: "buddhism", pct: 3 },
+      { key: "other", pct: 3 }
+    ],
+    languagesOfficial: ["ar"],
+    englishProficiency: "low",
+    industries: ["oil_gas", "tourism", "finance", "construction"],
+    medianAge: 31.6,
+    timezone: ["Asia/Dubai"],
+    electricity: { voltage: 230, plugs: ["G"] },
+    drivingSide: "right",
+    emergency: "999",
+    currencyUsdRateSnapshot: 3.6725
+  },
+  uruguay: {
+    capitalNameKo: "몬테비데오",
+    namesKoFallback: "우루과이",
+    religions: [
+      { key: "christianity", pct: 42.3 },
+      { key: "folk", pct: 2.8 },
+      { key: "none", pct: 48.9 },
+      { key: "other", pct: 6 }
+    ],
+    languagesOfficial: ["es"],
+    englishProficiency: "moderate",
+    industries: ["agriculture", "meat_processing", "tourism", "textiles", "finance"],
+    medianAge: 35.8,
+    timezone: ["America/Montevideo"],
+    electricity: { voltage: 230, plugs: ["C", "F", "I", "L"] },
+    drivingSide: "right",
+    emergency: "911",
+    currencyUsdRateSnapshot: 40
+  },
+  uzbekistan: {
+    capitalNameKo: "타슈켄트",
+    namesKoFallback: "우즈베키스탄",
+    religions: [
+      { key: "islam", pct: 88 },
+      { key: "christianity", pct: 9 },
+      { key: "other", pct: 3 }
+    ],
+    languagesOfficial: ["uz"],
+    englishProficiency: "very_low",
+    industries: ["mining", "oil_gas", "textiles", "agriculture"],
+    medianAge: 28.7,
+    timezone: ["Asia/Tashkent"],
+    electricity: { voltage: 230, plugs: ["C", "F"] },
+    drivingSide: "right",
+    emergency: "102",
+    currencyUsdRateSnapshot: 12700
   }
 };

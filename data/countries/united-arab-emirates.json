@@ -1,0 +1,166 @@
+{
+  "slug": "united-arab-emirates",
+  "iso2": "AE",
+  "iso3": "ARE",
+  "names": {
+    "en": "United Arab Emirates",
+    "ko": "아랍에미리트"
+  },
+  "capital": {
+    "names": {
+      "en": "Abu Dhabi",
+      "ko": "아부다비"
+    },
+    "lat": 24.451111111,
+    "lng": 54.396944444
+  },
+  "continent": "asia",
+  "area_km2": 83600,
+  "population": {
+    "value": 11513149,
+    "year": 2025
+  },
+  "gdp_nominal_usd": {
+    "value": 552324919096,
+    "year": 2024
+  },
+  "gdp_per_capita_usd": {
+    "value": 50273.5,
+    "year": 2024
+  },
+  "median_age": 31.6,
+  "life_expectancy": 83.1,
+  "urbanization_pct": 86,
+  "religions": [
+    {
+      "key": "islam",
+      "pct": 74
+    },
+    {
+      "key": "christianity",
+      "pct": 13
+    },
+    {
+      "key": "hinduism",
+      "pct": 7
+    },
+    {
+      "key": "buddhism",
+      "pct": 3
+    },
+    {
+      "key": "other",
+      "pct": 3
+    }
+  ],
+  "languages": {
+    "official": [
+      "ar"
+    ],
+    "english_proficiency": "low"
+  },
+  "industries": [
+    "oil_gas",
+    "tourism",
+    "finance",
+    "construction"
+  ],
+  "currency": {
+    "code": "AED",
+    "usd_rate_snapshot": 3.6725,
+    "snapshot_date": "2026-08-01"
+  },
+  "timezone": [
+    "Asia/Dubai"
+  ],
+  "electricity": {
+    "voltage": 230,
+    "plugs": [
+      "G"
+    ]
+  },
+  "driving_side": "right",
+  "calling_code": "+971",
+  "emergency": "999",
+  "climate": {
+    "temp_high_c": [
+      23.2,
+      25.1,
+      29.2,
+      36.1,
+      38.3,
+      38,
+      40.6,
+      42.4,
+      39.2,
+      34.9,
+      30.5,
+      26.6
+    ],
+    "temp_low_c": [
+      17.2,
+      18.3,
+      20,
+      23.9,
+      27.5,
+      28.9,
+      30.7,
+      32.1,
+      30.5,
+      27.4,
+      23,
+      19.4
+    ],
+    "precip_mm": [
+      1,
+      4,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      16
+    ]
+  },
+  "sources": {
+    "population": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "area": {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-08"
+    },
+    "gdp_nominal_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "gdp_per_capita_usd": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    "religions": {
+      "name": "Manual curation (Pew Research)",
+      "url": "https://www.pewresearch.org",
+      "retrieved": "2026-08"
+    },
+    "industries": {
+      "name": "Manual curation (CIA World Factbook)",
+      "url": "https://www.cia.gov/the-world-factbook/",
+      "retrieved": "2026-08"
+    },
+    "climate": {
+      "name": "Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com",
+      "retrieved": "2026-08"
+    }
+  }
+}

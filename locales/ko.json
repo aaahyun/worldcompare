@@ -15,7 +15,8 @@
   "home": {
     "title": "어느 나라든 내 나라와 한눈에 비교하기",
     "subtitle": "인구, 면적, GDP, 기온까지 — 대한민국(또는 내 나라) 기준으로 바로 비교해 드립니다.",
-    "popularCountries": "인기 국가"
+    "popularReports": "인기 리포트",
+    "allReports": "전체 리포트 보기"
   },
   "countriesIndex": {
     "title": "전체 국가",
@@ -140,6 +141,7 @@
       "buddhism": "불교",
       "judaism": "유대교",
       "folk": "민간신앙",
+      "chondoism": "천도교",
       "none": "무교",
       "other": "기타"
     },
@@ -163,7 +165,18 @@
       "mining": "광업",
       "oil_gas": "석유·가스",
       "textiles": "섬유",
-      "pharmaceuticals": "제약"
+      "pharmaceuticals": "제약",
+      "banking": "은행업",
+      "retail": "소매업",
+      "food_processing": "식품가공업",
+      "wine": "와인",
+      "forestry": "임업",
+      "shipping": "해운업",
+      "petrochemicals": "석유화학",
+      "palm_oil": "팜유",
+      "metallurgy": "야금업",
+      "construction": "건설업",
+      "meat_processing": "육류가공업"
     },
     "englishProficiency": {
       "very_high": "매우 높음",
