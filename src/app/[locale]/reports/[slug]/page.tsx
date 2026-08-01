@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllReportSlugs, getReport, localized, localizedList } from "@/lib/reports";
 import { getCountry } from "@/lib/countries";
 import { buildAlternateLanguages, canonicalUrl } from "@/lib/seo";
+import { siteName, siteUrl } from "@/lib/site";
 import { ReportCoverArt } from "@/components/reports/ReportCoverArt";
 import { ReportScrollHeader } from "@/components/reports/ReportScrollHeader";
 import { ViewBeacon } from "@/components/ViewBeacon";
@@ -56,9 +57,45 @@ export default async function ReportPage({
   if (!report) notFound();
 
   const t = await getTranslations("reportDetail");
+  const tNav = await getTranslations("nav");
+
+  const title = localized(report.title, locale);
+  const path = `/reports/${slug}`;
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: title,
+      description: localized(report.excerpt, locale),
+      datePublished: report.publishedAt,
+      image: canonicalUrl(locale, `${path}/opengraph-image`),
+      author: { "@type": "Organization", name: siteName },
+      publisher: { "@type": "Organization", name: siteName },
+      mainEntityOfPage: canonicalUrl(locale, path),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: tNav("home"), item: `${siteUrl}/${locale}` },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: tNav("reports"),
+          item: canonicalUrl(locale, "/reports"),
+        },
+        { "@type": "ListItem", position: 3, name: title, item: canonicalUrl(locale, path) },
+      ],
+    },
+  ];
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ViewBeacon endpoint={`/api/reports/${report.slug}/view`} />
       <Link href="/reports" className="text-sm text-content-secondary hover:text-content-primary">
         ← {t("backToReports")}
@@ -76,7 +113,7 @@ export default async function ReportPage({
       </div>
 
       <ReportScrollHeader
-        title={localized(report.title, locale)}
+        title={title}
         backHref="/reports"
         backLabel={t("backToReports")}
       />

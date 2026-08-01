@@ -11,6 +11,7 @@ import {
   populationSentence,
 } from "@/lib/compare";
 import { buildAlternateLanguages, canonicalUrl } from "@/lib/seo";
+import { siteUrl } from "@/lib/site";
 import { flagEmoji } from "@/lib/homeCountry";
 
 const PAIR_DELIMITER = "-vs-";
@@ -102,8 +103,28 @@ export default async function ComparePage({
   const compA = toComparable(a, locale);
   const compB = toComparable(b, locale);
 
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: tNav("home"), item: `${siteUrl}/${locale}` },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: `${nameA} vs ${nameB}`,
+          item: canonicalUrl(locale, `/compare/${pair}`),
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <nav aria-label="Breadcrumb" className="mb-4 text-xs text-content-tertiary">
         <Link href="/">{tNav("home")}</Link> {" / "}
         <span>
