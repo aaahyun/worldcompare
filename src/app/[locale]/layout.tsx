@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing, localeHomeCountry, type Locale } from "@/i18n/routing";
 import { siteName, siteUrl } from "@/lib/site";
+import { emojiFaviconDataUrl } from "@/lib/homeCountry";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { HomeCountryProvider } from "@/components/HomeCountryProvider";
@@ -30,6 +31,7 @@ export async function generateMetadata({
         "msvalidate.01": "4466C36B23437E3DB9D7D495752F3637",
       },
     },
+    icons: { icon: emojiFaviconDataUrl("🌍") },
   };
 }
 
