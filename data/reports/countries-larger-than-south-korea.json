@@ -1,0 +1,176 @@
+{
+  "slug": "countries-larger-than-south-korea",
+  "publishedAt": "2026-08-01",
+  "readingMinutes": 5,
+  "coverArt": "area-comparison",
+  "tags": {
+    "ko": ["면적", "데이터 분석", "여행 준비"],
+    "en": ["Area", "Data Deep-Dive", "Travel Planning"]
+  },
+  "title": {
+    "ko": "한국보다 큰 나라 20곳, 작은 나라 단 2곳",
+    "en": "20 Countries Bigger Than South Korea — And Only 2 Smaller"
+  },
+  "excerpt": {
+    "ko": "WhatsThePop이 다루는 22개국 중 한국(약 10만㎢)보다 작은 나라는 네덜란드와 스위스, 단 둘뿐이다. 나머지 20개국을 배수 구간별로 나눠 비교했다.",
+    "en": "Of the 22 countries WhatsThePop tracks, only the Netherlands and Switzerland are smaller than South Korea (100,210 km²). Here's how the other 20 stack up, grouped by scale."
+  },
+  "stats": [
+    {
+      "label": { "ko": "한국 면적", "en": "South Korea's Area" },
+      "value": { "ko": "약 10만㎢", "en": "100,210 km²" }
+    },
+    {
+      "label": { "ko": "한국보다 큰 나라", "en": "Bigger Than South Korea" },
+      "value": { "ko": "20개국 (22개국 중)", "en": "20 of 22 tracked countries" }
+    },
+    {
+      "label": { "ko": "가장 큰 나라와의 배수", "en": "Largest vs. South Korea" },
+      "value": { "ko": "캐나다 — 약 99.6배", "en": "Canada — ~99.6×" }
+    },
+    {
+      "label": { "ko": "한국보다 작은 나라", "en": "Smaller Than South Korea" },
+      "value": { "ko": "네덜란드, 스위스뿐", "en": "Just the Netherlands & Switzerland" }
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ko": "단 두 나라만 빼면, 전부 한국보다 크다",
+        "en": "Take out two countries, and everything else is bigger"
+      },
+      "body": {
+        "ko": [
+          "WhatsThePop이 다루는 22개국 중 한국(약 10만㎢)보다 국토가 작은 나라는 단 두 곳뿐이다. 네덜란드(4만 1,850㎢)와 스위스(4만 1,284㎢), 그 차이가 566㎢로 사실상 같은 크기다. 나머지 20개국은 예외 없이 한국보다 넓고, 그중 다섯 나라는 70배를 넘는다.",
+          "다만 이 목록은 지구상 195개국 전체가 아니라 이 사이트가 다루는 22개국 안에서의 비교다. 관광객이 많이 찾거나 경제 규모가 큰 나라 위주로 골라둔 표본이라, 원래도 국토가 넓은 나라 쪽으로 쏠려 있다 — 이 편향을 감안하고 읽어야 한다.",
+          "아래는 배수를 그냥 나열하지 않는다. 100배를 넘어가는 구간에서는 배수 비교 자체가 감이 안 오고, 반대로 아이슬란드처럼 겨우 1.03배인 나라는 면적은 비슷해도 인구가 한국의 1%가 안 돼 실제 여행 경험은 완전히 다르다. 구간별로 나눠, 각 구간에서 실제로 의미 있는 지점만 짚는다."
+        ],
+        "en": [
+          "Of the 22 countries WhatsThePop tracks, exactly two are smaller than South Korea (100,210 km²): the Netherlands (41,850 km²) and Switzerland (41,284 km²) — a difference of just 566 km², practically a rounding error. The other 20 are all bigger, and five of them are more than 70 times the size.",
+          "That said, this isn't a ranking against all 195 countries on Earth — it's a comparison within the 22 the site actually covers, which skews toward large, well-known destinations. Read the list with that selection bias in mind.",
+          "The countries below aren't just listed by multiplier. Past 70×, the ratio itself stops meaning anything, and at the other end, a country like Iceland — barely 1.03× Korea's size — turns out to have a population under 1% of Korea's, so the on-the-ground experience has nothing to do with the area figure. Grouped by scale, with what actually matters in each range."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "70배가 넘어가면 숫자는 감을 잃는다",
+        "en": "Past 70×, the multiplier stops mattering"
+      },
+      "body": {
+        "ko": [
+          "캐나다부터 호주까지, 다섯 나라가 한국의 70배를 넘는다. 캐나다(998만㎢)는 99.6배, 중국(971만㎢)은 96.9배, 미국(937만㎢)은 93.5배, 브라질(852만㎢)은 85.0배, 호주(769만㎢)는 76.8배 — 여기서부터는 배수 차이 자체가 무의미해진다.",
+          "이 중 캐나다와 호주는 인구밀도가 극도로 낮아 넓은 국토 대부분이 비어 있다는 공통점이 있다. 국토 면적 순위와 실제 사람이 사는 면적 순위가 가장 크게 벌어지는 구간이기도 하다."
+        ],
+        "en": [
+          "Canada through Australia — five countries clear 70×. Canada (9.98M km²) is 99.6× Korea's size, China (9.71M km²) 96.9×, the United States (9.37M km²) 93.5×, Brazil (8.52M km²) 85.0×, Australia (7.69M km²) 76.8× — beyond this point the ratio itself becomes unreadable.",
+          "Canada and Australia share something else, too: population density so low that most of that land sits empty, which is where land area and livable area diverge the most."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "10~35배 — 이름은 익숙해도 크기는 짐작 밖",
+        "en": "10×–35× — familiar names, unexpected scale"
+      },
+      "body": {
+        "ko": [
+          "인도(329만㎢, 32.8배), 멕시코(196만㎢, 19.6배), 인도네시아(190만㎢, 19.0배), 이집트(100만㎢, 정확히 10.0배). 이름은 익숙해도 실제 크기를 짐작하긴 어려운 나라들이다.",
+          "인도네시아는 특히 지도로 옮기기 어렵다 — 1만 7천 개가 넘는 섬에 나뉘어 있어서, 같은 면적이라도 캐나다처럼 육로로 이어진 땅이 아니라 국내선이나 페리 없이는 절대 가로지를 수 없다."
+        ],
+        "en": [
+          "India (3.29M km², 32.8×), Mexico (1.96M km², 19.6×), Indonesia (1.90M km², 19.0×), Egypt (1.00M km², exactly 10.0×). These are countries most people could name without being able to guess their size.",
+          "Indonesia is the hardest to picture on a map — spread across more than 17,000 islands, it's not one connected landmass the way Canada is. No domestic flight or ferry, no crossing it."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "5~8배 — 국내선이 필요해지는 경계",
+        "en": "5×–8× — where you start needing a domestic flight"
+      },
+      "body": {
+        "ko": [
+          "여행지로 익숙한 나라일수록 이 구간에 몰려 있다. 터키(78만㎢)는 한국의 7.8배, 프랑스(55만㎢)는 5.5배, 태국(51만㎢)은 5.1배, 스페인(51만㎢)은 5.1배 — 국내에서 이동하려면 항공을 갈아타야 하는 경계선이기도 하다. 태국만 해도 북쪽 치앙마이에서 남쪽 푸켓까지 육로로는 하루가 꼬박 걸린다."
+        ],
+        "en": [
+          "Familiar travel destinations cluster in this range. Turkey (783,562 km²) is 7.8× Korea's size, France (551,695 km²) 5.5×, Thailand (513,120 km²) 5.1×, Spain (505,992 km²) 5.1× — all four are big enough that crossing the country usually means catching a domestic flight, not renting a car. Thailand alone takes a full day overland from Chiang Mai in the north to Phuket in the south."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "3배 안팎 — 체감과 실제의 격차",
+        "en": "Around 3× — where intuition breaks"
+      },
+      "body": {
+        "ko": [
+          "필리핀과 베트남은 '가까운 동남아'라 한국과 크기도 비슷하려니 짐작하기 쉽다. 틀렸다 — 일본(38만㎢, 3.8배), 독일(36만㎢, 3.6배), 필리핀(34만㎢, 3.4배), 베트남(33만㎢, 3.3배), 이탈리아(30만㎢, 3.0배) 모두 한국의 3배를 넘는다."
+        ],
+        "en": [
+          "The Philippines and Vietnam get filed under \"nearby Southeast Asia\" in most Korean travelers' heads, which makes it easy to assume they're roughly Korea-sized. They're not — Japan (377,930 km², 3.8×), Germany (357,114 km², 3.6×), the Philippines (342,353 km², 3.4×), Vietnam (331,212 km², 3.3×), and Italy (301,336 km², 3.0×) are all more than triple."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "한국과 가장 가까운 크기, 그리고 유일한 예외 둘",
+        "en": "The closest match, and the only two exceptions"
+      },
+      "body": {
+        "ko": [
+          "영국(24만㎢)은 한국의 2.4배, 아이슬란드(10만 3천㎢)는 겨우 1.03배로 22개국 중 한국과 가장 비슷한 크기다. 다만 면적이 비슷하다고 나라가 비슷한 건 아니다 — 아이슬란드 인구는 약 39만 명으로 한국의 1%가 안 된다. 국토는 거의 같은데 인구밀도는 100배 넘게 벌어진다는 뜻이다.",
+          "그리고 이 사이트가 다루는 나라 중 한국보다 실제로 작은 나라는 네덜란드(4만 1,850㎢)와 스위스(4만 1,284㎢) 딱 둘뿐이다. 두 나라의 크기가 566㎢ 차이로 거의 같다는 것도 우연치고는 눈에 띈다. 네덜란드는 이 숫자 자체가 고정값도 아니다 — 국토의 상당 부분이 수백 년에 걸친 간척 사업으로 바다를 메워 만든 땅이라, '원래 크기'라는 개념 자체가 다른 나라와는 다르게 적용된다.",
+          "각 나라의 상세 페이지에서는 내가 사는 나라를 기준으로 다시 비교해 볼 수 있다. 인구 격차가 궁금하다면 인도와 바티칸 시국을 다룬 인구 리포트도 함께 보면 좋다. 여기 실린 면적은 모두 2026년 7월 기준 데이터다."
+        ],
+        "en": [
+          "The United Kingdom (242,900 km²) is 2.4× Korea's size, and Iceland (103,000 km²) is just 1.03× — the closest area match among all 22 countries. But similar area doesn't mean similar country: Iceland's population is around 390,000, under 1% of Korea's. Nearly identical land, population density more than 100× apart.",
+          "And among the countries this site covers, the only two smaller than Korea are the Netherlands (41,850 km²) and Switzerland (41,284 km²) — a 566 km² gap that's suspiciously close for two unrelated countries. Worth noting about the Netherlands specifically: that number isn't fixed. A meaningful share of its land was reclaimed from the sea over centuries of dike and polder engineering, so \"original size\" means something different there than it does anywhere else on this list.",
+          "Each country's detail page lets you re-run this comparison against wherever you're actually from. If population gaps are more your thing, the report comparing India and Vatican City covers the same idea at the other extreme. All area figures here are current as of July 2026."
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "world-countries (Wikidata-derived)",
+      "url": "https://github.com/mledoze/countries",
+      "retrieved": "2026-07"
+    },
+    {
+      "name": "World Bank Open Data — Population, total",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+      "retrieved": "2026-07"
+    },
+    {
+      "name": "Britannica — Netherlands: Land",
+      "url": "https://www.britannica.com/place/Netherlands/Land",
+      "retrieved": "2026-07"
+    }
+  ],
+  "relatedCountrySlugs": [
+    "south-korea",
+    "canada",
+    "china",
+    "united-states",
+    "brazil",
+    "australia",
+    "india",
+    "mexico",
+    "indonesia",
+    "egypt",
+    "turkey",
+    "france",
+    "thailand",
+    "spain",
+    "japan",
+    "germany",
+    "philippines",
+    "vietnam",
+    "italy",
+    "united-kingdom",
+    "iceland",
+    "netherlands",
+    "switzerland"
+  ]
+}

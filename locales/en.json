@@ -30,7 +30,8 @@
     "backToReports": "Back to reports",
     "readingMinutes": "{n} min read",
     "sourcesTitle": "Sources",
-    "retrieved": "retrieved {date}"
+    "retrieved": "retrieved {date}",
+    "relatedCountriesTitle": "Countries in this report"
   },
   "country": {
     "hero": {

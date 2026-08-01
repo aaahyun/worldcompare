@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getAllReportSlugs, getReport, localized, localizedList } from "@/lib/reports";
+import { getCountry } from "@/lib/countries";
 import { buildAlternateLanguages, canonicalUrl } from "@/lib/seo";
 import { ReportCoverArt } from "@/components/reports/ReportCoverArt";
 import { ReportScrollHeader } from "@/components/reports/ReportScrollHeader";
@@ -113,6 +114,29 @@ export default async function ReportPage({
           </section>
         ))}
       </div>
+
+      {report.relatedCountrySlugs && report.relatedCountrySlugs.length > 0 && (
+        <section className="mt-12 border-t border-neutral-200 pt-6">
+          <h2 className="text-sm font-semibold text-content-secondary">
+            {t("relatedCountriesTitle")}
+          </h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {report.relatedCountrySlugs.map((slug) => {
+              const country = getCountry(slug);
+              if (!country) return null;
+              return (
+                <Link
+                  key={slug}
+                  href={`/country/${slug}`}
+                  className="rounded-full bg-surface-card px-3 py-1 text-xs text-content-secondary shadow-sm transition hover:text-content-primary"
+                >
+                  {localized(country.names, locale)}
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       <section className="mt-12 border-t border-neutral-200 pt-6">
         <h2 className="text-sm font-semibold text-content-secondary">{t("sourcesTitle")}</h2>

@@ -1,0 +1,79 @@
+{
+  "_comment": "Starting scaffold, not a mold. Copy to data/reports/{slug}.json and replace every value. Delete this _comment key before saving — it is not part of the schema. See src/lib/reportSchema.ts for the authoritative shape, and any file in data/reports/ for a real worked example.",
+  "slug": "REPLACE-ME-kebab-case",
+  "publishedAt": "2026-XX-XX",
+  "readingMinutes": 5,
+  "coverArt": "REPLACE-ME-must-exist-in-reportCoverArtSchema",
+  "tags": {
+    "ko": ["태그1", "태그2", "태그3"],
+    "en": ["Tag1", "Tag2", "Tag3"]
+  },
+  "title": {
+    "ko": "구체적인 숫자나 대조가 담긴 제목",
+    "en": "A title with a concrete number or contrast in it"
+  },
+  "excerpt": {
+    "ko": "메타 설명으로 그대로 노출된다. 숫자를 최소 하나 포함할 것.",
+    "en": "This becomes the meta description as-is. Include at least one number."
+  },
+  "stats": [
+    {
+      "label": { "ko": "라벨", "en": "Label" },
+      "value": { "ko": "값", "en": "Value" }
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ko": "도입부 — 놀라운 사실 하나로 시작",
+        "en": "Intro — lead with one surprising fact"
+      },
+      "body": {
+        "ko": [
+          "300~500자. 데이터에서 찾은 구체적 사실, 숫자가 못 보여주는 맥락, 이 목록을 읽는 기준과 제외 항목을 반드시 포함한다. body는 순수 텍스트 문단 배열이다 — 마크다운/HTML/인라인 링크는 렌더링되지 않는다."
+        ],
+        "en": [
+          "300-500 characters (Korean length; write to a natural English length, not a literal translation). Must include a concrete fact from the data, context the numbers alone don't show, and how to read the list. body is a plain-text paragraph array — no markdown, HTML, or inline links render."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "본문 구간 1 — 균일한 나열 대신 그룹+코멘터리",
+        "en": "Body group 1 — group and comment, don't enumerate uniformly"
+      },
+      "body": {
+        "ko": [
+          "국가를 개별 목록으로 한 줄씩 나열하지 말고, 구간으로 묶어 그 구간에서만 의미 있는 관찰을 붙인다."
+        ],
+        "en": [
+          "Group countries into ranges instead of a flat list, and attach an observation specific to that range."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "마무리 — 다음 행동으로 연결",
+        "en": "Outro — point to the next action"
+      },
+      "body": {
+        "ko": [
+          "관련 국가 상세 페이지 활용법, 관련 리포트 언급(링크는 걸리지 않으니 이름만), 데이터 기준 시점을 짧게 적는다. '이상으로 알아보았습니다' 금지."
+        ],
+        "en": [
+          "Briefly point to how to use the country detail pages, name a related report (no link possible in prose), and state the data's as-of date. No \"in this article we explored...\" closers."
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "Source name",
+      "url": "https://example.com",
+      "retrieved": "2026-XX"
+    }
+  ],
+  "relatedCountrySlugs": [
+    "REPLACE-ME-every-slug-mentioned-above"
+  ]
+}

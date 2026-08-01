@@ -26,7 +26,7 @@ const reportSourceSchema = z.object({
   retrieved: z.string(),
 });
 
-export const reportCoverArtSchema = z.enum(["population-extremes"]);
+export const reportCoverArtSchema = z.enum(["population-extremes", "area-comparison"]);
 export type ReportCoverArt = z.infer<typeof reportCoverArtSchema>;
 
 export const reportSchema = z.object({
@@ -40,6 +40,7 @@ export const reportSchema = z.object({
   stats: z.array(reportStatSchema).optional(),
   sections: z.array(reportSectionSchema).min(1),
   sources: z.array(reportSourceSchema).min(1),
+  relatedCountrySlugs: z.array(z.string()).optional(),
 });
 
 export type Report = z.infer<typeof reportSchema>;
