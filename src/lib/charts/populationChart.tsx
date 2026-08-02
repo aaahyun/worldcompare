@@ -1,28 +1,46 @@
-export interface PopulationBarDatum {
+export interface PopulationFigureDatum {
   label: string;
   value: number;
   colorVar: "--color-country-target" | "--color-country-home";
 }
 
+/** Simple bust/avatar silhouette, viewBox "0 0 100 100". Traced as a single
+ * continuous outline (not a circle + a separate body shape overlaid) so
+ * there's no internal seam where the two would otherwise meet. The head is
+ * deliberately oversized relative to the body — at the small end of the
+ * size range (population gaps span orders of magnitude) a subtler neck taper
+ * disappears entirely and the whole figure reads as a plain blob. */
+const PERSON_PATH =
+  "M8,100 C8,68 20,44 34,36 A24,24 0 1,1 66,36 C80,44 92,68 92,100 Z";
+
+/** The path's head rounds slightly above y=0 (true bbox is y:[-5.89, 100],
+ * not y:[0, 100]) — reserve headroom for that so the largest figure's head
+ * isn't clipped by the SVG viewport at scale = MAX_SCALE. */
+const TOP_OVERSHOOT_PADDING = 12;
+
+/** Bounds on the sqrt(value/max) size scale: never so small the figure reads
+ * as an unrecognizable speck, never larger than the reference "100%" size. */
+const MIN_SCALE = 0.22;
+const MAX_SCALE = 1;
+
 /**
- * Proportional bar chart, sqrt-scaled so a much smaller value still renders
- * as a visible sliver rather than disappearing (population gaps can span
- * 2-3 orders of magnitude between two countries).
+ * Two person figures scaled so AREA (not just height) is proportional to
+ * population — both width and height scale by sqrt(value/max), which keeps
+ * the visual size honestly tied to quantity instead of exaggerating ratios.
  */
-export function PopulationBarChart({
+export function PopulationFigureChart({
   data,
   width = 480,
-  barHeight = 28,
-  gap = 16,
+  iconMaxHeight = 150,
 }: {
-  data: [PopulationBarDatum, PopulationBarDatum];
+  data: [PopulationFigureDatum, PopulationFigureDatum];
   width?: number;
-  barHeight?: number;
-  gap?: number;
+  iconMaxHeight?: number;
 }) {
   const maxValue = Math.max(...data.map((d) => d.value));
-  const trackWidth = width - 120;
-  const height = data.length * barHeight + (data.length - 1) * gap;
+  const labelHeight = 44;
+  const height = TOP_OVERSHOOT_PADDING + iconMaxHeight + labelHeight;
+  const baselineY = TOP_OVERSHOOT_PADDING + iconMaxHeight;
 
   return (
     <svg
@@ -32,34 +50,32 @@ export function PopulationBarChart({
       aria-hidden="true"
       style={{ maxWidth: width }}
     >
+      <line
+        x1={0}
+        y1={baselineY}
+        x2={width}
+        y2={baselineY}
+        stroke="var(--color-neutral-200)"
+      />
       {data.map((d, i) => {
-        const scaled = Math.sqrt(d.value / maxValue);
-        const barWidth = Math.max(0.04, scaled) * trackWidth;
-        const y = i * (barHeight + gap);
+        const scale = Math.min(MAX_SCALE, Math.max(MIN_SCALE, Math.sqrt(d.value / maxValue)));
+        const iconSize = iconMaxHeight * scale;
+        const cx = (width / data.length) * (i + 0.5);
+
         return (
           <g key={d.label}>
-            <rect
-              x={0}
-              y={y}
-              width={trackWidth}
-              height={barHeight}
-              rx={barHeight / 2}
-              fill="var(--color-surface-100)"
-            />
-            <rect
-              x={0}
-              y={y}
-              width={barWidth}
-              height={barHeight}
-              rx={barHeight / 2}
-              fill={`var(${d.colorVar})`}
-            />
+            <g
+              transform={`translate(${cx - iconSize / 2}, ${baselineY - iconSize}) scale(${iconSize / 100})`}
+            >
+              <path d={PERSON_PATH} fill={`var(${d.colorVar})`} />
+            </g>
             <text
-              x={trackWidth + 12}
-              y={y + barHeight / 2}
-              dominantBaseline="middle"
-              fontSize={13}
-              fill="var(--color-content-secondary)"
+              x={cx}
+              y={baselineY + 22}
+              textAnchor="middle"
+              fontSize={15}
+              fontWeight={600}
+              fill={`var(${d.colorVar})`}
             >
               {d.label}
             </text>

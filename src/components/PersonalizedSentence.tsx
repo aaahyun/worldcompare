@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useCountryCompare } from "./CountryCompareProvider";
 import {
   areaSentence,
+  densitySentence,
   gdpPerCapitaSentence,
   populationSentence,
   temperatureSentence,
@@ -25,7 +26,7 @@ export function PersonalizedSentence({
   metric,
   monthIndex,
 }: {
-  metric: "population" | "area" | "gdpPerCapita" | "temperature";
+  metric: "population" | "area" | "density" | "gdpPerCapita" | "temperature";
   monthIndex?: number;
 }) {
   const t = useTranslations("compare");
@@ -43,11 +44,12 @@ export function PersonalizedSentence({
   let sentence: string | null = null;
   if (metric === "population") sentence = populationSentence(targetC, homeC, locale, t);
   if (metric === "area") sentence = areaSentence(targetC, homeC, locale, t);
+  if (metric === "density") sentence = densitySentence(targetC, homeC, locale, t);
   if (metric === "gdpPerCapita") sentence = gdpPerCapitaSentence(targetC, homeC, locale, t);
   if (metric === "temperature") {
     sentence = temperatureSentence(targetC, homeC, locale, t, monthIndex ?? new Date().getMonth());
   }
 
   if (!sentence) return null;
-  return <p className="text-sm text-content-secondary">{sentence}</p>;
+  return <p className="text-base text-content-secondary">{sentence}</p>;
 }

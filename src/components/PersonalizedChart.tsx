@@ -2,9 +2,9 @@
 
 import { useLocale } from "next-intl";
 import { useCountryCompare } from "./CountryCompareProvider";
-import { PopulationBarChart } from "@/lib/charts/populationChart";
+import { PopulationFigureChart } from "@/lib/charts/populationChart";
 import { AreaOverlayChart } from "@/lib/charts/areaChart";
-import { ClimateLineChart } from "@/lib/charts/climateChart";
+import { ClimateLineChart, type ClimateSeries } from "@/lib/charts/climateChart";
 import { formatCompact } from "@/lib/compare";
 
 function ChartSkeleton({ height }: { height: number }) {
@@ -24,11 +24,11 @@ export function PersonalizedPopulationChart() {
   const locale = useLocale();
   const { home, target, homeIso2, isSameCountry } = useCountryCompare();
 
-  if (homeIso2 === null) return <ChartSkeleton height={88} />;
+  if (homeIso2 === null) return <ChartSkeleton height={194} />;
   if (!home || isSameCountry) return null;
 
   return (
-    <PopulationBarChart
+    <PopulationFigureChart
       data={[
         {
           label: `${name(target, locale)} · ${formatCompact(target.population, locale)}`,
@@ -62,36 +62,58 @@ export function PersonalizedAreaChart() {
           label: areaLabel(target, target.areaKm2),
           areaKm2: target.areaKm2,
           colorVar: "--color-country-target",
+          geometryPath: target.geometryPath,
         },
         {
           label: areaLabel(home, home.areaKm2),
           areaKm2: home.areaKm2,
           colorVar: "--color-country-home",
+          geometryPath: home.geometryPath,
         },
       ]}
     />
   );
 }
 
-export function PersonalizedClimateChart({ monthLabels }: { monthLabels: string[] }) {
+/**
+ * Renders immediately with just the viewed country's line (no skeleton —
+ * that data is already known server-side), then layers the home country's
+ * line in once home-country detection resolves. Works for both temperature
+ * and precipitation via the `metric` prop.
+ */
+export function PersonalizedClimateChart({
+  metric,
+  title,
+  unit,
+  monthLabels,
+}: {
+  metric: "temp" | "precip";
+  title: string;
+  unit: string;
+  monthLabels: string[];
+}) {
   const locale = useLocale();
-  const { home, target, homeIso2, isSameCountry } = useCountryCompare();
+  const { home, target, isSameCountry } = useCountryCompare();
 
-  if (homeIso2 === null) return <ChartSkeleton height={180} />;
-  if (!home || isSameCountry || !home.tempHighC || !target.tempHighC) return null;
+  const valuesFor = (d: { tempHighC?: number[]; precipMm?: number[] }) =>
+    metric === "temp" ? d.tempHighC : d.precipMm;
 
-  return (
-    <ClimateLineChart
-      monthLabels={monthLabels}
-      series={[
-        { label: name(target, locale), tempHighC: target.tempHighC, colorVar: "--color-country-target" },
-        {
-          label: name(home, locale),
-          tempHighC: home.tempHighC,
-          colorVar: "--color-country-home",
-          dashed: true,
-        },
-      ]}
-    />
-  );
+  const targetValues = valuesFor(target);
+  if (!targetValues) return null;
+
+  const series: ClimateSeries[] = [
+    { label: name(target, locale), values: targetValues, colorVar: "--color-country-target" },
+  ];
+
+  const homeValues = home ? valuesFor(home) : undefined;
+  if (home && !isSameCountry && homeValues) {
+    series.push({
+      label: name(home, locale),
+      values: homeValues,
+      colorVar: "--color-country-home",
+      dashed: true,
+    });
+  }
+
+  return <ClimateLineChart title={title} unit={unit} monthLabels={monthLabels} series={series} />;
 }

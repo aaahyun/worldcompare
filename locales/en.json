@@ -53,7 +53,8 @@
     "continent": "Continent",
     "viewFullComparison": "See the full {target} vs {home} comparison",
     "sections": {
-      "populationArea": "Population & area",
+      "population": "Population",
+      "area": "Area",
       "economy": "Economy",
       "climate": "Monthly temperature & rainfall",
       "demographics": "Demographics",
@@ -76,6 +77,8 @@
       "topIndustries": "Top industries"
     },
     "climate": {
+      "temperatureTitle": "Monthly average high temperature",
+      "precipitationTitle": "Monthly precipitation",
       "bestTimeToVisit": "Best time to visit {target} tends to be around {months}, when average highs sit near {temp}°C."
     },
     "demographics": {
@@ -116,6 +119,7 @@
       "areaSimilar": "{target}'s land area is similar to {home}'s.",
       "areaMultiple": "{target} is about {x}x the size of {home}.",
       "areaFraction": "{target} is about {x}x smaller than {home}.",
+      "density": "{target}'s population density is about {value} people/km², {ratio} of {home}'s ({homeValue} people/km²).",
       "gdpPerCapita": "{target}'s GDP per capita is {value}, {ratio} of {home}'s ({homeValue}).",
       "temperature": "In {month}, {target}'s capital averages {t}°C — {diff}°C {direction} than {home} at the same time of year."
     },

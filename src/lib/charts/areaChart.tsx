@@ -2,20 +2,19 @@ export interface AreaDatum {
   label: string;
   areaKm2: number;
   colorVar: "--color-country-target" | "--color-country-home";
+  /** Simplified real border outline, normalized to viewBox "0 0 100 100". */
+  geometryPath?: string;
 }
 
 /**
- * Same-scale overlay of the two countries' footprints, sized by sqrt(area)
- * (linear side length) so the ratio of rendered areas matches the ratio of
- * real areas. Uses plain squares, not real borders — see figcaption.
- *
- * When the two areas are close, the squares nearly coincide and blend into
- * what looks like one shape — the legend below is what actually tells them
- * apart, not just the outline colors.
+ * Overlays the two countries' real border outlines at the same scale — both
+ * sized by sqrt(area) (linear side length) so the ratio of rendered areas
+ * matches the ratio of real areas, "true size" comparison style. Falls back
+ * to a plain rounded square if a shape is missing so the chart still renders.
  */
 export function AreaOverlayChart({
   data,
-  size = 240,
+  size = 260,
 }: {
   data: [AreaDatum, AreaDatum];
   size?: number;
@@ -27,9 +26,21 @@ export function AreaOverlayChart({
     <div style={{ maxWidth: size }}>
       <svg viewBox={`0 0 ${size} ${size}`} width="100%" role="img" aria-hidden="true">
         {sorted.map((d) => {
-          const side = Math.max(0.06, Math.sqrt(d.areaKm2) / maxSide) * (size - 8);
+          const side = Math.max(0.1, Math.sqrt(d.areaKm2) / maxSide) * (size - 8);
           const offset = (size - side) / 2;
-          return (
+          return d.geometryPath ? (
+            <g key={d.label} transform={`translate(${offset}, ${offset}) scale(${side / 100})`}>
+              <path
+                d={d.geometryPath}
+                fill={`var(${d.colorVar})`}
+                fillOpacity={0.4}
+                stroke={`var(${d.colorVar})`}
+                strokeWidth={0.75}
+                strokeLinejoin="round"
+                vectorEffect="non-scaling-stroke"
+              />
+            </g>
+          ) : (
             <rect
               key={d.label}
               x={offset}
@@ -45,7 +56,7 @@ export function AreaOverlayChart({
           );
         })}
       </svg>
-      <ul className="mt-2 space-y-1 text-xs text-content-secondary">
+      <ul className="mt-2 space-y-1 text-sm text-content-secondary">
         {data.map((d) => (
           <li key={d.label} className="flex items-center gap-1.5">
             <span

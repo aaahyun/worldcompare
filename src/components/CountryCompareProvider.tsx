@@ -1,8 +1,9 @@
 "use client";
 
-import { createContext, useContext, useMemo, type ReactNode } from "react";
+import { createContext, useContext, useMemo, type CSSProperties, type ReactNode } from "react";
 import { useHomeCountry } from "./HomeCountryProvider";
 import type { CompareDatum } from "@/lib/compareDataset";
+import { getCountryAccentColor, HOME_COUNTRY_COLOR, HOME_COUNTRY_COLOR_SOFT } from "@/lib/countryColors";
 
 interface CountryCompareContextValue {
   homeIso2: string | null;
@@ -40,7 +41,22 @@ export function CountryCompareProvider({
     };
   }, [dataset, targetSlug, homeIso2, setHomeIso2]);
 
-  return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
+  // Scoped override: the viewed country gets its own accent color instead of
+  // a fixed blue, while the home/reference country stays a neutral gray —
+  // it's the constant baseline every comparison is measured against.
+  const colorVars = {
+    "--color-country-target": getCountryAccentColor(value.target.iso2),
+    "--color-country-home": HOME_COUNTRY_COLOR,
+    "--color-country-home-soft": HOME_COUNTRY_COLOR_SOFT,
+  } as CSSProperties;
+
+  return (
+    <Ctx.Provider value={value}>
+      <div className="contents" style={colorVars}>
+        {children}
+      </div>
+    </Ctx.Provider>
+  );
 }
 
 export function useCountryCompare() {

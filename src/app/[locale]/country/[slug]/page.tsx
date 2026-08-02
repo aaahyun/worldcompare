@@ -20,7 +20,7 @@ import {
   PersonalizedClimateChart,
   PersonalizedPopulationChart,
 } from "@/components/PersonalizedChart";
-import { ClimateLineChart } from "@/lib/charts/climateChart";
+import { DemographicsCompareTable } from "@/components/DemographicsCompareTable";
 import { ReligionStackedBar } from "@/lib/charts/religionChart";
 import { ViewBeacon } from "@/components/ViewBeacon";
 
@@ -159,7 +159,7 @@ export default async function CountryPage({
 
         <PopulationHero />
 
-        <p className="mb-8 mt-2 text-sm text-content-secondary">
+        <p className="mb-8 mt-2 text-base text-content-secondary">
           {t("capital")}: {capitalName} · {t("continent")}: {continentName}
         </p>
 
@@ -167,14 +167,14 @@ export default async function CountryPage({
 
         <section aria-label="Hero stats" className="mb-10 grid grid-cols-3 gap-3">
           <div className="rounded-xl bg-surface-card p-4 shadow-sm">
-            <p className="text-xs text-content-tertiary">{t("stats.population")}</p>
+            <p className="text-sm text-content-tertiary">{t("stats.population")}</p>
             <p className="text-lg font-semibold">{formatCompact(country.population.value, locale)}</p>
             <div className="mt-1">
               <HeroCompareBadge metric="population" />
             </div>
           </div>
           <div className="rounded-xl bg-surface-card p-4 shadow-sm">
-            <p className="text-xs text-content-tertiary">{t("stats.area")}</p>
+            <p className="text-sm text-content-tertiary">{t("stats.area")}</p>
             <p className="text-lg font-semibold">
               {new Intl.NumberFormat(locale).format(country.area_km2)} km²
             </p>
@@ -183,7 +183,7 @@ export default async function CountryPage({
             </div>
           </div>
           <div className="rounded-xl bg-surface-card p-4 shadow-sm">
-            <p className="text-xs text-content-tertiary">{t("stats.gdpPerCapita")}</p>
+            <p className="text-sm text-content-tertiary">{t("stats.gdpPerCapita")}</p>
             <p className="text-lg font-semibold">
               {formatUSD(country.gdp_per_capita_usd.value, locale)}
             </p>
@@ -193,36 +193,46 @@ export default async function CountryPage({
           </div>
         </section>
 
-        <section id="population-area" className="mb-10">
-          <h2 className="mb-3 text-xl font-semibold">{t("sections.populationArea")}</h2>
+        <section id="population" className="mb-10">
+          <h2 className="mb-3 text-xl font-semibold">{t("sections.population")}</h2>
           <PersonalizedPopulationChart />
-          <div className="mt-4">
-            <PersonalizedAreaChart />
-          </div>
-          <div className="mt-3 space-y-1">
+          <div className="mt-3">
             <PersonalizedSentence metric="population" />
-            <PersonalizedSentence metric="area" />
           </div>
+        </section>
+
+        <section id="area" className="mb-10">
+          <h2 className="mb-3 text-xl font-semibold">{t("sections.area")}</h2>
+          <PersonalizedAreaChart />
+          <div className="mt-3 space-y-1">
+            <PersonalizedSentence metric="area" />
+            <PersonalizedSentence metric="density" />
+          </div>
+        </section>
+
+        <section id="demographics" className="mb-10">
+          <h2 className="mb-3 text-xl font-semibold">{t("sections.demographics")}</h2>
+          <DemographicsCompareTable />
         </section>
 
         <section id="economy" className="mb-10">
           <h2 className="mb-3 text-xl font-semibold">{t("sections.economy")}</h2>
-          <dl className="grid grid-cols-2 gap-3 text-sm">
+          <dl className="grid grid-cols-2 gap-3 text-base">
             <div>
-              <dt className="text-content-tertiary">{t("economy.gdpNominal")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("economy.gdpNominal")}</dt>
               <dd className="font-medium">{formatUSD(country.gdp_nominal_usd.value, locale)}</dd>
             </div>
             <div>
-              <dt className="text-content-tertiary">{t("economy.currency")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("economy.currency")}</dt>
               <dd className="font-medium">{country.currency.code}</dd>
             </div>
           </dl>
           {country.industries && (
             <div className="mt-3">
-              <p className="text-content-tertiary text-sm">{t("economy.topIndustries")}</p>
+              <p className="text-sm text-content-tertiary">{t("economy.topIndustries")}</p>
               <ul className="mt-1 flex flex-wrap gap-2">
                 {country.industries.map((i) => (
-                  <li key={i} className="rounded-full bg-surface-100 px-3 py-1 text-xs">
+                  <li key={i} className="rounded-full bg-surface-100 px-3 py-1 text-sm">
                     {tEnums(`industries.${i}`)}
                   </li>
                 ))}
@@ -237,96 +247,49 @@ export default async function CountryPage({
         {country.climate && (
           <section id="climate" className="mb-10">
             <h2 className="mb-3 text-xl font-semibold">{t("sections.climate")}</h2>
-            <figure className="mb-3">
-              <ClimateLineChart
+            <div className="space-y-6">
+              <PersonalizedClimateChart
+                metric="temp"
+                title={t("climate.temperatureTitle")}
+                unit="°C"
                 monthLabels={monthLabels}
-                series={[
-                  { label: name, tempHighC: country.climate.temp_high_c, colorVar: "--color-country-target" },
-                ]}
               />
-              <figcaption className="sr-only">{`${name} monthly average high temperature`}</figcaption>
-              <details className="mt-2 text-xs">
-                <summary className="cursor-pointer text-content-tertiary">Data table</summary>
-                <table className="mt-2 w-full border-collapse text-left">
-                  <thead>
-                    <tr>
-                      <th className="pr-2">Month</th>
-                      <th className="pr-2">High °C</th>
-                      <th className="pr-2">Low °C</th>
-                      <th>Precip mm</th>
+              <PersonalizedClimateChart
+                metric="precip"
+                title={t("climate.precipitationTitle")}
+                unit="mm"
+                monthLabels={monthLabels}
+              />
+            </div>
+            <details className="mt-3 text-sm">
+              <summary className="cursor-pointer text-content-tertiary">Data table</summary>
+              <table className="mt-2 w-full border-collapse text-left">
+                <thead>
+                  <tr>
+                    <th className="pr-2">Month</th>
+                    <th className="pr-2">High °C</th>
+                    <th className="pr-2">Low °C</th>
+                    <th>Precip mm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {monthLabels.map((m, i) => (
+                    <tr key={m}>
+                      <td className="pr-2">{m}</td>
+                      <td className="pr-2">{country.climate!.temp_high_c[i]}</td>
+                      <td className="pr-2">{country.climate!.temp_low_c[i]}</td>
+                      <td>{country.climate!.precip_mm[i]}</td>
                     </tr>
-                  </thead>
-                  <tbody>
-                    {monthLabels.map((m, i) => (
-                      <tr key={m}>
-                        <td className="pr-2">{m}</td>
-                        <td className="pr-2">{country.climate!.temp_high_c[i]}</td>
-                        <td className="pr-2">{country.climate!.temp_low_c[i]}</td>
-                        <td>{country.climate!.precip_mm[i]}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </details>
-            </figure>
-            <PersonalizedClimateChart monthLabels={monthLabels} />
-            {bestTime && <p className="mt-2 text-sm text-content-secondary">{bestTime}</p>}
+                  ))}
+                </tbody>
+              </table>
+            </details>
+            {bestTime && <p className="mt-3 text-base text-content-secondary">{bestTime}</p>}
             <div className="mt-2">
               <PersonalizedSentence metric="temperature" />
             </div>
           </section>
         )}
-
-        <section id="demographics" className="mb-10">
-          <h2 className="mb-3 text-xl font-semibold">{t("sections.demographics")}</h2>
-          <dl className="grid grid-cols-3 gap-3 text-sm">
-            {country.median_age !== undefined && (
-              <div>
-                <dt className="text-content-tertiary">{t("demographics.medianAge")}</dt>
-                <dd className="font-medium">{country.median_age}</dd>
-              </div>
-            )}
-            {country.life_expectancy !== undefined && (
-              <div>
-                <dt className="text-content-tertiary">{t("demographics.lifeExpectancy")}</dt>
-                <dd className="font-medium">{country.life_expectancy}</dd>
-              </div>
-            )}
-            {country.urbanization_pct !== undefined && (
-              <div>
-                <dt className="text-content-tertiary">{t("demographics.urbanization")}</dt>
-                <dd className="font-medium">{country.urbanization_pct}%</dd>
-              </div>
-            )}
-            {country.happiness_index && (
-              <div>
-                <dt className="text-content-tertiary">{t("demographics.happinessIndex")}</dt>
-                <dd className="font-medium">
-                  {country.happiness_index.score.toFixed(2)}
-                  <span className="ml-1 text-xs font-normal text-content-tertiary">
-                    (
-                    {t("demographics.happinessIndexOutOf", {
-                      rank: country.happiness_index.rank,
-                      outOf: country.happiness_index.out_of,
-                    })}
-                    )
-                  </span>
-                </dd>
-              </div>
-            )}
-            {country.livability_rank && (
-              <div>
-                <dt className="text-content-tertiary">{t("demographics.livabilityRank")}</dt>
-                <dd className="font-medium">
-                  {t("demographics.livabilityRankOutOf", {
-                    rank: country.livability_rank.rank,
-                    outOf: country.livability_rank.out_of,
-                  })}
-                </dd>
-              </div>
-            )}
-          </dl>
-        </section>
 
         {country.religions && (
           <section id="religion" className="mb-10">
@@ -340,7 +303,7 @@ export default async function CountryPage({
               />
               <figcaption className="sr-only">{`${name} religious composition`}</figcaption>
             </figure>
-            <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-content-secondary">
+            <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-content-secondary">
               {country.religions.map((r) => (
                 <li key={r.key}>
                   {tEnums(`religions.${r.key}`)} {r.pct}%
@@ -352,13 +315,13 @@ export default async function CountryPage({
 
         <section id="language" className="mb-10">
           <h2 className="mb-3 text-xl font-semibold">{t("sections.language")}</h2>
-          <dl className="grid grid-cols-2 gap-3 text-sm">
+          <dl className="grid grid-cols-2 gap-3 text-base">
             <div>
-              <dt className="text-content-tertiary">{t("language.official")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("language.official")}</dt>
               <dd className="font-medium">{country.languages.official.join(", ")}</dd>
             </div>
             <div>
-              <dt className="text-content-tertiary">{t("language.englishProficiency")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("language.englishProficiency")}</dt>
               <dd className="font-medium">
                 {tEnums(`englishProficiency.${country.languages.english_proficiency}`)}
               </dd>
@@ -368,13 +331,13 @@ export default async function CountryPage({
 
         <section id="travel-info" className="mb-10">
           <h2 className="mb-3 text-xl font-semibold">{t("sections.travelInfo")}</h2>
-          <dl className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-3">
+          <dl className="grid grid-cols-2 gap-3 text-base sm:grid-cols-3">
             <div>
-              <dt className="text-content-tertiary">{t("travel.timezone")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("travel.timezone")}</dt>
               <dd className="font-medium">{country.timezone.join(", ")}</dd>
             </div>
             <div>
-              <dt className="text-content-tertiary">{t("travel.electricity")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("travel.electricity")}</dt>
               <dd className="font-medium">
                 <div>
                   {country.electricity.voltage}V · {country.electricity.plugs.join("/")}
@@ -387,17 +350,17 @@ export default async function CountryPage({
               </dd>
             </div>
             <div>
-              <dt className="text-content-tertiary">{t("travel.drivingSide")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("travel.drivingSide")}</dt>
               <dd className="font-medium">
                 {country.driving_side === "left" ? t("travel.drivingSideLeft") : t("travel.drivingSideRight")}
               </dd>
             </div>
             <div>
-              <dt className="text-content-tertiary">{t("travel.callingCode")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("travel.callingCode")}</dt>
               <dd className="font-medium">{country.calling_code}</dd>
             </div>
             <div>
-              <dt className="text-content-tertiary">{t("travel.emergency")}</dt>
+              <dt className="text-sm text-content-tertiary">{t("travel.emergency")}</dt>
               <dd className="font-medium">{country.emergency}</dd>
             </div>
           </dl>
@@ -447,7 +410,7 @@ export default async function CountryPage({
             {faqEntries.map((f) => (
               <div key={f.q}>
                 <dt className="font-medium">{f.q}</dt>
-                <dd className="text-sm text-content-secondary">{f.a}</dd>
+                <dd className="text-base text-content-secondary">{f.a}</dd>
               </div>
             ))}
           </dl>

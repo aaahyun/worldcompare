@@ -35,6 +35,14 @@ export function formatUSD(value: number, locale: string): string {
   }).format(value);
 }
 
+export function populationDensity(country: ComparableCountry): number {
+  return country.population / country.areaKm2;
+}
+
+export function formatDensity(value: number, locale: string): string {
+  return new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(value);
+}
+
 /**
  * Ratio (target/home) → translated qualitative description, per PRD §4.1:
  * 0.5x–2x reads as "similar", otherwise as an explicit multiple or percentage.
@@ -99,6 +107,24 @@ export function areaSentence(
     return t("templates.areaMultiple", { ...values, x: roundTo(ratio, 1) });
   }
   return t("templates.areaFraction", { ...values, x: roundTo(1 / ratio, 1) });
+}
+
+export function densitySentence(
+  target: ComparableCountry,
+  home: ComparableCountry,
+  locale: string,
+  t: Translator
+): string {
+  const targetDensity = populationDensity(target);
+  const homeDensity = populationDensity(home);
+  const ratio = targetDensity / homeDensity;
+  return t("templates.density", {
+    target: target.name,
+    home: home.name,
+    value: formatDensity(targetDensity, locale),
+    homeValue: formatDensity(homeDensity, locale),
+    ratio: ratioDescriptor(ratio, t),
+  });
 }
 
 function formatMonth(monthIndex: number, locale: string): string {

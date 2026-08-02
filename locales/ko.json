@@ -53,7 +53,8 @@
     "continent": "대륙",
     "viewFullComparison": "{target} vs {home} 자세히 비교하기",
     "sections": {
-      "populationArea": "인구 & 면적",
+      "population": "인구",
+      "area": "면적",
       "economy": "경제",
       "climate": "월별 기온 & 강수",
       "demographics": "인구 통계",
@@ -76,6 +77,8 @@
       "topIndustries": "주요 산업"
     },
     "climate": {
+      "temperatureTitle": "월별 평균 최고기온",
+      "precipitationTitle": "월별 강수량",
       "bestTimeToVisit": "{target} 여행에는 평균 최고기온이 {temp}°C 안팎인 {months} 무렵이 좋습니다."
     },
     "demographics": {
@@ -116,6 +119,7 @@
       "areaSimilar": "{target}의 면적은 {homeGwaWa} 비슷합니다.",
       "areaMultiple": "{targetTopic} {home}보다 약 {x}배 넓습니다.",
       "areaFraction": "{targetTopic} {home}보다 약 {x}배 좁습니다.",
+      "density": "{target}의 인구밀도는 약 {value}명/km²로, {home}({homeValue}명/km²)의 {ratio} 수준입니다.",
       "gdpPerCapita": "{target}의 1인당 GDP는 {value}, {home}({homeValue})의 {ratio} 수준입니다.",
       "temperature": "{month}월 {target} 수도의 평균 기온은 {t}°C로, 같은 시기 {home}보다 {diff}°C {direction}."
     },

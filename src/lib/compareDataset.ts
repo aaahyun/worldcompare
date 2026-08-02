@@ -10,6 +10,14 @@ export interface CompareDatum {
   areaKm2: number;
   gdpPerCapitaUsd: number;
   tempHighC?: number[];
+  precipMm?: number[];
+  /** Simplified real border outline, normalized to viewBox "0 0 100 100". */
+  geometryPath?: string;
+  medianAge?: number;
+  lifeExpectancy?: number;
+  urbanizationPct?: number;
+  happinessIndex?: { score: number; rank: number; outOf: number };
+  livabilityRank?: { rank: number; outOf: number };
 }
 
 /**
@@ -26,5 +34,16 @@ export function getCompareDataset(): CompareDatum[] {
     areaKm2: c.area_km2,
     gdpPerCapitaUsd: c.gdp_per_capita_usd.value,
     tempHighC: c.climate?.temp_high_c,
+    precipMm: c.climate?.precip_mm,
+    geometryPath: c.geometry_svg,
+    medianAge: c.median_age,
+    lifeExpectancy: c.life_expectancy,
+    urbanizationPct: c.urbanization_pct,
+    happinessIndex: c.happiness_index
+      ? { score: c.happiness_index.score, rank: c.happiness_index.rank, outOf: c.happiness_index.out_of }
+      : undefined,
+    livabilityRank: c.livability_rank
+      ? { rank: c.livability_rank.rank, outOf: c.livability_rank.out_of }
+      : undefined,
   }));
 }
