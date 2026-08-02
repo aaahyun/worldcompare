@@ -23,6 +23,7 @@ const COUNTRY_ACCENT_BY_ISO2: Record<string, string> = {
   FR: "#0055A4",
   GE: "#E4032E",
   DE: "#1A1A1A",
+  GY: "#009E49",
   GR: "#0D5EAF",
   HU: "#CE2939",
   IS: "#003897",
