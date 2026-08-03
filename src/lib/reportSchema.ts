@@ -26,7 +26,11 @@ const reportSourceSchema = z.object({
   retrieved: z.string(),
 });
 
-export const reportCoverArtSchema = z.enum(["population-extremes", "area-comparison"]);
+export const reportCoverArtSchema = z.enum([
+  "population-extremes",
+  "area-comparison",
+  "gdp-per-capita-gap",
+]);
 export type ReportCoverArt = z.infer<typeof reportCoverArtSchema>;
 
 export const reportSchema = z.object({
