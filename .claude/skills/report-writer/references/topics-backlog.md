@@ -1,6 +1,6 @@
 # 가이드 주제 백로그
 
-**규칙:** 주 1편. 발행 후 `status`, `published`, `slug`, `intro_shape`를 반드시 기록한다.
+**규칙:** 3일에 1편. 발행 후 `status`, `published`, `slug`, `intro_shape`를 반드시 기록한다.
 `intro_shape`는 다음 편에서 같은 형태를 피하기 위한 기록이다 (형태 정의는 `voice-and-style.md` 참조).
 
 ---
@@ -26,10 +26,11 @@
 
 ### 3. 1인당 GDP와 여행 물가: 예산 짜는 법
 - slug: `gdp-and-travel-budget`
-- status: todo
+- status: published (2026-08-03)
 - 데이터: `gdp_per_capita_usd` + `currency`
 - 형태: 설명 중심 + 소규모 표
 - 각도 힌트: **명목 GDP가 여행 물가를 오해하게 만드는 사례**를 주제로. 단순 순위 나열이 아니라 반박형 글
+- 실제 발행 노트: 명목 GDP·1인당 GDP 순위가 나라별로 크게 갈리는 지점(중국 명목 2위→1인당 33위, 안도라 명목 꼴찌→1인당 13위)을 축으로 씀. 아일랜드 1인당 1위는 다국적기업 회계 왜곡(GNI* 지표) 캐비엇을 덧붙였고, 가이아나는 최근 해상 유전 개발로 1인당 소득이 급등한 사례로 다룸 — 둘 다 데이터만으로는 안 나오는 문장.
 
 ### 4. 영어가 통하는 나라 순위
 - slug: `english-speaking-countries`
@@ -123,6 +124,7 @@
 |---|---|---|---|---|
 | 2026-07-30 | `population-extremes` | ko/en | D. 대조 병치형 | 이 스킬 워크플로 밖에서 수동 작성됨 (백로그 미기재 상태로 발견, 소급 기록) |
 | 2026-08-01 | `countries-larger-than-south-korea` | ko/en | A. 이상치 제시형 | "한국보다 큰 나라 30개국"에서 데이터 실측(22개국 중 20개)에 맞춰 "작은 나라는 단 2곳" 앵글로 전환 |
+| 2026-08-03 | `gdp-and-travel-budget` | ko/en | B. 오해 교정형 | 카탈로그가 53개국으로 늘어난 뒤 첫 발행. "경제 대국 = 비싼 나라"라는 통념을 명목/1인당 GDP 순위 격차로 반박. 새 커버아트 variant `gdp-per-capita-gap` 추가 |
 
 ---
 

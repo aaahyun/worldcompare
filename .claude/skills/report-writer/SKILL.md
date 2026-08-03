@@ -1,11 +1,11 @@
 ---
 name: country-guide-writer
-description: Produce one weekly data-driven guide article for the whatsthepop.world country-comparison site. Use this skill whenever the user mentions writing a guide, a curation post, a listicle, weekly content, the content routine, "이번 주 가이드", "가이드 하나 써줘", or asks what to publish next — and also whenever they ask for site content, blog posts, or SEO articles for this project, even if they don't say the word "guide". This skill handles topic selection from the backlog, querying the country dataset, writing the human intro, generating the Next.js page, wiring internal links, and updating the backlog. Do not hand-write guide content without consulting this skill first.
+description: Produce one data-driven guide article every 3 days for the whatsthepop.world country-comparison site. Use this skill whenever the user mentions writing a guide, a curation post, a listicle, the content routine, "이번 가이드", "가이드 하나 써줘", or asks what to publish next — and also whenever they ask for site content, blog posts, or SEO articles for this project, even if they don't say the word "guide". This skill handles topic selection from the backlog, querying the country dataset, writing the human intro, generating the Next.js page, wiring internal links, and updating the backlog. Do not hand-write guide content without consulting this skill first.
 ---
 
 # Country Guide Writer
 
-Produces the weekly `/reports/*` article for whatsthepop.world.
+Produces the `/reports/*` article for whatsthepop.world, on a 3-day cadence.
 
 These guides carry three jobs at once. Understanding all three prevents optimizing for one and breaking the others:
 
@@ -19,7 +19,7 @@ Job #2 is the one most easily broken by automation. A guide generated entirely f
 
 ## Before doing anything: the cadence rule
 
-**One guide per week. Never batch-publish.**
+**One guide every 3 days. Never batch-publish.**
 
 A new domain that ships 15 near-identical list pages in one day is the exact pattern Google's scaled-content-abuse policy targets. The cadence isn't a productivity preference — it's the protection.
 
@@ -31,7 +31,7 @@ Check the backlog before starting:
 grep -n "status:" references/topics-backlog.md | head -20
 ```
 
-If a guide was published within the last 5 days, say so and confirm before proceeding.
+If a guide was published within the last 2 days, say so and confirm before proceeding.
 
 ---
 
