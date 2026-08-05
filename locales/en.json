@@ -114,6 +114,29 @@
   },
   "compare": {
     "title": "{a} vs {b}",
+    "metadata": {
+      "title": "{a} vs {b}: GDP, Population, Area & Climate Compared",
+      "titleShort": "{a} vs {b}: GDP, Population & Area Compared",
+      "description": "{a}'s GDP is {gdpA}, {ratio} of {b}'s {gdpB}. Compare population, area, and monthly climate side by side."
+    },
+    "sections": {
+      "gdp": "{a} vs {b} GDP",
+      "population": "{a} vs {b} Population",
+      "area": "{a} vs {b} Area",
+      "climate": "{a} vs {b} Climate",
+      "religion": "{a} vs {b} Religion",
+      "languages": "{a} vs {b} Languages",
+      "travelInfo": "{a} vs {b} Travel Info"
+    },
+    "toc": {
+      "gdp": "GDP",
+      "population": "Population",
+      "area": "Area",
+      "climate": "Climate",
+      "religion": "Religion",
+      "languages": "Languages",
+      "travelInfo": "Travel"
+    },
     "templates": {
       "population": "{target}'s population is about {value}, {ratio} of {home}'s ({homeValue}).",
       "areaSimilar": "{target}'s land area is similar to {home}'s.",
@@ -121,7 +144,13 @@
       "areaFraction": "{target} is about {x}x smaller than {home}.",
       "density": "{target}'s population density is about {value} people/km², {ratio} of {home}'s ({homeValue} people/km²).",
       "gdpPerCapita": "{target}'s GDP per capita is {value}, {ratio} of {home}'s ({homeValue}).",
-      "temperature": "In {month}, {target}'s capital averages {t}°C — {diff}°C {direction} than {home} at the same time of year."
+      "gdpNominal": "{target}'s nominal GDP is {value}, {ratio} of {home}'s ({homeValue}).",
+      "temperature": "In {month}, {target}'s capital averages {t}°C — {diff}°C {direction} than {home} at the same time of year.",
+      "climateAnnual": "{target}'s capital averages {t}°C year-round, {diff}°C {direction} than {home}'s {homeT}°C.",
+      "religion": "{target}'s largest religious group is {targetReligion} ({targetPct}%), compared to {home}'s {homeReligion} ({homePct}%).",
+      "language": "{target}'s official language is {targetLang}, compared to {home}'s {homeLang}.",
+      "drivingSideSame": "Both {target} and {home} drive on the {targetSide} side.",
+      "drivingSideDiff": "{target} drives on the {targetSide} side, while {home} drives on the {homeSide} side."
     },
     "ratioSimilar": "about the same level",
     "ratioPercent": "about {n}%",

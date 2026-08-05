@@ -114,6 +114,29 @@
   },
   "compare": {
     "title": "{a} vs {b}",
+    "metadata": {
+      "title": "{a} vs {b} — GDP·인구·면적·기온 비교",
+      "titleShort": "{a} vs {b} — GDP·인구·면적 비교",
+      "description": "{a} GDP는 {gdpA}로 {b}({gdpB})의 {ratio}. 인구·면적·월별 기온까지 도표로 한눈에 비교하세요."
+    },
+    "sections": {
+      "gdp": "{a} vs {b} GDP 비교",
+      "population": "{a} vs {b} 인구 비교",
+      "area": "{a} vs {b} 면적 비교",
+      "climate": "{a} vs {b} 기온 비교",
+      "religion": "{a} vs {b} 종교 비교",
+      "languages": "{a} vs {b} 언어 비교",
+      "travelInfo": "{a} vs {b} 여행 정보 비교"
+    },
+    "toc": {
+      "gdp": "GDP",
+      "population": "인구",
+      "area": "면적",
+      "climate": "기온",
+      "religion": "종교",
+      "languages": "언어",
+      "travelInfo": "여행"
+    },
     "templates": {
       "population": "{target}의 인구는 약 {value}명으로, {home}({homeValue}명)의 {ratio} 수준입니다.",
       "areaSimilar": "{target}의 면적은 {homeGwaWa} 비슷합니다.",
@@ -121,7 +144,13 @@
       "areaFraction": "{targetTopic} {home}보다 약 {x}배 좁습니다.",
       "density": "{target}의 인구밀도는 약 {value}명/km²로, {home}({homeValue}명/km²)의 {ratio} 수준입니다.",
       "gdpPerCapita": "{target}의 1인당 GDP는 {value}, {home}({homeValue})의 {ratio} 수준입니다.",
-      "temperature": "{month}월 {target} 수도의 평균 기온은 {t}°C로, 같은 시기 {home}보다 {diff}°C {direction}."
+      "gdpNominal": "{target}의 명목 GDP는 {value}로, {home}({homeValue})의 {ratio} 수준입니다.",
+      "temperature": "{month}월 {target} 수도의 평균 기온은 {t}°C로, 같은 시기 {home}보다 {diff}°C {direction}.",
+      "climateAnnual": "{target} 수도의 연평균 최고기온은 {t}°C로, {home}의 {homeT}°C보다 {diff}°C {direction}.",
+      "religion": "{target}의 최대 종교는 {targetReligion}({targetPct}%)이며, {home}의 최대 종교는 {homeReligion}({homePct}%)입니다.",
+      "language": "{target}의 공용어는 {targetLang}이며, {home}의 공용어는 {homeLang}입니다.",
+      "drivingSideSame": "{target} {home} 모두 {targetSide}입니다.",
+      "drivingSideDiff": "{target} {targetSide}, {home} {homeSide}입니다."
     },
     "ratioSimilar": "비슷한",
     "ratioPercent": "약 {n}%",
