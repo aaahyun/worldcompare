@@ -30,6 +30,7 @@ export const reportCoverArtSchema = z.enum([
   "population-extremes",
   "area-comparison",
   "gdp-per-capita-gap",
+  "gdp-nominal-vs-ppp",
 ]);
 export type ReportCoverArt = z.infer<typeof reportCoverArtSchema>;
 

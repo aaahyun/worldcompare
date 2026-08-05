@@ -300,10 +300,99 @@ function GdpPerCapitaGapArt({ className }: { className?: string }) {
   );
 }
 
+function GdpNominalVsPppArt({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 480 320"
+      preserveAspectRatio="xMidYMid meet"
+      className={className}
+      role="img"
+      aria-labelledby="report-cover-title-ppp"
+    >
+      <title id="report-cover-title-ppp">
+        Bar illustration comparing South Korea&apos;s nominal GDP per capita of $36,227 to its
+        purchasing-power-adjusted GDP per capita of $68,624
+      </title>
+      <rect width={480} height={320} className="fill-country-target-soft" />
+
+      <line
+        x1={40}
+        y1={270}
+        x2={440}
+        y2={270}
+        className="stroke-content-tertiary"
+        strokeOpacity={0.4}
+        strokeWidth={1.5}
+      />
+
+      <rect x={64} y={54} width={132} height={216} rx={14} className="fill-country-target" />
+
+      <rect x={252} y={155} width={40} height={115} rx={8} className="fill-country-home" />
+
+      <line
+        x1={200}
+        y1={84}
+        x2={330}
+        y2={84}
+        className="stroke-content-secondary"
+        strokeOpacity={0.55}
+        strokeWidth={1.5}
+        strokeDasharray="3 5"
+      />
+      <line
+        x1={330}
+        y1={84}
+        x2={330}
+        y2={240}
+        className="stroke-content-secondary"
+        strokeOpacity={0.55}
+        strokeWidth={1.5}
+        strokeDasharray="3 5"
+      />
+
+      <text x={130} y={40} textAnchor="middle" fontSize={22}>
+        🇰🇷
+      </text>
+      <text
+        x={130}
+        y={296}
+        textAnchor="middle"
+        fontSize={17}
+        fontWeight={700}
+        className="fill-content-primary"
+      >
+        $68.6K
+      </text>
+
+      <text
+        x={272}
+        y={296}
+        textAnchor="middle"
+        fontSize={13}
+        fontWeight={700}
+        className="fill-content-primary"
+      >
+        $36.2K
+      </text>
+
+      <text
+        x={335}
+        y={168}
+        fontSize={13}
+        fontWeight={700}
+        className="fill-content-secondary"
+      >
+        ×1.9
+      </text>
+    </svg>
+  );
+}
+
 const artByVariant: Record<ReportCoverArtVariant, (props: { className?: string }) => ReactNode> = {
   "population-extremes": PopulationExtremesArt,
   "area-comparison": AreaComparisonArt,
   "gdp-per-capita-gap": GdpPerCapitaGapArt,
+  "gdp-nominal-vs-ppp": GdpNominalVsPppArt,
 };
 
 export function ReportCoverArt({

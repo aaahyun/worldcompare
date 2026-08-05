@@ -7,6 +7,16 @@
 
 ## P1 — 검색 수요 높음, 먼저 처리
 
+### 16. 명목 GDP vs 1인당 GDP vs PPP
+- slug: `nominal-vs-ppp-gdp`
+- status: published (2026-08-06)
+- 데이터: `gdp_nominal_usd` + `gdp_per_capita_usd` (사이트 데이터셋) + PPP는 IMF 세계경제전망 추정치(위키백과 정리본 경유, 사이트 데이터셋 밖 — 아래 "데이터 주의" 참고)
+- 형태: D. 대조 병치형 (아이슬란드 −16% vs 이집트 7.6배로 시작)
+- 각도: 명목/1인당 GDP 비교(지난 `gdp-and-travel-budget`)에 PPP라는 세 번째 질문을 더함. 물가가 싼 나라(이집트 7.6배, 이란 5.2배, 인도 4.7배)일수록 PPP가 명목을 크게 앞서고, 물가가 비싼 나라(스위스 −8%, 아이슬란드 −16%)는 드물게 PPP가 명목보다 낮아짐. 아일랜드는 다국적기업 회계 왜곡(GNI* 캐비엇, 지난 리포트에서 이미 다룸)으로 PPP로도 여전히 최상위
+- 데이터 주의: **PPP는 `data/countries/*.json`에 없는 필드.** 사용자 승인 하에 이 리포트에 한해 예외적으로 외부 자료를 씀 — 본문·소스에 출처를 명시. PPP 리포트를 더 쓸 계획이면 `gdp_ppp_usd` 필드를 정식 추가하는 걸 고려할 것
+- 커버아트: 신규 variant `gdp-nominal-vs-ppp` 추가 (한국 명목 vs PPP, ×1.9 — 두 나라 비교가 아니라 국가 하나의 명목/PPP 격차를 보여주는 첫 variant)
+- 카덴스 노트: 지난 리포트(8/3) 발행 3일 후 발행. 사용자가 8/5에 카덴스 경고를 확인하고 "오늘은 초안만, 발행은 8/6 이후"로 결정 → 8/6에 발행
+
 ### 1. 한국보다 큰 나라 30개국
 - slug: `countries-larger-than-south-korea`
 - status: published (2026-08-01)
@@ -125,6 +135,7 @@
 | 2026-07-30 | `population-extremes` | ko/en | D. 대조 병치형 | 이 스킬 워크플로 밖에서 수동 작성됨 (백로그 미기재 상태로 발견, 소급 기록) |
 | 2026-08-01 | `countries-larger-than-south-korea` | ko/en | A. 이상치 제시형 | "한국보다 큰 나라 30개국"에서 데이터 실측(22개국 중 20개)에 맞춰 "작은 나라는 단 2곳" 앵글로 전환 |
 | 2026-08-03 | `gdp-and-travel-budget` | ko/en | B. 오해 교정형 | 카탈로그가 53개국으로 늘어난 뒤 첫 발행. "경제 대국 = 비싼 나라"라는 통념을 명목/1인당 GDP 순위 격차로 반박. 새 커버아트 variant `gdp-per-capita-gap` 추가 |
+| 2026-08-06 | `nominal-vs-ppp-gdp` | ko/en | D. 대조 병치형 | 명목/1인당 GDP에 PPP를 더한 3부작 성격. PPP는 사이트 데이터셋에 없어 IMF 추정치(위키백과 경유)를 예외적으로 사용, 본문에 명시. 새 커버아트 variant `gdp-nominal-vs-ppp` 추가 |
 
 ---
 

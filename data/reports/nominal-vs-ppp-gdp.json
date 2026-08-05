@@ -1,0 +1,138 @@
+{
+  "slug": "nominal-vs-ppp-gdp",
+  "publishedAt": "2026-08-06",
+  "readingMinutes": 6,
+  "coverArt": "gdp-nominal-vs-ppp",
+  "tags": {
+    "ko": ["경제", "PPP", "데이터 분석"],
+    "en": ["Economy", "Purchasing Power Parity", "Data Deep-Dive"]
+  },
+  "title": {
+    "ko": "PPP로 다시 보면: 아이슬란드는 16% 낮아지고 이집트는 7.6배 뛴다",
+    "en": "Adjusted for PPP: Iceland Drops 16%, Egypt Jumps 7.6×"
+  },
+  "excerpt": {
+    "ko": "1인당 GDP를 구매력평가(PPP)로 다시 계산하면 순위가 또 한 번 바뀐다. 아이슬란드는 오히려 16% 낮아지고, 이집트는 7.6배로 뛴다 — 같은 '1인당 소득'이 나라마다 다른 걸 재고 있다는 뜻이다.",
+    "en": "Recalculating GDP per capita in purchasing-power-parity (PPP) terms reshuffles the rankings once more. Iceland's figure drops 16%; Egypt's jumps 7.6×. The same phrase, 'income per person,' measures something different in each country."
+  },
+  "stats": [
+    {
+      "label": { "ko": "PPP가 명목보다 가장 크게 뛰는 나라", "en": "Biggest PPP Jump vs. Nominal" },
+      "value": { "ko": "이집트 — 7.6배", "en": "Egypt — 7.6×" }
+    },
+    {
+      "label": { "ko": "PPP가 명목보다 낮아지는 나라", "en": "PPP Below Nominal" },
+      "value": { "ko": "아이슬란드 · 스위스뿐", "en": "Only Iceland & Switzerland" }
+    },
+    {
+      "label": { "ko": "한국 1인당 GDP (PPP)", "en": "South Korea's GDP Per Capita (PPP)" },
+      "value": { "ko": "6만 8,624달러 (명목의 1.9배)", "en": "$68,624 (1.9× nominal)" }
+    },
+    {
+      "label": { "ko": "PPP로도 여전히 최상위", "en": "Still Tops Even in PPP" },
+      "value": { "ko": "아일랜드 — 15만 9,129달러", "en": "Ireland — $159,129" }
+    }
+  ],
+  "sections": [
+    {
+      "heading": {
+        "ko": "아이슬란드는 16% 낮아지고, 이집트는 7.6배 뛴다",
+        "en": "Iceland drops 16%; Egypt jumps 7.6×"
+      },
+      "body": {
+        "ko": [
+          "아이슬란드의 1인당 GDP는 명목 기준 9만 8,324달러다. 그런데 이 소득으로 아이슬란드 안에서 실제로 살 수 있는 양, 즉 구매력평가(PPP) 기준으로 다시 계산하면 8만 2,730달러로 오히려 16% 낮아진다. 반대로 이집트는 명목 1인당 GDP가 3,086달러에 불과하지만, PPP로는 2만 3,321달러로 7.6배 뛴다.",
+          "명목 GDP는 그 나라 화폐를 시장 환율로 달러 환산한 값이고, PPP는 같은 물건 한 바구니를 각 나라에서 사는 데 드는 돈을 기준으로 환산한 값이다. 물가가 비싼 나라는 명목보다 PPP가 낮아진다 — 환율로 환산한 소득이 정작 자국 안에서는 그만큼 안 나간다는 뜻이다. 물가가 싼 나라는 반대로 PPP가 명목을 훨씬 앞선다 — 같은 액수라도 자국 안에서는 훨씬 많이 살 수 있다는 뜻이다.",
+          "지난 리포트에서는 명목 GDP와 1인당 GDP를 비교해 '경제 규모'와 '개인 소득'이 다른 질문이라는 걸 봤다. PPP는 여기에 세 번째 질문을 더한다 — 그 소득으로 그 나라 안에서 얼마나 살 수 있는가다. 다만 PPP는 이 사이트의 국가별 데이터셋에 아직 없는 값이라, 이번 리포트에서만 국제통화기금(IMF) 추정치를 별도로 가져와 썼다는 점을 밝혀둔다."
+        ],
+        "en": [
+          "Iceland's nominal GDP per capita is $98,324. Recalculate it in purchasing-power-parity (PPP) terms — how far that income actually stretches inside Iceland — and it drops to $82,730, about 16% lower. Egypt runs the opposite direction: a nominal GDP per capita of just $3,086 becomes $23,321 in PPP terms, a 7.6× jump.",
+          "Nominal GDP per capita converts a country's income at the market exchange rate. PPP converts it based on what the same basket of goods costs to buy locally. Where prices run high, PPP comes in below nominal — a dollar converted at the market rate doesn't stretch as far locally as the exchange rate implies. Where prices run low, PPP comes in well above nominal — the same dollar buys far more once it's spent at home.",
+          "The earlier report on this site compared nominal GDP and GDP per capita and showed that a country's total economic size and an individual's income answer different questions. PPP adds a third question: how far that income actually goes inside the country. One disclosure: PPP isn't part of this site's own country dataset yet, so the figures here were pulled separately from IMF estimates."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "물가가 싼 나라일수록 PPP가 명목을 크게 앞선다",
+        "en": "The cheaper the country, the further PPP pulls ahead of nominal"
+      },
+      "body": {
+        "ko": [
+          "이집트(7.6배), 이란(5.2배), 인도(4.7배)는 이번에 확인한 나라 중 명목 대비 PPP 배수가 가장 큰 세 곳이다. 세 나라 모두 지난 리포트에서 명목 1인당 GDP가 한국의 7~11% 수준으로 낮았는데, PPP로 다시 보면 격차가 크게 줄어든다 — 이집트는 한국의 34%, 이란은 30%, 인도는 19% 수준까지 올라온다.",
+          "베트남(3.9배), 인도네시아(3.8배), 태국(3.4배), 필리핀(3.3배)도 같은 패턴이다. 동남아 여행 물가가 유독 저렴하게 느껴지는 이유 중 하나이기도 하다 — 명목 소득은 낮아도 그 소득으로 자국 안에서 살 수 있는 양은 훨씬 많고, 이는 곧 현지 서비스의 절대 가격이 낮게 형성돼 있다는 뜻이다.",
+          "가이아나(2.9배), 중국(2.3배), 브라질(2.3배)은 배수는 상대적으로 작지만 방향은 같다. 가이아나는 지난 리포트에서 다룬 해상 유전발 소득 급증이 명목 수치에 이미 크게 반영돼 있어, PPP가 벌려놓는 격차가 다른 나라보다 좁은 편이다.",
+          "이 나라들의 공통점은 소득 수준 자체가 낮다는 것이다. 소득이 낮은 나라일수록 이발, 대중교통, 외식처럼 국경을 넘지 않는 서비스 가격이 국제 기준보다 싸게 형성되는 경향이 있고, 이게 PPP를 명목보다 크게 밀어올린다. 소득이 높은 나라는 같은 서비스도 비싸게 매겨지는 쪽으로 움직여, PPP가 명목을 따라잡지 못하거나 오히려 밀어내리는 경우가 생긴다."
+        ],
+        "en": [
+          "Egypt (7.6×), Iran (5.2×), and India (4.7×) show the largest PPP-to-nominal multiples among the countries checked here. All three had nominal GDP per capita in the 7%–11% range of South Korea's in the earlier report; recalculated in PPP terms, the gap narrows sharply — Egypt reaches 34% of Korea's PPP figure, Iran 30%, India 19%.",
+          "Vietnam (3.9×), Indonesia (3.8×), Thailand (3.4×), and the Philippines (3.3×) follow the same pattern. It's part of why travel in Southeast Asia feels especially cheap on the ground — nominal income is low, but what that income buys locally is far higher, tracking with low absolute prices for everyday local services.",
+          "Guyana (2.9×), China (2.3×), and Brazil (2.3×) show smaller multiples but the same direction. Guyana's case is muted partly because its offshore-oil income boom, covered in the earlier report, is already baked into the nominal figure — narrowing the gap PPP would otherwise close.",
+          "What these countries share is a lower income level to begin with. In lower-income countries, prices for services that never cross a border — a haircut, local transit, a meal out — tend to run cheap relative to international levels, which is exactly what pushes PPP well above nominal. In higher-income countries those same services get priced high, which is what pulls PPP back toward, or even below, nominal."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "물가가 비싼 나라는 PPP가 명목보다 낮아진다",
+        "en": "Where prices run high, PPP falls below nominal"
+      },
+      "body": {
+        "ko": [
+          "반대 방향은 오히려 드물다. 이번에 확인한 나라들 중 PPP가 명목보다 낮아지는 곳은 스위스(−8%)와 아이슬란드(−16%) 둘뿐이다. 지난 리포트에서 1인당 GDP 최상위권(2위, 3위)에 올랐던 바로 그 나라들이다.",
+          "이 두 나라는 소득이 아니라 물가가 이례적으로 높다. 취리히나 레이캬비크에서는 식비·인건비·임대료 같은, 국경을 넘지 않는 서비스 가격이 국제적으로도 최상위권이라 달러로 환산한 명목 소득이 그 나라 안에서는 오히려 '덜' 나간다. 여행자에게 이 두 나라가 유독 비싸게 느껴지는 이유이기도 하다.",
+          "아일랜드는 이 그룹에 속할 것 같지만 다르다. 명목 1인당 GDP가 이미 세계 최상위권(13만 1,593달러)인데, PPP로도 오히려 21% 더 높아진다(15만 9,129달러). 지난 리포트에서 짚었듯 이 수치 자체가 다국적기업의 회계상 매출이 크게 반영된 값이라, PPP로 다시 계산해도 그 왜곡은 그대로 남는다."
+        ],
+        "en": [
+          "The reverse is rare. Among the countries checked here, only two show PPP below nominal: Switzerland (−8%) and Iceland (−16%) — the same two countries that ranked 2nd and 3rd for nominal GDP per capita in the earlier report.",
+          "In both cases it's not income that's unusual, it's prices. In Zurich or Reykjavík, non-tradable costs — food, labor, rent — sit near the top of the world's price tables, so a nominal dollar income converts to less purchasing power inside the country than the exchange rate suggests. It's also part of why both countries feel especially expensive to visit.",
+          "Ireland looks like it should belong in this group but doesn't. Its nominal GDP per capita is already near the top of the world ($131,593), and in PPP terms it goes higher still — $159,129, up 21%. As the earlier report noted, that headline figure is heavily inflated by multinational corporations booking revenue through Irish subsidiaries, and PPP conversion doesn't correct for that distortion."
+        ]
+      }
+    },
+    {
+      "heading": {
+        "ko": "PPP도 완벽한 답은 아니다",
+        "en": "PPP isn't a complete answer either"
+      },
+      "body": {
+        "ko": [
+          "PPP는 그 소득으로 자국 안에서 얼마나 살 수 있는지를 보여주지만, 해외에서 그 돈을 쓰는 여행자의 경험과는 다시 달라진다. 여행자는 자국 통화를 현지 통화로 환전해 쓰기 때문에, 체감 물가는 PPP가 아니라 명목 환율과 현지 물가 수준이 함께 결정한다. PPP가 높은 나라의 국민이 여유롭게 산다는 뜻이지, 그 나라 여행이 저렴하다는 뜻은 아니다.",
+          "이 리포트에 쓰인 PPP 수치는 이 사이트의 국가 데이터셋이 아니라 국제통화기금(IMF) 세계경제전망(2026년 추정치, 위키백과 정리본 경유)에서 가져왔다. 명목 GDP와 1인당 GDP는 앞선 리포트와 마찬가지로 세계은행 2025년 데이터 기준이다. 각 나라의 상세 페이지에서는 명목·1인당 GDP를 한국과 직접 비교해 볼 수 있다."
+        ],
+        "en": [
+          "PPP shows how far an income stretches inside its own country, but that's still not the same as what a traveler experiences spending foreign currency abroad. Travelers convert their home currency at market exchange rates, so what they actually feel is driven by the nominal rate and local prices together, not PPP. A country's residents having strong PPP-adjusted purchasing power doesn't mean visiting that country is cheap.",
+          "The PPP figures in this report come from IMF World Economic Outlook estimates (2026, via a Wikipedia compilation), not this site's own country dataset. Nominal and per-capita GDP figures are the same World Bank 2025 data used in the earlier report. Each country's detail page lets you compare nominal and per-capita GDP directly against South Korea."
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "name": "World Bank Open Data — GDP, GDP per capita",
+      "url": "https://data.worldbank.org",
+      "retrieved": "2026-08"
+    },
+    {
+      "name": "IMF World Economic Outlook — GDP per capita, PPP (via Wikipedia compilation)",
+      "url": "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita",
+      "retrieved": "2026-08"
+    }
+  ],
+  "relatedCountrySlugs": [
+    "south-korea",
+    "iceland",
+    "switzerland",
+    "egypt",
+    "iran",
+    "india",
+    "vietnam",
+    "indonesia",
+    "thailand",
+    "philippines",
+    "guyana",
+    "china",
+    "brazil",
+    "ireland"
+  ]
+}
