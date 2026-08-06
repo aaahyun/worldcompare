@@ -1,5 +1,5 @@
 #!/bin/bash
-KEY="a3f9c2e1b8d47f6091ca35e8d2b7f401"
+KEY="e86c1433bfc0856f731e16cbb5763606"
 HOST="whatsthepop.world"
 
 # 인자로 받은 URL들을 JSON 배열로 변환
