@@ -115,8 +115,8 @@
   "compare": {
     "title": "{a} vs {b}",
     "metadata": {
-      "title": "{a} vs {b} — GDP·인구·면적·기온 비교",
-      "titleShort": "{a} vs {b} — GDP·인구·면적 비교",
+      "title": "{a} 인구 {b} 인구 비교 — GDP·면적까지",
+      "titleShort": "{a} 인구 {b} 인구 비교",
       "description": "{a} GDP는 {gdpA}로 {b}({gdpB})의 {ratio}. 인구·면적·월별 기온까지 도표로 한눈에 비교하세요."
     },
     "sections": {
@@ -156,7 +156,18 @@
     "ratioPercent": "약 {n}%",
     "ratioMultiple": "약 {n}배",
     "higher": "높습니다",
-    "lower": "낮습니다"
+    "lower": "낮습니다",
+    "faq": {
+      "areaQuestion": "{a} {b}보다 큰가요?",
+      "areaAnswerYes": "네, {a}의 면적은 {aValue}로, {b}({bValue})의 {ratio} 수준입니다.",
+      "areaAnswerNo": "아니요, {a}의 면적은 {aValue}로, {b}({bValue})의 {ratio} 수준입니다.",
+      "gdpQuestion": "{a} {b}보다 잘사나요?",
+      "gdpAnswerYes": "네, {a}의 1인당 GDP는 {aValue}로, {b}({bValue})의 {ratio} 수준입니다.",
+      "gdpAnswerNo": "아니요, {a}의 1인당 GDP는 {aValue}로, {b}({bValue})의 {ratio} 수준입니다.",
+      "populationQuestion": "{a} {b} 중 어디가 인구가 많나요?",
+      "populationAnswerYes": "네, {a}의 인구는 약 {aValue}명으로, {b}(약 {bValue}명)의 {ratio} 수준입니다.",
+      "populationAnswerNo": "아니요, {a}의 인구는 약 {aValue}명으로, {b}(약 {bValue}명)의 {ratio} 수준입니다."
+    }
   },
   "enums": {
     "continents": {

@@ -1,4 +1,4 @@
-import { eunNeun, gwaWa } from "./josa";
+import { eunNeun, gwaWa, iGa } from "./josa";
 
 export type Translator = (
   key: string,
@@ -33,6 +33,10 @@ export function formatUSD(value: number, locale: string): string {
     currency: "USD",
     maximumFractionDigits: 0,
   }).format(value);
+}
+
+export function formatAreaKm2(value: number, locale: string): string {
+  return `${new Intl.NumberFormat(locale).format(value)} km²`;
 }
 
 /** Compact GDP figure for headlines/descriptions (e.g. "$4.4T", "4.4조 달러"). */
@@ -278,6 +282,96 @@ export function drivingSideSentence(
     home: sameSide ? home.name : homeTopic,
     targetSide: target.side,
     homeSide: home.side,
+  });
+}
+
+/**
+ * FAQ question/answer pairs for the three highest-volume natural-language query
+ * shapes seen in Search Console ("is X bigger than Y", etc). Answers always lead
+ * with yes/no and cite both countries' raw figures, so they stand alone as
+ * AI-search-citable sentences without requiring the rest of the page.
+ */
+export function areaFaqQuestion(
+  target: { name: string },
+  home: { name: string },
+  locale: string,
+  t: Translator
+): string {
+  return t("faq.areaQuestion", {
+    a: locale === "ko" ? iGa(target.name) : target.name,
+    b: home.name,
+  });
+}
+
+export function areaFaqAnswer(
+  target: ComparableCountry,
+  home: ComparableCountry,
+  locale: string,
+  t: Translator
+): string {
+  const ratio = target.areaKm2 / home.areaKm2;
+  return t(ratio >= 1 ? "faq.areaAnswerYes" : "faq.areaAnswerNo", {
+    a: target.name,
+    b: home.name,
+    aValue: formatAreaKm2(target.areaKm2, locale),
+    bValue: formatAreaKm2(home.areaKm2, locale),
+    ratio: ratioDescriptor(ratio, t),
+  });
+}
+
+export function gdpFaqQuestion(
+  target: { name: string },
+  home: { name: string },
+  locale: string,
+  t: Translator
+): string {
+  return t("faq.gdpQuestion", {
+    a: locale === "ko" ? iGa(target.name) : target.name,
+    b: home.name,
+  });
+}
+
+export function gdpFaqAnswer(
+  target: ComparableCountry,
+  home: ComparableCountry,
+  locale: string,
+  t: Translator
+): string {
+  const ratio = target.gdpPerCapitaUsd / home.gdpPerCapitaUsd;
+  return t(ratio >= 1 ? "faq.gdpAnswerYes" : "faq.gdpAnswerNo", {
+    a: target.name,
+    b: home.name,
+    aValue: formatUSD(target.gdpPerCapitaUsd, locale),
+    bValue: formatUSD(home.gdpPerCapitaUsd, locale),
+    ratio: ratioDescriptor(ratio, t),
+  });
+}
+
+export function populationFaqQuestion(
+  target: { name: string },
+  home: { name: string },
+  locale: string,
+  t: Translator
+): string {
+  return t("faq.populationQuestion", {
+    a: locale === "ko" ? gwaWa(target.name) : target.name,
+    b: home.name,
+  });
+}
+
+export function populationFaqAnswer(
+  target: ComparableCountry,
+  home: ComparableCountry,
+  locale: string,
+  t: Translator
+): string {
+  const ratio = target.population / home.population;
+  return t(ratio >= 1 ? "faq.populationAnswerYes" : "faq.populationAnswerNo", {
+    a: target.name,
+    b: home.name,
+    aValue: formatCompact(target.population, locale),
+    bValue: formatCompact(home.population, locale),
+    ratio: ratioDescriptor(ratio, t),
   });
 }
 

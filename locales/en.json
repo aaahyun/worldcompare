@@ -156,7 +156,18 @@
     "ratioPercent": "about {n}%",
     "ratioMultiple": "about {n}x",
     "higher": "higher",
-    "lower": "lower"
+    "lower": "lower",
+    "faq": {
+      "areaQuestion": "Is {a} bigger than {b}?",
+      "areaAnswerYes": "Yes — {a}'s land area is {aValue}, {ratio} of {b}'s {bValue}.",
+      "areaAnswerNo": "No — {a}'s land area is {aValue}, {ratio} of {b}'s {bValue}.",
+      "gdpQuestion": "Is {a} richer than {b}?",
+      "gdpAnswerYes": "Yes — {a}'s GDP per capita is {aValue}, {ratio} of {b}'s {bValue}.",
+      "gdpAnswerNo": "No — {a}'s GDP per capita is {aValue}, {ratio} of {b}'s {bValue}.",
+      "populationQuestion": "Does {a} have more people than {b}?",
+      "populationAnswerYes": "Yes — {a}'s population is about {aValue}, {ratio} of {b}'s {bValue}.",
+      "populationAnswerNo": "No — {a}'s population is about {aValue}, {ratio} of {b}'s {bValue}."
+    }
   },
   "enums": {
     "continents": {

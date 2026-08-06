@@ -4,6 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { permanentRedirect, Link } from "@/i18n/navigation";
 import { getAllSlugs, getCountry, toComparable } from "@/lib/countries";
 import {
+  areaFaqAnswer,
+  areaFaqQuestion,
   areaSentence,
   buildCompareTitle,
   climateAnnualSentence,
@@ -12,10 +14,14 @@ import {
   formatCompact,
   formatGdpCompact,
   formatUSD,
+  gdpFaqAnswer,
+  gdpFaqQuestion,
   gdpNominalSentence,
   gdpPerCapitaSentence,
   languageDisplayName,
   languageSentence,
+  populationFaqAnswer,
+  populationFaqQuestion,
   populationSentence,
   religionSentence,
 } from "@/lib/compare";
@@ -149,6 +155,12 @@ export default async function ComparePage({
   const targetSide = locale === "ko" ? t(`travel.drivingSide${a.driving_side === "left" ? "Left" : "Right"}`) : a.driving_side;
   const homeSide = locale === "ko" ? t(`travel.drivingSide${b.driving_side === "left" ? "Left" : "Right"}`) : b.driving_side;
 
+  const faqEntries = [
+    { q: areaFaqQuestion(compA, compB, locale, tCompare), a: areaFaqAnswer(compA, compB, locale, tCompare) },
+    { q: gdpFaqQuestion(compA, compB, locale, tCompare), a: gdpFaqAnswer(compA, compB, locale, tCompare) },
+    { q: populationFaqQuestion(compA, compB, locale, tCompare), a: populationFaqAnswer(compA, compB, locale, tCompare) },
+  ];
+
   const jsonLd = [
     {
       "@context": "https://schema.org",
@@ -162,6 +174,15 @@ export default async function ComparePage({
           item: canonicalUrl(locale, `/compare/${pair}`),
         },
       ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqEntries.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
   ];
 
@@ -445,6 +466,18 @@ export default async function ComparePage({
             <dd className="font-medium">{nameA}: {a.emergency}</dd>
             <dd className="font-medium">{nameB}: {b.emergency}</dd>
           </div>
+        </dl>
+      </section>
+
+      <section aria-label="FAQ" className="mb-10">
+        <h2 className="sr-only">FAQ</h2>
+        <dl className="space-y-3">
+          {faqEntries.map((f) => (
+            <div key={f.q}>
+              <dt className="font-medium">{f.q}</dt>
+              <dd className="text-base text-content-secondary">{f.a}</dd>
+            </div>
+          ))}
         </dl>
       </section>
 
