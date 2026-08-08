@@ -30,17 +30,8 @@ import { siteUrl } from "@/lib/site";
 import { flagEmoji } from "@/lib/homeCountry";
 import { ReligionStackedBar } from "@/lib/charts/religionChart";
 import { PlugIcon } from "@/components/PlugIcon";
-
-const PAIR_DELIMITER = "-vs-";
-
-function parsePair(pair: string): [string, string] | null {
-  const idx = pair.indexOf(PAIR_DELIMITER);
-  if (idx === -1) return null;
-  const a = pair.slice(0, idx);
-  const b = pair.slice(idx + PAIR_DELIMITER.length);
-  if (!a || !b) return null;
-  return [a, b];
-}
+import { PAIR_DELIMITER, parsePair } from "@/lib/comparePair";
+import { EmbedChartButton } from "@/components/EmbedChartButton";
 
 export async function generateStaticParams() {
   const slugs = getAllSlugs().sort();
@@ -99,6 +90,9 @@ export async function generateMetadata({
     alternates: {
       canonical: url,
       languages: buildAlternateLanguages(path),
+      types: {
+        "application/json+oembed": `${siteUrl}/api/oembed?url=${encodeURIComponent(url)}`,
+      },
     },
     openGraph: { title, description, url },
   };
@@ -216,7 +210,16 @@ export default async function ComparePage({
       </nav>
 
       <section id="gdp" className="mb-10 scroll-mt-24">
-        <h2 className="mb-3 text-xl font-semibold">{sectionH2("gdp")}</h2>
+        <div className="mb-3 flex items-center justify-between gap-2">
+          <h2 className="text-xl font-semibold">{sectionH2("gdp")}</h2>
+          <EmbedChartButton
+            pair={pair}
+            metric="gdp"
+            metricLabel={tCompare("toc.gdp")}
+            nameA={nameA}
+            nameB={nameB}
+          />
+        </div>
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-neutral-200 text-left">
@@ -256,7 +259,16 @@ export default async function ComparePage({
       </section>
 
       <section id="population" className="mb-10 scroll-mt-24">
-        <h2 className="mb-3 text-xl font-semibold">{sectionH2("population")}</h2>
+        <div className="mb-3 flex items-center justify-between gap-2">
+          <h2 className="text-xl font-semibold">{sectionH2("population")}</h2>
+          <EmbedChartButton
+            pair={pair}
+            metric="population"
+            metricLabel={tCompare("toc.population")}
+            nameA={nameA}
+            nameB={nameB}
+          />
+        </div>
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-neutral-200 text-left">
@@ -281,7 +293,16 @@ export default async function ComparePage({
       </section>
 
       <section id="area" className="mb-10 scroll-mt-24">
-        <h2 className="mb-3 text-xl font-semibold">{sectionH2("area")}</h2>
+        <div className="mb-3 flex items-center justify-between gap-2">
+          <h2 className="text-xl font-semibold">{sectionH2("area")}</h2>
+          <EmbedChartButton
+            pair={pair}
+            metric="area"
+            metricLabel={tCompare("toc.area")}
+            nameA={nameA}
+            nameB={nameB}
+          />
+        </div>
         <table className="w-full border-collapse text-sm">
           <thead>
             <tr className="border-b border-neutral-200 text-left">
@@ -308,7 +329,16 @@ export default async function ComparePage({
 
       {hasClimate && (
         <section id="climate" className="mb-10 scroll-mt-24">
-          <h2 className="mb-3 text-xl font-semibold">{sectionH2("climate")}</h2>
+          <div className="mb-3 flex items-center justify-between gap-2">
+            <h2 className="text-xl font-semibold">{sectionH2("climate")}</h2>
+            <EmbedChartButton
+              pair={pair}
+              metric="climate"
+              metricLabel={tCompare("toc.climate")}
+              nameA={nameA}
+              nameB={nameB}
+            />
+          </div>
           <p className="mb-3 text-sm text-content-secondary">
             {climateAnnualSentence(compA, compB, locale, tCompare)}
           </p>

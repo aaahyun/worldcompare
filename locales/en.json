@@ -167,6 +167,15 @@
       "populationQuestion": "Does {a} have more people than {b}?",
       "populationAnswerYes": "Yes — {a}'s population is about {aValue}, {ratio} of {b}'s {bValue}.",
       "populationAnswerNo": "No — {a}'s population is about {aValue}, {ratio} of {b}'s {bValue}."
+    },
+    "embed": {
+      "button": "Get this chart",
+      "modalTitle": "Embed this chart",
+      "modalHint": "Paste this into your blog post or CMS.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "close": "Close",
+      "iframeTitle": "{a} vs {b} {metric} comparison"
     }
   },
   "enums": {

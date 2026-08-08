@@ -167,6 +167,15 @@
       "populationQuestion": "{a} {b} 중 어디가 인구가 많나요?",
       "populationAnswerYes": "네, {a}의 인구는 약 {aValue}명으로, {b}(약 {bValue}명)의 {ratio} 수준입니다.",
       "populationAnswerNo": "아니요, {a}의 인구는 약 {aValue}명으로, {b}(약 {bValue}명)의 {ratio} 수준입니다."
+    },
+    "embed": {
+      "button": "이 차트 가져가기",
+      "modalTitle": "차트 임베드하기",
+      "modalHint": "아래 코드를 블로그 글이나 CMS에 붙여넣으세요.",
+      "copy": "복사",
+      "copied": "복사됨!",
+      "close": "닫기",
+      "iframeTitle": "{a} vs {b} {metric} 비교"
     }
   },
   "enums": {
