@@ -10,6 +10,7 @@ import { PopulationFigureChart } from "@/lib/charts/populationChart";
 import { AreaOverlayChart } from "@/lib/charts/areaChart";
 import { ClimateLineChart, type ClimateSeries } from "@/lib/charts/climateChart";
 import { GdpBarChart } from "@/lib/charts/gdpChart";
+import { industryLabelEn } from "@/lib/industries";
 
 const METRIC_LABEL: Record<EmbedMetric, string> = {
   gdp: "GDP",
@@ -183,6 +184,62 @@ export default async function EmbedComparePage({
       </a>
 
       <div style={{ display: "flex", justifyContent: "center" }}>{chart}</div>
+
+      {metric === "population" && a.industries?.length && b.industries?.length ? (
+        <>
+        <p
+          style={{
+            marginTop: 10,
+            marginBottom: 0,
+            fontSize: 11,
+            fontWeight: 600,
+            color: "var(--color-content-tertiary)",
+            textTransform: "uppercase",
+            letterSpacing: "0.03em",
+          }}
+        >
+          Top industries
+        </p>
+        <table style={{ width: "100%", marginTop: 4, borderCollapse: "collapse", fontSize: 12 }}>
+          <thead>
+            <tr>
+              <th
+                style={{
+                  textAlign: "left",
+                  padding: "2px 6px",
+                  color: "var(--color-country-target)",
+                  fontWeight: 600,
+                }}
+              >
+                {nameA}
+              </th>
+              <th
+                style={{
+                  textAlign: "left",
+                  padding: "2px 6px",
+                  color: "var(--color-country-home)",
+                  fontWeight: 600,
+                }}
+              >
+                {nameB}
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {[0, 1, 2].map((i) => (
+              <tr key={i} style={{ borderTop: "1px solid var(--color-neutral-200)" }}>
+                <td style={{ padding: "3px 6px", color: "var(--color-content-secondary)" }}>
+                  {a.industries![i] ? industryLabelEn(a.industries![i]) : "—"}
+                </td>
+                <td style={{ padding: "3px 6px", color: "var(--color-content-secondary)" }}>
+                  {b.industries![i] ? industryLabelEn(b.industries![i]) : "—"}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        </>
+      ) : null}
 
       <div
         style={{
